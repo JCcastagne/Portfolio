@@ -174,16 +174,18 @@ nav .navBar div {
 .container {
   /*Fullpage margins*/
   position: absolute;
-  flex-wrap: wrap;
-  top: 35%;
+  /* flex-wrap: wrap; */
+  top: 50%;
+  transform: translateY(-50%);
   left: 10vw;
   margin: auto;
   width: 80vw;
-  height: 100vh;
+  /* height: 100vh; */
   z-index: 10;
 }
 
 /** first page **/
+
 /* .s1{
   background-image: url(./../img/house_background.png);
   background-size: cover;
@@ -208,14 +210,24 @@ nav .navBar div {
   width: 700px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+  margin-bottom: var(--bodySmaller);
 }
+
 .s1 p {
   font-size: var(--one);
   max-width: 600px;
 }
 
+.s1 p:first-of-type {
+  margin-bottom: var(--two);
+}
+
+.s1 p:last-of-type {
+  margin-bottom: var(--bodySmaller);
+}
+
 .s1 a img {
-  height: var(--three);
+  height: var(--two);
 }
 .s1 a,
 .s1 a:link .s1 a:visited,
@@ -224,24 +236,14 @@ nav .navBar div {
   color: var(--jet);
 }
 
-/*
-.s1 img {
-  mobile
-  position: absolute;
-  width: 100vw;
-  right: 0px;
-  transform: translate(10vw, -35vh);
-  bottom: 0px;
-}
-*/
-
-.banner {
-  /*Banner text = 5.5em*/
-  position: absolute;
-  width: 118.25vw;
-  bottom: 0;
-  z-index: 10;
-  min-width: 1500px;
+.guides {
+  display: flex;
+  justify-content: space-between;
+  max-width: 850px;
+  margin: 1em 0;
+  font-size: var(--three);
+  font-weight: 300;
+  transform: translateX(-0.66%);
 }
 
 .banner-left {
@@ -257,10 +259,5 @@ nav .navBar div {
   right: 0;
   z-index: 10;
 }
-
-/* .page p {
-  font-size: 1.25em;
-  padding: 1em 0;
-} */
 
 /** first page ^ **/
