@@ -146,6 +146,10 @@ nav .navBar {
   font-size: var(--one);
 }
 
+nav .navBar div {
+  transform: translateY(25%);
+}
+
 .navBar .navLeft,
 .navBar .navRight {
   display: grid;
@@ -156,7 +160,9 @@ nav .navBar {
 
 .navBar .logo {
   width: 100px;
-  transform: translateY(-12.5px);
+  position: relative;
+  /* transform: translateY(-12.5px); */
+  transform: translateY(0px);
 }
 .navBar a,
 .navBar a:link .navBar a:visited,
@@ -236,6 +242,20 @@ nav .navBar {
   bottom: 0;
   z-index: 10;
   min-width: 1500px;
+}
+
+.banner-left {
+  position: absolute;
+  height: 20vh;
+  bottom: 0;
+  z-index: 10;
+}
+.banner-right {
+  position: absolute;
+  height: 39.5vh;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
 }
 
 /* .page p {
