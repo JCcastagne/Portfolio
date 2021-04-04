@@ -48,19 +48,16 @@ h6 {
   font-size: 1em;
 }
 
-/* --- font sizes --- */ /*
-
-5.5em
-2.441em
-1.953em
-1.563em
-1.250em
-1.000em
-0.800em
-0.640em
-0.512em
-
-*/
+/* --- font sizes --- */
+:root {
+  --five: 5.5em; /*banner font size*/
+  --four: 2.75em;
+  --three: 1.8333em;
+  --two: 1.375em;
+  --one: 1.2083em;
+  --body: 1.0417em;
+  --bodySmaller: 0.9167em;
+}
 
 /* --- color palette --- */
 :root {
@@ -117,7 +114,7 @@ h6 {
 .fp-slidesNav ul li:hover a.active span::after {
   height: 100%;
 }
-/*** page slides nav ^ ***/
+/*** page slides nav buttons/dots^ ***/
 
 .section {
   /*all "fullpages"*/
@@ -146,7 +143,7 @@ nav .navBar {
   margin-right: 10vw;
   width: 80vw;
   padding: 2em 0;
-  font-size: 1.25em;
+  font-size: var(--one);
 }
 
 .navBar .navLeft,
@@ -156,13 +153,6 @@ nav .navBar {
   justify-items: center;
   width: 100%;
 }
-
-/* nav .navLeft a:first-of-type {
-  margin-right: 10vw;
-} */
-/* nav .navRight a {
-  margin-left: 4vw;
-} */
 
 .navBar .logo {
   width: 100px;
@@ -186,6 +176,7 @@ nav .navBar {
   height: 100vh;
 }
 
+/** first page **/
 /* .s1{
   background-image: url(./../img/house_background.png);
   background-size: cover;
@@ -199,12 +190,16 @@ nav .navBar {
   background-position: left;
 } */
 
-h1 {
-  font-size: 3em;
+.s1 h1 {
+  font-size: var(--four);
   /* background: linear-gradient(45deg, var(--ebony) 0%, var(--jet) 100%);
   width: 700px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; */
+}
+.s1 p {
+  font-size: var(--one);
+  max-width: 600px;
 }
 
 /*
@@ -232,6 +227,4 @@ h1 {
   padding: 1em 0;
 } */
 
-.s1 p {
-  max-width: 450px;
-}
+/** first page ^ **/
