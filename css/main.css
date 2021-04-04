@@ -50,7 +50,7 @@ h6 {
 
 /* --- font sizes --- */ /*
 
-3.052em
+5.5em
 2.441em
 1.953em
 1.563em
@@ -137,14 +137,33 @@ nav {
 }
 
 nav .navBar {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 1fr;
+  /* justify-content: space-between; */
+  justify-content: center;
+  justify-items: center;
   margin-left: 10vw;
   margin-right: 10vw;
   width: 80vw;
   padding: 2em 0;
   font-size: 1.25em;
 }
+
+.navBar .navLeft,
+.navBar .navRight {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  width: 100%;
+}
+
+/* nav .navLeft a:first-of-type {
+  margin-right: 10vw;
+} */
+/* nav .navRight a {
+  margin-left: 4vw;
+} */
+
 .navBar .logo {
   width: 100px;
   transform: translateY(-12.5px);
