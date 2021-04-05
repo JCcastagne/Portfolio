@@ -27,3 +27,10 @@ function init() {
     },
   });
 }
+
+// Code and design by Jean-Christophe Castagne
+// | https://github.com/JCcastagne/ |
+
+// Code is free to be used with proper credit, all media assets belong to the original owner and shall not be reused or redistributed.
+
+// fullpage.js is a library from https://github.com/alvarotrigo/fullPage.js/
