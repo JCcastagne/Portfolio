@@ -326,8 +326,21 @@ h1 {
 }
 
 .s2 .container {
-  background-color: rgba(255, 255, 255, 0.55);
   width: 80vw;
+  max-width: 850px;
+}
+.s2 h1 {
+  background-color: var(--white);
+  padding: var(--bodySmaller);
+  font-size: var(--three);
+  margin: 0;
+}
+.s2 p {
+  color: var(--white);
+  background-color: var(--jet);
+  padding: var(--bodySmaller);
+  font-size: var(--two);
+  width: max-content;
 }
 
 .gradientOverlay {
@@ -338,13 +351,12 @@ h1 {
   position: absolute;
   left: 0;
   top: 0;
-  z-index: 99;
-  background: rgb(255, 255, 255);
+  z-index: 1;
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 1) 5%,
-    rgba(255, 255, 255, 0) 50%,
-    rgba(255, 255, 255, 1) 95%
+    var(--linearGradientBot) 0%,
+    rgba(0, 0, 0, 0.25) 50%,
+    var(--linearGradientTop) 100%
   );
 }
 
