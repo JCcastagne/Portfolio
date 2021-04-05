@@ -204,7 +204,7 @@ nav .navBar div {
   text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
-.s1 h1 {
+h1 {
   font-size: var(--four);
   /* background: linear-gradient(45deg, var(--ebony) 0%, var(--jet) 100%);
   width: 700px;
@@ -247,17 +247,105 @@ nav .navBar div {
 }
 
 .banner-left {
+  display: initial;
   position: absolute;
   height: 20vh;
   bottom: 0;
   z-index: 10;
 }
 .banner-right {
+  display: initial;
   position: absolute;
   height: 39.5vh;
   bottom: 0;
   right: 0;
   z-index: 10;
+}
+
+/** first page ^ **/
+
+@media only screen and (max-width: 1115px) {
+  .banner-right {
+    display: none;
+  }
+}
+
+/** second page **/
+
+.p2Background {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.p2Background img:first-of-type {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 33.34vh;
+  object-fit: cover;
+}
+.p2Background img:nth-of-type(2) {
+  position: absolute;
+  top: 33.34vh;
+  right: 0;
+  height: 33.34vh;
+  object-fit: cover;
+}
+.p2Background img:nth-of-type(3) {
+  position: absolute;
+  top: 66.68vh;
+  left: 0;
+  height: 33.34vh;
+  object-fit: cover;
+}
+
+.p2Background img:first-of-type {
+  animation: bannerSlide 110s 1.5s infinite alternate;
+  /*67*/
+}
+.p2Background img:nth-of-type(2) {
+  animation: bannerSlide2 110s 0s infinite alternate; /*37*/
+}
+.p2Background img:nth-of-type(3) {
+  animation: bannerSlide 110s 3s infinite alternate; /*67*/
+}
+@keyframes bannerSlide {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-40%);
+  }
+}
+@keyframes bannerSlide2 {
+  0% {
+    transform: translateX(40%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.s2 .container {
+  background-color: rgba(255, 255, 255, 0.55);
+  width: 80vw;
+}
+
+.gradientOverlay {
+  content: "";
+  height: 100vh;
+  width: 100vw;
+  background: black;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 99;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 5%,
+    rgba(255, 255, 255, 0) 50%,
+    rgba(255, 255, 255, 1) 95%
+  );
 }
 
 /** first page ^ **/
