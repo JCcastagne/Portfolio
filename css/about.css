@@ -1,0 +1,85 @@
+.container {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center; */
+}
+
+/** first page **/
+
+.banner-left {
+  display: initial;
+  position: absolute;
+  height: 20vh;
+  bottom: 0;
+  z-index: 10;
+}
+.banner-right {
+  display: initial;
+  position: absolute;
+  height: 39.5vh;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+}
+@media only screen and (max-width: 1115px) {
+  .banner-right {
+    display: none;
+  }
+}
+
+h1 {
+  font-size: var(--four);
+}
+h2 {
+  font-size: var(--three);
+}
+
+.s1 .about {
+  display: flex;
+  /* justify-content: center;
+  align-items: center; */
+  padding-top: var(--four);
+}
+
+.s1 .about1,
+.s1 .about2 {
+  /* background-color: var(--white); */
+}
+.s1 .about1 {
+  margin-right: 100px;
+}
+
+.s1 .about1 p,
+.s1 .about2 p {
+  font-size: var(--body);
+  padding-top: var(--body);
+  width: calc(40vw - 60px);
+}
+
+.about1 img,
+.about2 img {
+  height: 20vh;
+  width: calc(40vw - 50px);
+  object-fit: cover;
+  object-position: left center;
+}
+
+/** first page^ **/
+
+/** second page **/
+
+.s2 .container .fullStackIcons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-auto-rows: 33vh 33vh;
+}
+.fullStackIcons div {
+  background-color: grey;
+}
+
+.fullStackIcons img {
+  height: 100px;
+}
+
+/** second page^ **/
