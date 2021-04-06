@@ -39,7 +39,7 @@ h2 {
   display: flex;
   /* justify-content: center;
   align-items: center; */
-  padding-top: var(--four);
+  padding-top: var(--three);
 }
 
 .s1 .about1,
@@ -82,7 +82,11 @@ h2 {
 .s2 .container .fullStackIcons {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-auto-rows: 33vh 33vh;
+  grid-auto-rows: 1fr 1fr;
+  gap: var(--four);
+}
+.fullStackIcons {
+  padding-top: var(--four);
 }
 
 .headers {
@@ -92,6 +96,23 @@ h2 {
 
 .fullStackIcons img {
   height: 100px;
+}
+
+.s2 h2 {
+  margin-left: 2em;
+}
+
+.headers::after {
+  content: "";
+  height: var(--four);
+  width: 2.5px;
+  background-color: var(--jet);
+  position: absolute;
+  transform: translateX(calc(100px + 2em));
+}
+
+.s2 p {
+  margin-top: var(--one);
 }
 
 /* .s1 .about1::after,
