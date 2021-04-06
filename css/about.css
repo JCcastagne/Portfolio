@@ -65,6 +65,16 @@ h2 {
   object-position: left center;
 }
 
+.s1 .about1::after,
+.s1 .about2::after {
+  content: "";
+  width: calc(30vw - 50px);
+  height: 5px;
+  position: absolute;
+  bottom: -1em;
+  background-color: var(--jet);
+}
+
 /** first page^ **/
 
 /** second page **/
@@ -74,12 +84,23 @@ h2 {
   grid-template-columns: 1fr 1fr 1fr;
   grid-auto-rows: 33vh 33vh;
 }
-.fullStackIcons div {
-  background-color: grey;
+
+.headers {
+  display: flex;
+  align-items: center;
 }
 
 .fullStackIcons img {
   height: 100px;
 }
 
+/* .s1 .about1::after,
+.s1 .about2::after {
+  content: "";
+  width: calc(30vw - 50px);
+  height: 5px;
+  position: absolute;
+  bottom: -1em;
+  background-color: var(--jet);
+} */
 /** second page^ **/
