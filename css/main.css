@@ -74,8 +74,10 @@ h6 {
   --grey: #d3d3d3;
   --white: #eeeeee;
 
-  --linearGradientTop: rgb(227, 227, 227);
-  --linearGradientBot: rgb(164, 164, 164);
+  --linearGradientTop: rgb(224, 224, 224);
+  --linearGradientBot: rgb(199, 199, 199);
+
+  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
 }
 
 /* * *            * * */
@@ -138,7 +140,7 @@ h6 {
 
 nav {
   position: absolute;
-  z-index: 1;
+  z-index: 99;
   text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.091);
 }
 
@@ -169,7 +171,7 @@ nav .navBar div {
 
 .navBar .logo {
   width: 100px;
-  position: relative;
+  /* position: relative; */
   /* transform: translateY(-12.5px); */
   transform: translateY(0px);
 }

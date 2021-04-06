@@ -1,21 +1,126 @@
+/** intro animation **/
+.introCover.active {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(
+    -45deg,
+    var(--linearGradientBot) 0%,
+    var(--linearGradientTop) 100%
+  );
+  z-index: 97;
+  opacity: 1;
+}
+.introCover {
+  transition: 0.5s opacity ease-in-out;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  top: 0;
+  left: 0;
+  content: "";
+  background: linear-gradient(
+    -45deg,
+    var(--linearGradientBot) 0%,
+    var(--linearGradientTop) 100%
+  );
+  z-index: 98;
+  opacity: 0;
+}
+
+nav .navBar a,
+.nav img {
+  animation: fadeNav 4s forwards;
+}
+#fp-nav {
+  animation: fadeFPNav 4s 0.25s forwards;
+}
+.banner-left,
+.banner-right {
+  animation: fadeBanner 4s 0.3s forwards;
+}
+
+@keyframes fadeNav {
+  0% {
+    filter: none;
+    transform: translateY(-50vh);
+  }
+  75% {
+    filter: none;
+    transform: translateY(-50vh);
+  }
+  100% {
+    filter: invert();
+    transform: translateY(0);
+  }
+}
+@keyframes fadeFPNav {
+  0% {
+    filter: none;
+    transform: translateX(-5vw);
+  }
+  75% {
+    filter: none;
+    transform: translateX(-5vw);
+  }
+  100% {
+    filter: invert();
+    transform: translateX(0);
+  }
+}
+@keyframes fadeBanner {
+  0% {
+    filter: none;
+    transform: translateY(50vh);
+  }
+  75% {
+    filter: none;
+    transform: translateY(50vh);
+  }
+  100% {
+    filter: invert();
+    transform: translateY(0);
+  }
+}
+
+.headShot {
+  animation: fadeInBG 4s forwards;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url(../img/headShot.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+@keyframes fadeInBG {
+  0% {
+    opacity: 0%;
+  }
+  75% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+/** intro animation ^ **/
+
 /** first page **/
 
-/* .s1{
-  background-image: url(./../img/house_background.png);
-  background-size: cover;
-  background-position: right;
-} */
-
-/* .s1 {
-  background-image: url(../img/cringe.JPEG);
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: left;
-} */
+.container {
+  overflow: hidden;
+}
 
 .s1 {
   color: var(--white);
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  text-shadow: var(--textShadow);
 }
 
 h1 {
@@ -168,9 +273,9 @@ h1 {
   z-index: 1;
   background: linear-gradient(
     0deg,
-    var(--linearGradientBot) 0%,
+    var(--jet) 0%,
     rgba(0, 0, 0, 0.25) 50%,
-    var(--linearGradientTop) 100%
+    var(--jet) 100%
   );
 }
 

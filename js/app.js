@@ -1,6 +1,13 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
+  setTimeout(function () {
+    let cover = document.querySelector(".introCover");
+    if (cover) {
+      cover.classList.remove("active");
+    }
+  }, 1000);
+
   TweenMax.defaultEase = Linear.easeOut;
 
   new fullpage("#fullpage", {
