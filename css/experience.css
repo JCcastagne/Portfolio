@@ -1,4 +1,69 @@
+.nextPageHint {
+  position: absolute;
+  z-index: 100;
+  bottom: -112.5px;
+  left: calc(50vw - 75px);
+  background-color: var(--jet);
+  height: 150px;
+  width: 150px;
+
+  animation: hint 1.5s 1s cubic-bezier(0.95, -0.85, 0, 1.57) both;
+}
+span {
+  font-weight: 600;
+  color: var(--white);
+  position: absolute;
+  transform: rotate(-45deg) translate(-25%, 1em);
+}
+@keyframes hint {
+  0% {
+    transform: scale(0) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+}
+
 /** first page **/
+
+h1 {
+  font-size: var(--four);
+}
+
+.positions {
+  margin-top: var(--four);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
+
+h2 {
+  font-size: var(--three);
+}
+.headers {
+  margin-bottom: var(--three);
+}
+.headers::after {
+  content: "";
+  height: 5px;
+  width: 33vw;
+  background-color: var(--jet);
+  position: absolute;
+  transform: translateY(1ch);
+}
+
+h3 {
+  font-size: var(--two);
+  font-weight: 400;
+}
+
+.positions li {
+  font-size: var(--body);
+}
 
 /** first page^ **/
 
