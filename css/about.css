@@ -108,9 +108,9 @@ h2 {
 .s1 .about2::after {
   content: "";
   width: calc(30vw - 50px);
-  height: 5px;
+  height: 3px;
   position: absolute;
-  bottom: -1em;
+  bottom: -2em;
   background-color: var(--jet);
 }
 

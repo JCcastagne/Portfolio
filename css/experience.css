@@ -30,6 +30,10 @@ span {
 
 /** first page **/
 
+.s1 {
+  overflow: hidden;
+}
+
 h1 {
   font-size: var(--four);
 }
@@ -49,7 +53,7 @@ h2 {
 }
 .headers::after {
   content: "";
-  height: 5px;
+  height: 3px;
   width: 33vw;
   background-color: var(--jet);
   position: absolute;
