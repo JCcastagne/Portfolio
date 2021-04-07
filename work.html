@@ -9,10 +9,12 @@
    -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JC Castagne | Experience</title>
+  <title>JC Castagne | My Work</title>
   <link rel="stylesheet" href="./css/fullpage.min.css">
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/work.css">
+
+  
 </head>
 <body>
 
@@ -45,70 +47,67 @@
   <div id="fullpage">
 
     <section class="section s1">
-
-      <!-- <div class="nextPageHint"><span>Education&#8675;</span></div> -->
-
+      <!-- <div class="nextPageHint"><span>Assets&#8675;</span></div> -->
       <div class="container">
 
-        <h1>Professional History & Key Roles</h1>
-        
-        <div class="positions">
-
-          <div class="firstPos">
-            <div class="headers">
-              <h2>Head Estimator & Service Manager</h2>
-              <h3>04-2018 / 04-2020</h3>
-            </div>
-            <ul>
-              <li>Complete turnaround in both Service 
-                Management and Estimating department</li>
-              <li>Estimating civil construction of foundations, handle project schedules, contracts, maintain cost effective methods.</li>
-            </ul>
-          </div>
-  
-          <div class="secondPos">
-            <div class="headers">
-              <h2>Customer Service Representative</h2>
-              <h3>05-2016 / 07-2017</h3>
-            </div>
-            <ul>
-              <li>Top balance transfer awards & best rated customer service in department for multiple months</li>
-              <li>Handle customer credit card inquires, discrepancies, issues.</li>
-            </ul>
-          </div>
-
+        <h1>aertg</h1>
+        <p>yguvbh</p>
+        <div class="siema">
+          <div><img src="./img/work/p1Hortus/2-AppFeatures.png" alt=""></div>
+          <div><img src="./img/work/p1Hortus/3-AppFeatures2.png" alt=""></div>
+          <div><img src="./img/work/p1Hortus/4-Main, Shopping cart.png" alt=""></div>
+          <div><img src="./img/work/p1Hortus/5-Landing page, login.png" alt=""></div>
         </div>
+
+        <button class="prev">prev</button>
+        <button class="next">next</button>
         
-      </div>
+        
+
     </section>
 
 
     <section class="section s2">
-      <div class="p2Background">
-        <img src="./img/indexP2/p2Banner1.png" alt="">
-        <img src="./img/indexP2/p2Banner2.png" alt="">
-        <img src="./img/indexP2/p2Banner3.png" alt="">
-      </div>
       <div class="container">
-        <h1>Currently finishing first year at Algonquin College’s Mobile Application Design & Development program</h1>
-        <p>View my work ></p>
+
+        <h1>Jean-Christophe Castagne</h1>
+        <h2>A jack of all trades, specializing in technological platforms</h2>
+        <p>yguvbh</p>
+        
       </div>
-      <div class="gradientOverlay"></div>
+
     </section>
   </div>
+
+  <script src="./js/siema.min.js"></script>
+  <script>
+    const mySiema = new Siema({
+      selector: '.siema',
+      duration: 400,
+      easing: 'ease-in-out',
+      perPage: 1,
+      startIndex: 0,
+      draggable: true,
+      multipleDrag: true,
+      threshold: 20,
+      loop: true
+    });
+    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+    document.querySelector('.next').addEventListener('click', () => mySiema.next());
+  </script>
 
   <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
       integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
       crossorigin="anonymous"
     ></script>
-    <script
+  <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
       integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
       crossorigin="anonymous"
     ></script>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/app.js"></script>
+  <script src="./js/fullpage.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>
 
