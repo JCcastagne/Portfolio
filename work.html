@@ -52,17 +52,17 @@
 
         <h1>aertg</h1>
         <p>yguvbh</p>
-        <div class="siema">
+        <div class="siema1">
           <div><img src="./img/work/p1Hortus/2-AppFeatures.png" alt=""></div>
           <div><img src="./img/work/p1Hortus/3-AppFeatures2.png" alt=""></div>
           <div><img src="./img/work/p1Hortus/4-Main, Shopping cart.png" alt=""></div>
           <div><img src="./img/work/p1Hortus/5-Landing page, login.png" alt=""></div>
         </div>
 
-        <button class="prev">prev</button>
-        <button class="next">next</button>
+        <button class="prev1">prev</button>
+        <button class="next1">next</button>
         
-        
+      </div>
 
     </section>
 
@@ -80,21 +80,7 @@
   </div>
 
   <script src="./js/siema.min.js"></script>
-  <script>
-    const mySiema = new Siema({
-      selector: '.siema',
-      duration: 400,
-      easing: 'ease-in-out',
-      perPage: 1,
-      startIndex: 0,
-      draggable: true,
-      multipleDrag: true,
-      threshold: 20,
-      loop: true
-    });
-    document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
-    document.querySelector('.next').addEventListener('click', () => mySiema.next());
-  </script>
+  <script src="./js/carousel.js"></script>
 
   <script
       src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
