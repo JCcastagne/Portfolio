@@ -39,3 +39,31 @@ const siema3 = new Siema({
 });
 document.querySelector(".prev3").addEventListener("click", () => siema3.prev());
 document.querySelector(".next3").addEventListener("click", () => siema3.next());
+
+const siema4 = new Siema({
+  selector: ".siema4",
+  duration: 700,
+  easing: "ease-in-out",
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: true,
+});
+document.querySelector(".prev4").addEventListener("click", () => siema4.prev());
+document.querySelector(".next4").addEventListener("click", () => siema4.next());
+
+const siema5 = new Siema({
+  selector: ".siema5",
+  duration: 700,
+  easing: "ease-in-out",
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: true,
+});
+document.querySelector(".prev5").addEventListener("click", () => siema5.prev());
+document.querySelector(".next5").addEventListener("click", () => siema5.next());

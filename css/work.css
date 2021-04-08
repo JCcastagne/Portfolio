@@ -50,6 +50,10 @@ p {
 
 /** main ^ **/
 
+/** page0 | Into/Display **/
+
+/** page0 | Into/Display ^ **/
+
 /** page1 | Hortus **/
 
 .description1 {
@@ -116,7 +120,7 @@ p {
 }
 
 .siema3 {
-  width: 80vw;
+  width: 79vw;
   max-height: 50vh;
 }
 
@@ -126,3 +130,39 @@ p {
 }
 
 /** page3 | STOX ^ **/
+
+/** page4 | DoorsOpenOttawa **/
+
+.description4 {
+  margin-right: 2vw;
+}
+
+.siema4 {
+  width: 79vw;
+  max-height: 50vh;
+}
+
+.siema4 img {
+  max-height: 50vh;
+  max-width: 80vw;
+}
+
+/** page4 | DoorsOpenOttawa ^ **/
+
+/** page5 | Cubic **/
+
+.description5 {
+  margin-right: 2vw;
+}
+
+.siema5 {
+  width: 79vw;
+  max-height: 50vh;
+}
+
+.siema5 img {
+  max-height: 50vh;
+  max-width: 80vw;
+}
+
+/** page5 | Cubic ^ **/
