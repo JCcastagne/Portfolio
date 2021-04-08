@@ -25,3 +25,17 @@ const siema2 = new Siema({
 });
 document.querySelector(".prev2").addEventListener("click", () => siema2.prev());
 document.querySelector(".next2").addEventListener("click", () => siema2.next());
+
+const siema3 = new Siema({
+  selector: ".siema3",
+  duration: 700,
+  easing: "ease-in-out",
+  perPage: 3,
+  startIndex: 0,
+  draggable: true,
+  multipleDrag: true,
+  threshold: 20,
+  loop: true,
+});
+document.querySelector(".prev3").addEventListener("click", () => siema3.prev());
+document.querySelector(".next3").addEventListener("click", () => siema3.next());

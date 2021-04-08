@@ -108,3 +108,21 @@ p {
 }
 
 /** page2 | Speculo ^ **/
+
+/** page3 | STOX **/
+
+.description3 {
+  margin-right: 2vw;
+}
+
+.siema3 {
+  width: 80vw;
+  max-height: 50vh;
+}
+
+.siema3 img {
+  max-height: 50vh;
+  max-width: 80vw;
+}
+
+/** page3 | STOX ^ **/
