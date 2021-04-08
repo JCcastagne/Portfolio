@@ -1,7 +1,38 @@
+/** carousel/siema styling **/
+.carousel {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.carouselButtons {
+  display: flex;
+}
+
+.carousel button {
+  color: var(--jet);
+  background-color: var(--white);
+  font-size: var(--body);
+  padding: var(--body);
+  border: none;
+}
+.carousel button:last-of-type {
+  background-color: black;
+  color: var(--white);
+}
+
+/** carousel/siema styling ^ **/
+
+/** page1 | Hortus **/
+
 .siema1 {
-  height: 50ch;
+  width: 80vw;
+  /* height: 66vh; */
 }
 
 .siema1 div img {
-  height: 50vh;
+  width: 40vw;
+  /* height: 66vh; */
 }
+
+/** page1 | Hortus ^ **/
