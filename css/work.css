@@ -50,9 +50,29 @@ p {
 
 /** main ^ **/
 
-/** page0 | Into/Display **/
+/** page0 | Inteo/Display **/
 
-/** page0 | Into/Display ^ **/
+.selectDesigns h2 {
+  font-size: var(--two);
+}
+.selectDesigns p {
+  font-size: var(--one);
+}
+.container > p {
+  padding-bottom: 1em;
+}
+
+.selectDesigns {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: var(--two);
+}
+
+.selectDesigns img {
+  width: 100%;
+}
+
+/** page0 | Inteo/Display ^ **/
 
 /** page1 | Hortus **/
 
