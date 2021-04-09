@@ -68,11 +68,15 @@ p {
   gap: var(--two);
 }
 
-.selectDesigns img {
-  width: 100%;
+.selectDesigns > div {
+  display: flex;
 }
 
-/** page0 | Inteo/Display ^ **/
+.selectDesigns img {
+  max-height: 40vh;
+}
+
+/** page0 | Intro/Display ^ **/
 
 /** page1 | Hortus **/
 
