@@ -47,14 +47,14 @@ span {
 }
 
 .banner-left {
-  display: initial;
+  display: none;
   position: absolute;
   height: 20vh;
   bottom: 0;
   z-index: 10;
 }
 .banner-right {
-  display: initial;
+  display: none;
   position: absolute;
   height: 39.5vh;
   bottom: 0;
@@ -91,14 +91,14 @@ h2 {
 
 .s1 .about1 p,
 .s1 .about2 p {
-  font-size: var(--body);
-  padding-top: var(--body);
+  font-size: var(--one);
+  padding-top: var(--one);
   width: calc(40vw - 60px);
 }
 
 .about1 img,
 .about2 img {
-  height: 20vh;
+  height: 15vh;
   width: calc(40vw - 50px);
   object-fit: cover;
   object-position: center;

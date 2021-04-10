@@ -72,6 +72,14 @@ p {
   font-size: var(--two);
   margin-bottom: 0.5em;
 }
+.s2 p,
+.s3 p,
+.s4 p,
+.s5 p,
+.s6 p {
+  font-size: var(--two);
+  margin-bottom: 1.5em;
+}
 
 /** main ^ **/
 
