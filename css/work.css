@@ -98,8 +98,8 @@ p {
   border-radius: 31px;
   margin-bottom: 2em;
 }
-.selectDesigns img:last-of-type {
-  margin-right: 2em;
+.selectCubic .description {
+  margin-right: 10vw;
 }
 
 /** page0 | Intro/Display ^ **/
