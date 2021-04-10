@@ -1,6 +1,16 @@
 document.addEventListener("DOMContentLoaded", init);
 
 function init() {
+  let introCover = document.querySelector(".introCover");
+  console.log(introCover);
+  if (introCover) {
+    setTimeout(function () {
+      introCover.style.width = "0";
+    }, 3000);
+
+    console.log("done");
+  }
+
   setTimeout(function () {
     let cover = document.querySelector(".introCover");
     if (cover) {

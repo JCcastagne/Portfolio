@@ -28,6 +28,18 @@ span {
   }
 }
 
+.s2 a:active,
+.s2 a:focus,
+.s2 a:visited,
+.s2 a:link {
+  color: var(--white);
+  text-decoration: none;
+  transition: 0.175s ease-in-out all;
+}
+.s2 a:hover {
+  margin: 1em;
+}
+
 /** first page **/
 
 .s1 {
