@@ -30,7 +30,37 @@
   }
 }
 
+/** main **/
+
+h1 {
+  font-size: var(--four);
+}
+
+/** main ^ **/
+
 /** first page **/
+
+.s1 .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+}
+.textBody {
+  /* width: 500px; */
+  margin-top: 1em;
+}
+
+.textBody p {
+  font-size: var(--one);
+  padding: 0.5em 0;
+  max-width: 900px;
+}
+
+.textBody p:last-of-type {
+  padding: 1em 0;
+}
 
 /** first page ^ **/
 
