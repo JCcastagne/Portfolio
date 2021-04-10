@@ -1,47 +1,72 @@
-/** carousel/siema styling **/
-.carousel {
+/** carousel styling **/
+
+.s2 .container,
+.s3 .container,
+.s4 .container,
+.s5 .container,
+.s6 .container {
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
-.carouselButtons {
+.s2 .carousel,
+.s3 .carousel,
+.s4 .carousel,
+.s5 .carousel,
+.s6 .carousel {
   display: flex;
-  margin-bottom: 1em;
 }
 
-.carouselButtons button {
-  color: var(--jet);
-  background-color: var(--white);
-  font-size: var(--body);
-  padding: var(--body);
-  border: none;
-}
-.carouselButtons button:last-of-type {
-  background-color: black;
-  color: var(--white);
-}
-
-.carouselButtons button:focus {
-  outline: none;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.153);
-}
-.carouselButtons button:active {
-  outline: none;
-  background-color: rgb(120, 120, 120) !important;
-}
-
-/** carousel/siema styling ^ **/
+/** carousel styling ^ **/
 
 /** main **/
+.s1 {
+  overflow: hidden;
+}
+.nextPageHint {
+  position: absolute;
+  z-index: 100;
+  bottom: -112.5px;
+  left: calc(50vw - 75px);
+  background-color: var(--jet);
+  height: 150px;
+  width: 150px;
+  color: var(--white);
+  animation: hint 1.5s 1s cubic-bezier(0.95, -0.85, 0, 1.57) both;
+}
+.nextPageHint span {
+  font-weight: 600;
+  color: var(--white);
+  position: absolute;
+  transform: rotate(-45deg) translate(-25%, 1em);
+}
+@keyframes hint {
+  0% {
+    transform: scale(0) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+}
 
 h1 {
   font-size: var(--four);
-  margin-bottom: 0.125em;
-  padding-bottom: 0.125em;
-  border-bottom: 3px solid var(--jet);
-  /* max-width: 17.5%; */
-  max-width: 33%;
+  /* margin-bottom: 0.125em; */
+  /* padding-bottom: 0.125em; */
+  /* border-bottom: 3px solid var(--jet); */
+  /* max-width: 33%; */
+}
+.headerDivider {
+  display: block;
+  min-width: 300px;
+  width: 33%;
+  height: 3px;
+  background-color: var(--jet);
+  margin: 0.25em 0;
 }
 p {
   font-size: var(--two);
@@ -50,12 +75,24 @@ p {
 
 /** main ^ **/
 
-/** page0 | Inteo/Display **/
+/** page0 | Intro/Display **/
+
+.descDivider {
+  display: block;
+  /* min-width: 300px; */
+  width: 66%;
+  height: 3px;
+  background-color: var(--jet);
+  margin: 0.25em 0;
+}
+.selectDoorsOpenOttawa .descDivider {
+  width: 96%;
+}
 
 .selectDesigns h2 {
   font-size: var(--two);
-  border-bottom: solid 3px var(--jet);
-  width: 75%;
+  /* border-bottom: solid 3px var(--jet); */
+  /* width: 75%; */
 }
 .selectDesigns p {
   font-size: var(--one);
@@ -98,121 +135,44 @@ p {
   border-radius: 31px;
   margin-bottom: 2em;
 }
-.selectDesigns img:last-of-type {
-  margin-right: 2em;
+.selectCubic .description {
+  margin-right: 10vw;
 }
 
 /** page0 | Intro/Display ^ **/
 
 /** page1 | Hortus **/
 
-.description1 {
-  margin-right: 2vw;
+.carousel img {
+  display: block;
+  max-height: 57vh;
+  max-width: 70vw;
+  height: auto;
+  width: auto;
+  margin-right: var(--four);
+  box-shadow: 4.5px 9px 9px rgba(0, 0, 0, 0.16);
+  margin-bottom: 18px;
 }
 
-.siema1 {
-  width: 80vw;
-  max-height: 50vh;
-}
-
-.siema1 img {
-  max-height: 50vh;
-  max-width: 80vw;
+.carousel {
+  overflow: auto;
+  width: 90vw;
 }
 
 /** page1 | Hortus ^ **/
 
 /** page2 | Speculo **/
 
-.description2 {
-  margin-right: 2vw;
-}
-
-.s3 p {
-  max-width: 50vw;
-}
-
-.siema2 {
-  width: 40vw;
-  max-height: 50vh;
-}
-
-.siema2 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
-
-.s3 .icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1em;
-  position: absolute;
-  right: 0;
-  top: 50vh;
-  transform: translate(-66%, -66%);
-  width: 20vw;
-  height: 50vh;
-}
-
-.s3 .icons img {
-  border-radius: 16px;
-  height: 10vh;
-  box-shadow: 4.5px 9px 9px rgba(0, 0, 0, 0.153);
-}
-
 /** page2 | Speculo ^ **/
 
 /** page3 | STOX **/
-
-.description3 {
-  margin-right: 2vw;
-}
-
-.siema3 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema3 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
 
 /** page3 | STOX ^ **/
 
 /** page4 | DoorsOpenOttawa **/
 
-.description4 {
-  margin-right: 2vw;
-}
-
-.siema4 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema4 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
-
 /** page4 | DoorsOpenOttawa ^ **/
 
 /** page5 | Cubic **/
-
-.description5 {
-  margin-right: 2vw;
-}
-
-.siema5 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema5 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
 
 /** page5 | Cubic ^ **/

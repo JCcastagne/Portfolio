@@ -101,7 +101,7 @@ h2 {
   height: 20vh;
   width: calc(40vw - 50px);
   object-fit: cover;
-  object-position: left center;
+  object-position: center;
 }
 
 .s1 .about1::after,
