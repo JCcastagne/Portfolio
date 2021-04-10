@@ -1,34 +1,21 @@
-/** carousel/siema styling **/
-.carousel {
+/** carousel/siema styling ^ **/
+
+.s2 .container,
+.s3 .container,
+.s4 .container,
+.s5 .container,
+.s6 .container {
   display: flex;
   flex-direction: column;
-  margin: 0;
 }
 
-.carouselButtons {
+.s2 .carousel,
+.s3 .carousel,
+.s4 .carousel,
+.s5 .carousel,
+.s6 .carousel {
   display: flex;
-  margin-bottom: 1em;
-}
-
-.carouselButtons button {
-  color: var(--jet);
-  background-color: var(--white);
-  font-size: var(--body);
-  padding: var(--body);
-  border: none;
-}
-.carouselButtons button:last-of-type {
-  background-color: black;
-  color: var(--white);
-}
-
-.carouselButtons button:focus {
-  outline: none;
-  box-shadow: 5px 5px 30px rgba(0, 0, 0, 0.153);
-}
-.carouselButtons button:active {
-  outline: none;
-  background-color: rgb(120, 120, 120) !important;
+  /* flex-direction: column; */
 }
 
 /** carousel/siema styling ^ **/
@@ -50,7 +37,7 @@ p {
 
 /** main ^ **/
 
-/** page0 | Inteo/Display **/
+/** page0 | Intro/Display **/
 
 .selectDesigns h2 {
   font-size: var(--two);
@@ -106,113 +93,36 @@ p {
 
 /** page1 | Hortus **/
 
-.description1 {
-  margin-right: 2vw;
+.carousel img {
+  display: block;
+  max-height: 57vh;
+  max-width: 70vw;
+  height: auto;
+  width: auto;
+  margin-right: var(--four);
+  box-shadow: 4.5px 9px 9px rgba(0, 0, 0, 0.16);
+  margin-bottom: 18px;
 }
 
-.siema1 {
-  width: 80vw;
-  max-height: 50vh;
-}
-
-.siema1 img {
-  max-height: 50vh;
-  max-width: 80vw;
+.carousel {
+  overflow: auto;
+  width: 90vw;
 }
 
 /** page1 | Hortus ^ **/
 
 /** page2 | Speculo **/
 
-.description2 {
-  margin-right: 2vw;
-}
-
-.s3 p {
-  max-width: 50vw;
-}
-
-.siema2 {
-  width: 40vw;
-  max-height: 50vh;
-}
-
-.siema2 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
-
-.s3 .icons {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  gap: 1em;
-  position: absolute;
-  right: 0;
-  top: 50vh;
-  transform: translate(-66%, -66%);
-  width: 20vw;
-  height: 50vh;
-}
-
-.s3 .icons img {
-  border-radius: 16px;
-  height: 10vh;
-  box-shadow: 4.5px 9px 9px rgba(0, 0, 0, 0.153);
-}
-
 /** page2 | Speculo ^ **/
 
 /** page3 | STOX **/
-
-.description3 {
-  margin-right: 2vw;
-}
-
-.siema3 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema3 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
 
 /** page3 | STOX ^ **/
 
 /** page4 | DoorsOpenOttawa **/
 
-.description4 {
-  margin-right: 2vw;
-}
-
-.siema4 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema4 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
-
 /** page4 | DoorsOpenOttawa ^ **/
 
 /** page5 | Cubic **/
-
-.description5 {
-  margin-right: 2vw;
-}
-
-.siema5 {
-  width: 79vw;
-  max-height: 50vh;
-}
-
-.siema5 img {
-  max-height: 50vh;
-  max-width: 80vw;
-}
 
 /** page5 | Cubic ^ **/
