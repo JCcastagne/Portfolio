@@ -1,4 +1,4 @@
-/** carousel/siema styling ^ **/
+/** carousel styling **/
 
 .s2 .container,
 .s3 .container,
@@ -15,34 +15,52 @@
 .s5 .carousel,
 .s6 .carousel {
   display: flex;
-  /* flex-direction: column; */
 }
 
-/** carousel/siema styling ^ **/
+/** carousel styling ^ **/
 
 /** main **/
 
 h1 {
   font-size: var(--four);
-  margin-bottom: 0.125em;
-  padding-bottom: 0.125em;
-  border-bottom: 3px solid var(--jet);
-  /* max-width: 17.5%; */
-  max-width: 33%;
+  /* margin-bottom: 0.125em; */
+  /* padding-bottom: 0.125em; */
+  /* border-bottom: 3px solid var(--jet); */
+  /* max-width: 33%; */
+}
+.headerDivider {
+  display: block;
+  min-width: 300px;
+  width: 33%;
+  height: 3px;
+  background-color: var(--jet);
+  margin: 0.25em 0;
 }
 p {
   font-size: var(--two);
-  margin-bottom: 0.5em;
+  /* margin-bottom: 0.5em; */
 }
 
 /** main ^ **/
 
 /** page0 | Intro/Display **/
 
+.descDivider {
+  display: block;
+  /* min-width: 300px; */
+  width: 66%;
+  height: 3px;
+  background-color: var(--jet);
+  margin: 0.25em 0;
+}
+.selectDoorsOpenOttawa .descDivider {
+  width: 96%;
+}
+
 .selectDesigns h2 {
   font-size: var(--two);
-  border-bottom: solid 3px var(--jet);
-  width: 75%;
+  /* border-bottom: solid 3px var(--jet); */
+  /* width: 75%; */
 }
 .selectDesigns p {
   font-size: var(--one);
