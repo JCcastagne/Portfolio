@@ -113,16 +113,27 @@ p {
   display: flex;
   overflow: auto;
   width: 90vw;
-  /* white-space: nowrap; */
 }
 ::-webkit-scrollbar {
-  width: 16px;
-  display: none;
+  height: 15px;
 }
 ::-webkit-scrollbar-thumb,
 ::-webkit-scrollbar-thumb:hover {
   background: var(--jet);
-  display: none;
+  display: initial;
+  border-radius: 8px;
+  overflow: hidden;
+}
+@keyframes hintScroll {
+  0% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(30px);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .selectDesigns div {
@@ -170,6 +181,11 @@ p {
 /** page1 | Hortus ^ **/
 
 /** page2 | Speculo **/
+
+.s3 img {
+  object-fit: contain;
+  max-height: 45.3vh;
+}
 
 /** page2 | Speculo ^ **/
 
