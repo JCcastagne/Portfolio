@@ -69,9 +69,10 @@ span {
 
 h1 {
   font-size: var(--four);
-}
-h2 {
-  font-size: var(--three);
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .s1 .about {
@@ -110,8 +111,18 @@ h2 {
   width: calc(30vw - 50px);
   height: 3px;
   position: absolute;
-  bottom: -2em;
+  bottom: 7em;
   background-color: var(--jet);
+}
+
+h2 {
+  font-size: var(--two);
+  font-weight: 400;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(3.75vh);
 }
 
 /** first page^ **/
