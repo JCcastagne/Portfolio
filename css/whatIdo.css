@@ -68,11 +68,15 @@ h1 {
 
 .s2 h1 {
   font-size: var(--three);
+  max-width: 1266px;
+  margin: auto;
   margin-bottom: var(--one);
 }
 
 .links {
   display: grid;
+  max-width: 1266px;
+  margin: auto;
   gap: var(--one);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -100,7 +104,7 @@ h1 {
   justify-content: center;
   height: 100%;
   transform: translateX(calc(-1 * var(--one)));
-  color: var(--jet);
+  color: var(--white);
   font-weight: 400;
 }
 
