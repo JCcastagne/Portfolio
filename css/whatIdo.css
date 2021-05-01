@@ -66,97 +66,71 @@ h1 {
 
 /** second page **/
 
-.s2 .container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
+.s2 h1 {
+  font-size: var(--three);
+  margin-bottom: var(--one);
 }
 
 .links {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  margin-top: 2em;
+  display: grid;
+  gap: var(--one);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 }
 
 .links div {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  height: 10vh;
+  background-color: var(--jet);
+  transition: 0.3s cubic-bezier(0.47, 0.29, 0.01, 1.55);
 }
 
-.links h3 {
-  margin-left: 2em;
+.links div:last-of-type {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background: rgb(30, 190, 115);
+}
+
+.links div a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.links div:last-of-type a {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform: translateX(calc(-1 * var(--one)));
+  color: var(--jet);
   font-weight: 400;
 }
 
-.links h3::before {
-  content: "";
-  width: 3px;
-  height: 50px;
-  background-color: var(--jet);
-  position: absolute;
-  transform: translate(-1em, -25%);
+.links h3 {
+  font-size: var(--two);
+  font-weight: 300;
+}
+.links h3:last-of-type {
+  font-weight: 400;
 }
 
 .s2 img {
   width: 50px;
-  margin-left: 1em;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 var(--one);
 }
 
 .links a:active,
 .links a:focus,
 .links a:visited,
 .links a:link {
-  color: var(--jet);
+  color: var(--grey);
   text-decoration: none;
-  font-size: var(--two);
-  transition: 0.175s ease-in-out all;
-}
-.links a:hover {
-  color: var(--white);
+  transition: 0.3s cubic-bezier(0.47, 0.29, 0.01, 1.55);
 }
 
-.links div:nth-of-type(1) h3 {
-  /* color: rgba(0, 119, 181, 1); */
-  /* background: linear-gradient(
-    -45deg,
-    rgba(49, 51, 53, 1) 0%,
-    rgba(0, 119, 181, 1) 100%
-  ); */
-}
-.links div:nth-of-type(2) h3 {
-  /* color: rgba(45, 186, 78, 1); */
-  /* background: linear-gradient(
-    -45deg,
-    rgba(43, 49, 55, 1) 0%,
-    rgba(45, 186, 78, 1) 100%
-  ); */
-}
-.links div:nth-of-type(3) h3 {
-  /* color: rgb(43, 49, 55); */
-  /* background: linear-gradient(
-    -45deg,
-    rgba(43, 49, 55, 1) 0%,
-    rgb(252, 252, 252) 100%
-  ); */
-}
-.links div:nth-of-type(4) h3 {
-  /* color: rgba(56, 220, 180, 1); */
-  /* background: linear-gradient(
-    -45deg,
-    rgba(29, 173, 168, 1) 0%,
-    rgba(56, 220, 180, 1) 100%
-  ); */
-}
-.links div:nth-of-type(5) h3 {
-  /* color: rgba(255, 85, 0, 1); */
-  /* background: linear-gradient(
-    -45deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(255, 85, 0, 1) 100%
-  ); */
+div .links div:hover {
+  transform: scale(1.09);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
 }
 
 /** second page ^ **/
