@@ -79,7 +79,7 @@ h1 {
   margin: auto;
   gap: var(--one);
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .links div {
@@ -103,7 +103,7 @@ h1 {
   align-items: center;
   justify-content: center;
   height: 100%;
-  transform: translateX(calc(-1 * var(--one)));
+  transform: translateX(calc(-0.5 * var(--one)));
   color: var(--white);
   font-weight: 400;
 }
