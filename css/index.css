@@ -1,0 +1,13 @@
+.banner-left {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 10vh;
+}
+
+.banner-right {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 10vh;
+}
