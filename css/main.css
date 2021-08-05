@@ -70,14 +70,8 @@ h6 {
 
 /* --- color palette --- */
 :root {
-  --jet: #292929;
-  --grey: #d3d3d3;
-  --white: #eeeeee;
-
-  --linearGradientTop: rgb(224, 224, 224);
-  --linearGradientBot: rgb(199, 199, 199);
-
-  text-shadow: 1px 1px 20px rgba(0, 0, 0, 0.1);
+  --jet: #373737;
+  --white: #f4f4f4;
 }
 
 /* * *            * * */
@@ -131,11 +125,7 @@ h6 {
   /*all "fullpages"*/
   height: 100vh;
   width: 100vw;
-  background: linear-gradient(
-    -45deg,
-    var(--linearGradientBot) 0%,
-    var(--linearGradientTop) 100%
-  );
+  background: var(--white);
 }
 
 nav {
