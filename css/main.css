@@ -55,6 +55,7 @@ h4,
 h5,
 h6 {
   font-size: 1em;
+  font-weight: 400;
 }
 
 /* --- font sizes --- */
@@ -86,7 +87,7 @@ h6 {
   margin: -8px 0 0 -8px;
   background: transparent;
   box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px var(--jet);
+  /* box-shadow: inset 0 0 0 2px var(--jet); */
   overflow: hidden;
 }
 #fp-nav ul li a span::after,
@@ -99,7 +100,7 @@ h6 {
   left: 0;
   bottom: 0;
   background-color: var(--jet);
-  box-shadow: 0 0 1px var(--jet);
+  /* box-shadow: 0 0 1px var(--jet); */
   transition: height 0.3s;
 }
 #fp-nav ul li a.active span,
@@ -111,7 +112,7 @@ h6 {
   margin: -8px 0 0 -8px;
   background: transparent;
   box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px var(--jet);
+  /* box-shadow: inset 0 0 0 2px var(--jet); */
 }
 #fp-nav ul li a.active span::after,
 .fp-slidesNav ul li a.active span::after,
@@ -125,13 +126,12 @@ h6 {
   /*all "fullpages"*/
   height: 100vh;
   width: 100vw;
-  background: var(--white);
 }
 
 nav {
   position: absolute;
   z-index: 99;
-  text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.091);
+  /* text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.091); */
 }
 
 nav .navBar {
@@ -145,6 +145,7 @@ nav .navBar {
   width: 80vw;
   padding: 2em 0;
   font-size: var(--one);
+  color: var(--jet);
 }
 
 nav .navBar div {
