@@ -71,7 +71,6 @@
   color: var(--white);
   padding: 0.5em;
   background: var(--jet);
-  box-shadow: 5px 15px 42px rgba(0, 0, 0, 0.14);
 }
 
 .s2 p {
@@ -92,6 +91,34 @@
   text-decoration: none;
 }
 
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  content: " ";
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--white) 85%,
+    var(--white) 100%
+  );
+}
+.gradientOverlay::after {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50vh);
+  content: " ";
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--white) 85%,
+    var(--white) 100%
+  );
+}
+
 /** animations **/
 .p2Background img {
   position: absolute;
@@ -100,14 +127,42 @@
 .p2Background :first-of-type {
   top: 0;
   left: 0;
+  animation: p2Background1 30s infinite alternate linear;
 }
 .p2Background :nth-of-type(2n) {
   top: 33.33333vh;
   right: 0;
+  animation: p2Background2 30s infinite alternate linear;
 }
 .p2Background :nth-of-type(3n) {
   bottom: 0;
   left: 0;
+  animation: p2Background3 30s 1s infinite alternate linear;
+}
+
+@keyframes p2Background1 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -33%;
+  }
+}
+@keyframes p2Background2 {
+  0% {
+    right: 0;
+  }
+  100% {
+    right: -33%;
+  }
+}
+@keyframes p2Background3 {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -33%;
+  }
 }
 
 /** animations^ **/
