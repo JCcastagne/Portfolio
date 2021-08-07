@@ -87,7 +87,7 @@ h6 {
   margin: -8px 0 0 -8px;
   background: transparent;
   box-sizing: border-box;
-  /* box-shadow: inset 0 0 0 2px var(--jet); */
+  box-shadow: inset 0 0 0 2px var(--jet);
   overflow: hidden;
 }
 #fp-nav ul li a span::after,
@@ -100,7 +100,7 @@ h6 {
   left: 0;
   bottom: 0;
   background-color: var(--jet);
-  /* box-shadow: 0 0 1px var(--jet); */
+  box-shadow: 0 0 1px var(--jet);
   transition: height 0.3s;
 }
 #fp-nav ul li a.active span,
@@ -112,7 +112,7 @@ h6 {
   margin: -8px 0 0 -8px;
   background: transparent;
   box-sizing: border-box;
-  /* box-shadow: inset 0 0 0 2px var(--jet); */
+  box-shadow: inset 0 0 0 2px var(--jet);
 }
 #fp-nav ul li a.active span::after,
 .fp-slidesNav ul li a.active span::after,
