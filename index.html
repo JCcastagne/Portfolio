@@ -121,13 +121,16 @@
     </div>
 
     <script>
-      let introCover = document.querySelector(".introCover");
-      console.log(introCover);
-      if (introCover) {
-        setTimeout(function () {
-          introCover.style.opacity = "0";
-        }, 1750);
+      function init() {
+        let introCover = document.querySelector(".introCover");
+        console.log(introCover);
+        if (introCover) {
+          setTimeout(function () {
+            introCover.style.opacity = "0";
+          }, 1750);
+        }
       }
+      document.body.addEventListener("DOMContentLoaded", init());
 
       // setTimeout(function () {
       //   let cover = document.querySelector(".introCover");
