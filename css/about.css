@@ -42,7 +42,38 @@ img {
 
 /** S2 **/
 
-.s2 {
+.s2 .container {
+  align-items: center;
+  width: 80vw;
+}
+
+.assets {
+  display: grid;
+  gap: 5vw;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.assets .asset .banner {
+  display: flex;
+  align-items: center;
+}
+
+.s2 img {
+  width: clamp(50px, 10vw, 125px);
+  margin-right: 1em;
+}
+
+.s2 h2 {
+  font-size: var(--two);
+  margin-left: 1em;
+}
+.s2 h2::before {
+  content: " ";
+  height: 50px;
+  width: 2px;
+  background: var(--jet);
+  position: absolute;
+  transform: translate(-0.8em, -25%);
 }
 
 /** S2^ **/
