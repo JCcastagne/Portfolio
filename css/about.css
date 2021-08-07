@@ -1,3 +1,5 @@
+/** S1 **/
+
 .container {
   display: flex;
   justify-content: center;
@@ -13,10 +15,10 @@
   align-items: center;
 }
 .cards .card:first-of-type {
-  margin-right: 2.5vw;
+  margin-right: 3vw;
 }
 .cards .card:last-of-type {
-  margin-left: 2.5vw;
+  margin-left: 3vw;
 }
 
 .cards p {
@@ -33,5 +35,14 @@
 }
 
 img {
-  width: 35vw;
+  width: 37vw;
 }
+
+/** S1^ **/
+
+/** S2 **/
+
+.s2 {
+}
+
+/** S2^ **/
