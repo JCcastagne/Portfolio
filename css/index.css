@@ -1,3 +1,19 @@
+/** intro cover **/
+
+.introCover {
+  content: "c ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 1;
+  transition: opacity ease-in-out 1s;
+}
+
+/** intro cover^ **/
+
 /** S1 **/
 
 /** Bottom banner pictures **/
