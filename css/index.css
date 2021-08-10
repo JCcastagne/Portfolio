@@ -35,9 +35,9 @@
 
 /** Content **/
 
-.container {
+/* .container {
   max-width: 850px;
-}
+} */
 
 .guides {
   display: flex;
@@ -49,6 +49,11 @@
 .guides .botRight {
   position: relative;
   transform: translateX(-1em);
+}
+.guides .topLeft,
+.guides .botLeft {
+  position: relative;
+  transform: translateX(1em);
 }
 
 .s1 h1 {
@@ -63,7 +68,7 @@
   max-width: 650px;
 }
 
-.s1 img {
+.s1 a img {
   filter: invert();
   height: 2em;
 }

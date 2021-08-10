@@ -11,7 +11,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JC Castagne | Portfolio</title>
-    <link rel="stylesheet" href="./css/fullpage.min.css" />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
 
@@ -70,10 +69,7 @@
     <span class="introCover active"></span>
 
     <div id="fullpage">
-      <img src="./img/banner-left.png" class="banner-left" alt="" />
-      <img src="./img/banner-right.png" class="banner-right" alt="" />
-
-      <section class="section s1">
+      <section class="s1">
         <div class="container">
           <div class="guides">
             <span class="topRight">+</span>
@@ -94,6 +90,8 @@
             <img src="./img/icons/icon-github.png" alt="github icon" />
           </a>
 
+          <img src="./img/banner-left.png" class="banner-left" alt="" />
+          <img src="./img/banner-right.png" class="banner-right" alt="" />
           <div class="guides">
             <span class="botRight">+</span>
             <span class="botLeft">+</span>
@@ -101,12 +99,12 @@
         </div>
       </section>
 
-      <section class="section s2">
-        <div class="p2Background">
+      <section class="s2">
+        <!-- <div class="p2Background">
           <img src="./img/indexP2/p2Banner1.png" alt="" />
           <img src="./img/indexP2/p2Banner2.png" alt="" />
           <img src="./img/indexP2/p2Banner3.png" alt="" />
-        </div>
+        </div> -->
         <div class="container">
           <h1>
             Currently completing my second year at Algonquin College’s Mobile
@@ -116,7 +114,18 @@
             <a href="./work.html">View my work ></a>
           </p>
         </div>
-        <div class="gradientOverlay"></div>
+        <!-- <div class="gradientOverlay"></div> -->
+      </section>
+
+      <section>
+        <footer>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+          <a href="#">Link 1</a>
+        </footer>
       </section>
     </div>
 
@@ -128,28 +137,16 @@
           setTimeout(function () {
             introCover.style.opacity = "0";
           }, 1750);
+          setTimeout(function () {
+            introCover.style.display = "none";
+          }, 2760);
+          //2760 because animation of cover fading is 1000, adding an extra 10ms on second function just to make sure.
+          //cover is "position: absolute" which forces user to watch animation before scrolling.
         }
       }
       document.body.addEventListener("DOMContentLoaded", init());
-
-      // setTimeout(function () {
-      //   let cover = document.querySelector(".introCover");
-      //   if (cover) {
-      //     cover.classList.remove("active");
-      //   }
-      // }, 1000);
     </script>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TimelineMax.min.js"
-      integrity="sha256-fIkQKQryItPqpaWZbtwG25Jp2p5ujqo/NwJrfqAB+Qk="
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"
-      integrity="sha256-lPE3wjN2a7ABWHbGz7+MKBJaykyzqCbU96BJWjio86U="
-      crossorigin="anonymous"
-    ></script>
     <script src="./js/fullpage.min.js"></script>
     <script src="./js/app.js"></script>
   </body>
