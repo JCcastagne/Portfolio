@@ -18,26 +18,24 @@
 
 /** Bottom banner pictures **/
 
-.banner-right,
-.banner-left {
-  position: absolute;
-  bottom: 0;
+.s1 .container {
+  max-width: 800px;
 }
-.banner-left {
-  left: 0;
-  height: 20vh;
-}
-.banner-right {
-  right: 0;
-  height: 39.6vh;
+
+.banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 /** Bottom banner pictures^ **/
 
 /** Content **/
 
-/* .container {
-  max-width: 850px;
-} */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
 
 .guides {
   display: flex;
@@ -71,6 +69,10 @@
 .s1 a img {
   filter: invert();
   height: 2em;
+}
+
+.s1 .guides {
+  max-width: 800px;
 }
 /** Content^ **/
 
