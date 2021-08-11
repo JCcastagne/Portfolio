@@ -80,13 +80,15 @@
 
 /** S2 **/
 
-.p2Background {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.s2 {
+  background-image: url(../img/indexP2/p2Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
-.p2Background img {
-  height: 33.3333333vh;
+
+.s2 .container {
+  position: relative;
 }
 
 .s2 h1 {
@@ -143,7 +145,7 @@
 }
 
 /** animations **/
-.p2Background img {
+/* .p2Background img {
   position: absolute;
 }
 
@@ -161,7 +163,7 @@
   bottom: 0;
   left: 0;
   animation: p2Background3 30s 1s infinite alternate linear;
-}
+} */
 
 @keyframes p2Background1 {
   0% {
