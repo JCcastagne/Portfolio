@@ -101,11 +101,6 @@ section {
   flex-direction: column;
 }
 
-section:last-of-type {
-  height: 33vh;
-  background: grey;
-}
-
 .container {
   width: 80vw;
 }
@@ -151,4 +146,36 @@ nav .navBar div {
 .navBar a:active {
   text-decoration: none;
   color: var(--jet);
+}
+
+section:last-of-type {
+  /**footer**/
+  height: initial;
+  background: var(--jet);
+  padding: 4em 0;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 80vw;
+  /* max-width: 800px; */
+}
+
+footer > div {
+  display: flex;
+  flex-direction: column;
+}
+
+footer a,
+footer p {
+  padding: 0.25em 0;
+}
+footer a:link,
+footer a:visited,
+footer a:active,
+footer p {
+  text-decoration: none;
+  list-style: none;
+  color: var(--white);
 }
