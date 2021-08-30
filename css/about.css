@@ -1,23 +1,35 @@
 /** S1 **/
 
-.cards {
+.introCover {
+  content: "c ";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: black;
+  opacity: 1;
+  transition: opacity ease-in-out 1s;
+}
+
+/* .cards {
   display: grid;
   gap: 3vw;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* max-width: 1000px; */
+  max-width: 1000px;
 }
 .cards .card:first-of-type {
-  /* margin-right: 3vw; */
+  margin-right: 3vw;
 }
 .cards .card:last-of-type {
-  /* margin-left: 3vw; */
+  margin-left: 3vw;
 }
 
 .cards p {
   max-width: 85%;
   font-size: var(--two);
   padding: 2em 0;
-}
+} */
 
 h1 {
   padding: 0 0 2em;
@@ -36,7 +48,7 @@ img {
 /** S2 **/
 
 .s1 {
-  background: red;
+  background: grey;
 }
 
 .s2 .container {
