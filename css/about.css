@@ -3,6 +3,7 @@
 .introCover {
   content: "c ";
   position: absolute;
+  display: none;
   top: 0;
   left: 0;
   width: 100vw;
@@ -12,11 +13,17 @@
   transition: opacity ease-in-out 1s;
 }
 
-/* .cards {
+/* .s1 .container {
+  max-width: 900px;
+} */
+
+.cards {
   display: grid;
   gap: 3vw;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  max-width: 1000px;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /*snaps at 650px*/
 }
 .cards .card:first-of-type {
   margin-right: 3vw;
@@ -25,12 +32,6 @@
   margin-left: 3vw;
 }
 
-.cards p {
-  max-width: 85%;
-  font-size: var(--two);
-  padding: 2em 0;
-} */
-
 h1 {
   padding: 0 0 2em;
   font-size: var(--three);
@@ -38,9 +39,46 @@ h1 {
   max-width: 84%;
 }
 
+.cards p {
+  max-width: 85%;
+  font-size: var(--two);
+  padding: 2em 0;
+}
+
 img {
   /* width: 37vw; */
   width: 100%;
+}
+
+@media screen and (max-width: 650px) {
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cards .card:first-of-type {
+    margin-right: initial;
+  }
+  .cards .card:last-of-type {
+    margin-left: initial;
+  }
+
+  h1 {
+    padding: 0 0 1em;
+    font-size: 1.25em;
+    font-weight: 600;
+    max-width: 84%;
+  }
+
+  .cards p {
+    max-width: 85%;
+    font-size: 1em;
+    padding: 0.5em 0 1em;
+  }
+
+  img {
+    /* height: 10vh; */
+  }
 }
 
 /** S1^ **/
@@ -48,7 +86,7 @@ img {
 /** S2 **/
 
 .s1 {
-  background: grey;
+  background: rgb(235, 235, 235);
 }
 
 .s2 .container {
