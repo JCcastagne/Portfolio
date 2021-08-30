@@ -122,6 +122,15 @@ nav .navBar {
   font-size: var(--one);
   color: var(--jet);
 }
+@media screen and (max-width: 700px) {
+  nav .navBar {
+    grid-template-columns: 1fr;
+  }
+  nav .navBar .navLeft,
+  nav .navBar .navRight a {
+    display: none !important;
+  }
+}
 
 nav .navBar div {
   transform: translateY(25%);

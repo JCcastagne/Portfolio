@@ -1,0 +1,167 @@
+/*
+Hamburger Menu - By J-C Castagne @ Github https://github.com/JCcastagne
+*/
+
+/* --- color palette --- */
+:root {
+  --jet: #373737;
+  --white: #f4f4f4;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+/* hamburger menu */
+
+.menuContainer {
+  position: fixed;
+  right: 10vw;
+  top: 2.75em;
+  z-index: 999;
+}
+
+.menuButton {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  /* border: 1.5px solid var(--jet); */
+}
+
+.menuButtonBurger {
+  width: 25px;
+  height: 4px;
+  background: var(--jet);
+  /* border-radius: 4px; */
+  /* box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9); */
+  transition: all 0.6s ease-in-out;
+}
+
+.menuButtonBurger::before,
+.menuButtonBurger::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 4px;
+  background: var(--jet);
+  /* border-radius: 8px; */
+  /* box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9); */
+  transition: all 0.6s ease-in-out;
+}
+
+.menuButtonBurger::before {
+  transform: translateY(-8px);
+}
+
+.menuButtonBurger::after {
+  transform: translateY(8px);
+}
+
+@media screen and (min-width: 701px) {
+  .drawer,
+  .menuContainer {
+    display: none;
+  }
+}
+
+/* hamburger menu */
+
+/* animation steps */
+
+.menuButton.open .menuButtonBurger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menuButton.open .menuButtonBurger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menuButton.open .menuButtonBurger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+/* animation steps */
+
+/* drawer */
+
+.drawer {
+  position: fixed;
+  transform: translateX(100%);
+  top: 0;
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1.25em;
+  font-weight: 300;
+  padding: 3em 2em;
+
+  background: rgb(47, 47, 47);
+  background: linear-gradient(
+    90deg,
+    rgba(47, 47, 47, 0.99) 0%,
+    rgba(27, 27, 27, 0.99) 75%
+  );
+
+  box-shadow: none;
+  color: white;
+  z-index: 50;
+  /* border-radius: 8px; */
+
+  overflow: hidden;
+  transition: all 0.6s ease-in-out;
+}
+
+.drawer a {
+  display: block;
+  text-decoration: none;
+  padding: 0.5em 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.drawer a,
+.drawer a:active,
+.drawer a:visited {
+  color: white;
+}
+.drawer a:hover {
+  color: rgb(187, 187, 187);
+  padding-left: 20px;
+  /* border-left: 1px solid white; */
+  /* box-shadow: inset 1px 1px 50px rgba(0, 0, 0, 0.3); */
+}
+
+/* drawer */
+
+/* drawer animation steps*/
+
+.drawer.toggledDrawer {
+  transform: translateX(50%);
+  box-shadow: -1px -1px 1000px black;
+}
+
+/* drawer animation steps*/
+
+@media all and (min-width: 426px) {
+  .drawer.toggledDrawer {
+    transform: translateX(60%);
+  }
+}
+@media all and (min-width: 769px) {
+  .drawer.toggledDrawer {
+    transform: translateX(75%);
+  }
+}
