@@ -100,10 +100,6 @@ img {
   align-items: center;
 }
 
-.asset {
-  /* background: red; */
-}
-
 .s2 img {
   width: 75px;
   padding-right: 1em;
@@ -119,6 +115,70 @@ img {
 
 .s2 p {
   margin: 1em 0;
+}
+
+@media screen and (max-width: 900px) {
+  .s2 .container {
+    position: relative;
+    transform: translateY(5vh);
+  }
+  .assets {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 1em;
+  }
+
+  .s2 img {
+    width: 66px;
+    padding-right: 0.75em;
+  }
+
+  .s2 h2 {
+    font-size: var(--two);
+    padding-left: 0.5em;
+  }
+
+  .s2 p {
+    margin: 0.75em 0;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .s1 .container,
+  .s2 .container {
+    position: relative;
+    transform: translateY(5vh);
+  }
+  .assets {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .asset {
+    padding: 0.5em 0;
+  }
+
+  .s2 img {
+    width: 50px;
+    padding-right: 1em;
+  }
+
+  .s2 h1 {
+    font-weight: 600;
+    font-size: var(--two);
+  }
+
+  .s2 h2 {
+    font-size: var(--two);
+
+    padding-left: 0.5em;
+  }
+
+  .s2 p {
+    margin: 0.75em 0;
+    display: none;
+  }
 }
 
 /** S2^ **/
