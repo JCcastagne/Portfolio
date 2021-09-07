@@ -39,7 +39,7 @@ h1 {
 
 .links {
   display: grid;
-  /* margin: auto; */
+  margin: auto;
   gap: var(--one);
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
@@ -61,6 +61,7 @@ h1 {
   display: flex;
   align-items: center;
   padding: 8px;
+  color: var(--white);
 }
 .links div:last-of-type a {
   align-items: center;
