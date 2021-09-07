@@ -1,0 +1,79 @@
+/*** S2 ***/
+
+.s2 .container {
+  max-width: 800px;
+}
+
+.s2 .banner {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.s2 {
+  background-image: url(../img/indexP2/p2Background.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.s2 .container {
+  position: relative;
+}
+
+.s2 h1 {
+  font-size: var(--three);
+  font-weight: 400;
+  color: var(--white);
+  padding: 0.5em;
+  background: var(--jet);
+}
+
+.s2 p {
+  font-size: var(--one);
+  font-weight: 600;
+  margin-bottom: 1em;
+  color: var(--jet);
+  padding: 1em;
+  background: var(--white);
+  width: min-content;
+  min-width: 177px;
+
+  box-shadow: 5px 15px 42px rgba(0, 0, 0, 0.14);
+}
+.s2 a:link,
+.s2 a:visited,
+.s2 a:active {
+  color: var(--jet);
+  text-decoration: none;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  content: " ";
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--white) 85%,
+    var(--white) 100%
+  );
+}
+.gradientOverlay::after {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(50vh);
+  content: " ";
+  width: 100vw;
+  height: 50vh;
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    var(--white) 85%,
+    var(--white) 100%
+  );
+}
+
+/*** S2^ ***/
