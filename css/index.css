@@ -69,6 +69,7 @@
 .s1 a img {
   filter: invert();
   height: 2em;
+  margin-right: 0.5em;
 }
 
 .s1 .guides {
@@ -93,6 +94,7 @@
 
 .s2 h1 {
   font-size: var(--three);
+  font-weight: 400;
   color: var(--white);
   padding: 0.5em;
   background: var(--jet);
@@ -100,12 +102,13 @@
 
 .s2 p {
   font-size: var(--one);
+  font-weight: 600;
   margin-bottom: 1em;
   color: var(--jet);
   padding: 1em;
   background: var(--white);
   width: min-content;
-  min-width: 174px;
+  min-width: 177px;
 
   box-shadow: 5px 15px 42px rgba(0, 0, 0, 0.14);
 }
@@ -193,3 +196,32 @@
 /** animations^ **/
 
 /** S2^ **/
+
+@media screen and (max-width: 700px) {
+  .guides .topRight,
+  .guides .botRight {
+    position: relative;
+    transform: translateX(-0.5em);
+  }
+  .guides .topLeft,
+  .guides .botLeft {
+    position: relative;
+    transform: translateX(0.5em);
+  }
+
+  .s1 h1 {
+    font-size: var(--three);
+  }
+  .s1 p {
+    font-size: 1em;
+  }
+  .s1 a img {
+    height: 1.5em;
+    margin-right: 0.5em;
+  }
+
+  .s2 h1 {
+    font-size: var(--two);
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+}
