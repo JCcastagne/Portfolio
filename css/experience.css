@@ -1,3 +1,46 @@
+/*** S1 ***/
+
+.s1 {
+  overflow: hidden;
+}
+
+h1 {
+  font-size: var(--four);
+}
+
+.positions {
+  margin-top: var(--four);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10vw;
+}
+
+h2 {
+  font-size: var(--three);
+}
+.headers {
+  margin-bottom: var(--three);
+}
+.headers::after {
+  content: "";
+  height: 3px;
+  width: 33vw;
+  background-color: var(--jet);
+  position: absolute;
+  transform: translateY(1ch);
+}
+
+h3 {
+  font-size: var(--two);
+  font-weight: 400;
+}
+
+.positions li {
+  font-size: var(--body);
+}
+
+/*** S1^ ***/
+
 /*** S2 ***/
 
 .s2 .container {
