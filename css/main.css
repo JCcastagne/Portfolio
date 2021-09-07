@@ -168,6 +168,7 @@ footer {
   display: flex;
   justify-content: space-between;
   width: 80vw;
+  /* height: 33vh; */
   /* max-width: 800px; */
 }
 
