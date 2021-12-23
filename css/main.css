@@ -60,8 +60,93 @@ h6 {
 
 :root {
   --main-bg-color: #1d1d1d;
-  --body-color: #ededed;
-  --body-two-color: #a6a6a6;
-  --body-three-color: #626262;
   --accent-color: #4db5f0;
+  --body-color: #ededed;
+  --body-two-color: #a6a6a6; /* 66% opacity of body */
+  --body-three-color: #626262; /* 33% opacity of body */
+
+  --counter-fontSize: 432px;
+  --heroBanner-fontSize: 72px;
+  --header-fontSize: 48px;
+  --title-fontSize: 24px;
+  --body-fontSize: 18px;
 }
+
+/* * * Nav * * */
+
+nav.active {
+  display: flex;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  min-width: 200px;
+  width: 33vw;
+  max-width: 1000px;
+  background-color: var(--body-three-color);
+}
+
+nav .nav {
+  margin-left: var(--title-fontSize);
+  margin-top: var(--title-fontSize);
+  margin-bottom: var(--title-fontSize);
+}
+
+nav .nav h6 {
+  margin-bottom: var(--body-fontSize);
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+nav li {
+  list-style: none;
+}
+nav li a,
+nav li a:link,
+nav li a:visited,
+nav li a:active {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+/* * Menu icon * */
+.menuIcon span {
+  position: absolute;
+  right: calc((100vw / 12) + 37px);
+  top: calc((100vh / 12));
+}
+
+.menuIcon span::before {
+  position: absolute;
+  margin-top: 2px;
+  content: ' ';
+  height: 4px;
+  width: 37px;
+  background-color: var(--body-color);
+
+  transition: all 0.3s ease-in-out;
+}
+.menuIcon span::after {
+  position: absolute;
+  margin-top: 14px;
+  content: ' ';
+  height: 4px;
+  width: 37px;
+  background-color: var(--body-color);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.menuIcon span.active::before {
+  transform-origin: left;
+  transform: rotate(45deg);
+}
+
+/* * Menu icon ^ * */
+
+/* * * Nav * * */
