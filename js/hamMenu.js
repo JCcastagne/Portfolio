@@ -1,13 +1,22 @@
 function init () {
-  let nav = document.getElementsByClassName('hamMenu')[0]
+  let hamMenu = document.getElementsByClassName('hamMenu')[0]
   let menuIcon = document.getElementsByClassName('menuIcon')[0]
 
   menuIcon.addEventListener('click', toggleNavMenu)
 
-  let navMenuIsOpen = false
+  let hamMenuIsOpen = false
 
   function toggleNavMenu () {
     console.log('clicked nav')
+    if (hamMenuIsOpen) {
+      hamMenu.classList.remove('active')
+      menuIcon.classList.remove('active')
+      hamMenuIsOpen = false
+    } else {
+      hamMenu.classList.add('active')
+      menuIcon.classList.add('active')
+      hamMenuIsOpen = true
+    }
   }
 }
 
