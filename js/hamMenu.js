@@ -13,9 +13,15 @@ function init () {
       hamMenu.classList.remove('active')
       menuIcon.classList.remove('active')
       hamMenuIsOpen = false
+      setTimeout(() => {
+        hamMenu.style.display = 'none'
+      }, 400)
     } else {
-      hamMenu.classList.add('active')
-      menuIcon.classList.add('active')
+      hamMenu.style.display = 'flex'
+      setTimeout(() => {
+        hamMenu.classList.add('active')
+        menuIcon.classList.add('active')
+      }, 100)
       hamMenuIsOpen = true
     }
   }
