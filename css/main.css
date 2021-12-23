@@ -64,7 +64,7 @@ h6 {
   --body-color: #ededed;
   --body-two-color: #a6a6a6; /* 66% opacity of body */
   --body-three-color: #626262; /* 33% opacity of body */
-
+  --drawer-bg-color: #3a3a3a;
   --counter-fontSize: 432px;
   --heroBanner-fontSize: 72px;
   --header-fontSize: 48px;
@@ -75,20 +75,22 @@ h6 {
 /* * * Nav * * */
 
 nav.active {
-  display: flex;
+  right: 0;
 }
 nav {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   position: absolute;
-  right: 0;
+  right: -100%;
   top: 0;
   height: 100vh;
   min-width: 200px;
   width: 33vw;
   max-width: 1000px;
-  background-color: var(--body-three-color);
+  background-color: var(--drawer-bg-color);
+
+  transition: all 0.4s ease-in-out;
 }
 
 nav .nav {
@@ -116,38 +118,42 @@ nav li a:active {
 
 /* * Menu icon * */
 .menuIcon {
-  z-index: 999;
-}
-.menuIcon span {
   position: absolute;
+  transform: translate(-1em, -1em);
   right: calc((100vw / 12) + 37px);
   top: calc((100vh / 12));
+  z-index: 999;
+  padding: 1em;
+  width: calc(35px + 2em);
+  height: calc(20px + 2em);
 }
 
 .menuIcon span::before {
   position: absolute;
-  margin-top: 2px;
   content: ' ';
   height: 4px;
-  width: 37px;
+  width: 35px;
   background-color: var(--body-color);
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 .menuIcon span::after {
   position: absolute;
-  margin-top: 14px;
+  margin-top: 12px;
   content: ' ';
   height: 4px;
-  width: 37px;
+  width: 35px;
   background-color: var(--body-color);
 
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 }
 
-.menuIcon.active span::before {
-  transform-origin: left;
-  transform: rotate(45deg);
+.menuIcon span.active::before {
+  transform: translateY(150%) rotate(45deg);
+}
+.menuIcon span.active::after {
+  transform: translateY(-150%) rotate(-45deg);
+  box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9);
 }
 
 /* * Menu icon ^ * */

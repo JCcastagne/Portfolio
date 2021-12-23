@@ -1,8 +1,9 @@
 function init () {
   let hamMenu = document.getElementsByClassName('hamMenu')[0]
-  let menuIcon = document.getElementsByClassName('menuIcon')[0]
+  let menuButton = document.querySelector('.menuIcon')
+  let menuIcon = document.querySelector('.menuIcon span')
 
-  menuIcon.addEventListener('click', toggleNavMenu)
+  menuButton.addEventListener('click', toggleNavMenu)
 
   let hamMenuIsOpen = false
 
