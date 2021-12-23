@@ -74,55 +74,13 @@ h6 {
 
 /* * * Nav * * */
 
-nav.active {
-  right: 0;
-}
-nav {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: absolute;
-  right: -100%;
-  top: 0;
-  height: 100vh;
-  min-width: 200px;
-  width: 33vw;
-  max-width: 1000px;
-  background-color: var(--drawer-bg-color);
-
-  transition: all 0.4s ease-in-out;
-}
-
-nav .nav {
-  margin-left: var(--title-fontSize);
-  margin-top: var(--title-fontSize);
-  margin-bottom: var(--title-fontSize);
-}
-
-nav .nav h6 {
-  margin-bottom: var(--body-fontSize);
-  font-weight: 500;
-  color: var(--accent-color);
-}
-
-nav li {
-  list-style: none;
-}
-nav li a,
-nav li a:link,
-nav li a:visited,
-nav li a:active {
-  text-decoration: none;
-  color: var(--body-color);
-}
-
 /* * Menu icon * */
 .menuIcon {
   position: absolute;
   transform: translate(-1em, -1em);
   right: calc((100vw / 12) + 37px);
   top: calc((100vh / 12));
-  z-index: 999;
+  z-index: 99;
   padding: 1em;
   width: calc(35px + 2em);
   height: calc(20px + 2em);
@@ -158,4 +116,79 @@ nav li a:active {
 
 /* * Menu icon ^ * */
 
-/* * * Nav * * */
+nav.active {
+  right: 0;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  min-width: 200px;
+  width: 33vw;
+  max-width: 1000px;
+  background-color: var(--drawer-bg-color);
+  z-index: 98;
+
+  transition: all 0.4s ease-in-out;
+}
+
+nav .nav {
+  margin-left: var(--title-fontSize);
+  margin-top: var(--title-fontSize);
+  margin-bottom: var(--title-fontSize);
+}
+
+nav .nav h6 {
+  margin-bottom: var(--body-fontSize);
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+nav li {
+  list-style: none;
+}
+nav li a,
+nav li a:link,
+nav li a:visited,
+nav li a:active {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+/* * * Nav^ * * */
+
+/* * * Header * * */
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 90;
+  position: absolute;
+  margin-left: calc(100vw / 12);
+  margin-top: calc(100vh / 12);
+  transform: translate(12.5%, -30%);
+}
+
+header img {
+  height: 30px;
+  transform: translateY(3.5px);
+}
+
+header a,
+header a:link,
+header a:visited,
+header a:active {
+  text-decoration: none;
+  color: var(--body-two-color);
+}
+
+header > a {
+  margin-right: calc(100vw / 12);
+  /* background-color: red; */
+}
+
+/* * * Header^ * * */
