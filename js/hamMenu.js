@@ -1,15 +1,14 @@
 function init () {
-  let nav = document.getElementsByClassName('hamMenu')
-  let menuIcon = document.getElementsByClassName('menuIcon')
+  let nav = document.getElementsByClassName('hamMenu')[0]
+  let menuIcon = document.getElementsByClassName('menuIcon')[0]
 
-  nav.addEventListener('click', toggleNavMenu)
   menuIcon.addEventListener('click', toggleNavMenu)
 
   let navMenuIsOpen = false
 
   function toggleNavMenu () {
-    console.log('clicked')
+    console.log('clicked nav')
   }
 }
 
-window.addEventListener('DOMContentLoaded', init)
+document.addEventListener('DOMContentLoaded', init)

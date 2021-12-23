@@ -115,6 +115,9 @@ nav li a:active {
 }
 
 /* * Menu icon * */
+.menuIcon {
+  z-index: 999;
+}
 .menuIcon span {
   position: absolute;
   right: calc((100vw / 12) + 37px);
@@ -142,7 +145,7 @@ nav li a:active {
   transition: all 0.3s ease-in-out;
 }
 
-.menuIcon span.active::before {
+.menuIcon.active span::before {
   transform-origin: left;
   transform: rotate(45deg);
 }
