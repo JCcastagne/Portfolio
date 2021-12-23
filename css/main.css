@@ -120,7 +120,7 @@ nav.active {
   right: 0;
 }
 nav {
-  display: flex;
+  display: none;
   flex-direction: column;
   justify-content: center;
   position: absolute;
