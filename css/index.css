@@ -97,6 +97,8 @@
 
 /* * Pages^ * */
 
+/* Skills */
+
 #skills .wrapper > div {
   display: flex;
   align-items: center;
@@ -152,3 +154,5 @@
     opacity: 10%;
   }
 }
+
+/* Skills^ */
