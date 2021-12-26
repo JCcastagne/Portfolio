@@ -29,7 +29,7 @@
   /* background-color: rgba(255, 0, 0, 0.386); */
 }
 
-/* * * * * */
+/* * Home page * */
 
 #home h1 {
   font-size: var(--heroBanner-fontSize);
@@ -75,3 +75,35 @@
 #home .button {
   margin-top: var(--heroBanner-fontSize);
 }
+
+/* * Home page^ * */
+
+/* * Pages * */
+
+.counter {
+  font-size: var(--counter-fontSize);
+  line-height: 432px;
+  color: var(--body-three-color);
+  position: absolute;
+  left: -57px;
+  transform: translateY(-66px);
+  z-index: -1;
+}
+
+.page h3 {
+  font-size: var(--header-fontSize);
+  /* line-height: 48px; */
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+.page h4 {
+  font-size: var(--body-fontSize);
+}
+
+.page h3,
+.page h4 {
+  max-width: 373px;
+}
+
+/* * Pages^ * */
