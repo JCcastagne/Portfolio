@@ -66,7 +66,14 @@
   font-weight: 500;
 }
 #home .button {
+  display: flex;
+  align-items: center;
+  width: calc((100vw / 12) * 2);
   margin-top: var(--heroBanner-fontSize);
+}
+
+#home .button img {
+  margin-left: var(--body-fontSize);
 }
 
 /* * Home page^ * */
@@ -231,11 +238,56 @@
 
 /* About^ */
 
+/* Work */
+
 #work h3,
 #work h4 {
   width: calc((100vw / 12) * 2);
 }
 
+#work .wrapper > div div:nth-of-type(1) {
+  transform: translateY(25%);
+}
+
+#work div:nth-of-type(2) {
+  display: flex;
+  justify-content: center;
+  width: calc(100vw / 2);
+}
+
 #work div:nth-of-type(2) img {
   width: calc((100vw / 12) * 5);
+  max-width: 700px;
+  transform: translateX(-7%);
 }
+
+#work button {
+  display: flex;
+  align-items: center;
+  padding: var(--body-fontSize);
+  width: 66%;
+  margin-top: var(--title-fontSize);
+  bottom: calc((-400vh) + ((100vh / 12) * 4));
+  background-color: var(--accent-color);
+  border: none;
+}
+
+#work button img {
+  margin-left: var(--body-fontSize);
+}
+
+#work button a {
+  background-color: none;
+}
+
+#work button a,
+#work button a:link,
+#work button a:visited,
+#work button a:active {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--body-fontSize);
+  color: var(--body-color);
+}
+
+/* Work^ */
