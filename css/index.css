@@ -73,6 +73,11 @@
 
 /* * Pages * */
 
+.page .wrapper > div {
+  display: flex;
+  align-items: center;
+}
+
 .counter {
   font-size: var(--counter-fontSize);
   line-height: 432px;
@@ -98,11 +103,6 @@
 /* * Pages^ * */
 
 /* Skills */
-
-#skills .wrapper > div {
-  display: flex;
-  align-items: center;
-}
 
 #skills .lists {
   display: flex;
@@ -156,3 +156,53 @@
 }
 
 /* Skills^ */
+
+/* Experience */
+
+#experience .items {
+  transform: translate(0, calc(100vh / 12));
+}
+
+#experience .items .item {
+  display: flex;
+  flex-direction: column;
+  margin-left: calc(100vw / 12);
+}
+
+#experience .item {
+  width: calc(100vw / 2.4);
+  margin-bottom: calc(var(--body-fontSize) * 2);
+}
+
+#experience .item h5 {
+  font-size: var(--title-fontSize);
+  font-weight: 500;
+  color: var(--accent-color);
+  line-height: var(--title-fontSize);
+  margin-bottom: calc(var(--body-fontSize) / 3);
+}
+
+#experience .item p {
+  color: var(--body-two-color);
+  margin-bottom: var(--body-fontSize);
+}
+
+#experience .item ul {
+  list-style-type: none;
+}
+
+#experience .item ul li::before {
+  content: ' ';
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  background-color: var(--body-two-color);
+  border-radius: 99px;
+  transform: translate(-300%, 233%);
+}
+
+#experience .item ul li {
+  margin-bottom: calc(var(--body-fontSize) / 3);
+}
+
+/* Experience^ */
