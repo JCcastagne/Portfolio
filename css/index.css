@@ -97,9 +97,10 @@
 
 .page h3,
 .page h4 {
-  max-width: calc((100vw / 12) * 3);
+  /* min-width: calc((100vw / 12) * 2);
+  max-width: calc((100vw / 12) * 3); */
+  width: calc((100vw / 12) * 3);
   margin-right: calc(100vw / 12);
-  /* max-width: 373px; */
 }
 
 /* * Pages^ * */
@@ -229,3 +230,12 @@
 }
 
 /* About^ */
+
+#work h3,
+#work h4 {
+  width: calc((100vw / 12) * 2);
+}
+
+#work div:nth-of-type(2) img {
+  width: calc((100vw / 12) * 5);
+}
