@@ -80,8 +80,8 @@ h6 {
 .menuIcon {
   position: absolute;
   /* transform: translate(calc(35px + 1em), -12.5%); */
-  right: calc((100vw / 12));
-  top: calc((100vh / 12) - 8px);
+  right: calc((100vw / 12) + 1em);
+  top: calc((100vh / 12) - 8px + 1em);
   z-index: 99;
   /* padding: 1em; */
   width: calc(35px + 2em);
@@ -90,7 +90,7 @@ h6 {
 
 .menuIcon span::before {
   position: absolute;
-  transform: translate(1em, 1em);
+  /* transform: translate(1em, 1em); */
   content: ' ';
   height: 4px;
   width: 35px;
@@ -100,7 +100,7 @@ h6 {
 }
 .menuIcon span::after {
   position: absolute;
-  transform: translate(1em, 1em);
+  /* transform: translate(1em, 1em); */
   margin-top: 12px;
   content: ' ';
   height: 4px;
