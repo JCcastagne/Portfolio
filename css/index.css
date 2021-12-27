@@ -258,7 +258,7 @@
 #work div:nth-of-type(2) img {
   width: calc((100vw / 12) * 5);
   max-width: 700px;
-  transform: translateX(-7%);
+  transform: translateX(-12%);
 }
 
 #work button {
