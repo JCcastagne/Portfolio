@@ -97,7 +97,9 @@
 
 .page h3,
 .page h4 {
-  max-width: 373px;
+  max-width: calc((100vw / 12) * 3);
+  margin-right: calc(100vw / 12);
+  /* max-width: 373px; */
 }
 
 /* * Pages^ * */
@@ -107,7 +109,6 @@
 #skills .lists {
   display: flex;
   flex-direction: row;
-  margin-left: calc(100vw / 12);
   transform: translateY(calc(50% + calc(var(--body-fontSize) / 2)));
 }
 
@@ -160,13 +161,13 @@
 /* Experience */
 
 #experience .items {
-  transform: translate(0, calc(100vh / 12));
+  /* transform: translate(0, calc(100vh / 12)); */
+  transform: translate(0, 10%);
 }
 
 #experience .items .item {
   display: flex;
   flex-direction: column;
-  margin-left: calc(100vw / 12);
 }
 
 #experience .item {
@@ -206,3 +207,25 @@
 }
 
 /* Experience^ */
+
+/* About */
+
+#about div:nth-of-type(2) {
+  transform: translate(0, 42%);
+}
+
+#about div:nth-of-type(2) h5 {
+  font-size: var(--title-fontSize);
+  font-weight: 500;
+  font-style: italic;
+  color: var(--accent-color);
+  line-height: var(--title-fontSize);
+  margin-bottom: var(--body-fontSize);
+}
+
+#about div:nth-of-type(2) p {
+  max-width: calc((100vw / 12) * 6);
+  margin-bottom: calc(var(--body-fontSize) / 2);
+}
+
+/* About^ */
