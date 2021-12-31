@@ -1,32 +1,3 @@
-.pages {
-  width: 100vw;
-  height: 100vh;
-
-  position: relative;
-  scroll-behavior: smooth;
-  overflow-y: scroll;
-  scroll-snap-points-y: repeat(100vh);
-  scroll-snap-type: y mandatory;
-}
-
-.page {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-
-  scroll-snap-align: center;
-}
-
-.page .wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  margin: 0 calc(100vw / 12) 0 calc((100vw / 12) * 2);
-  width: calc((100vw / 12) * 10);
-}
-
 /* * Home page * */
 
 #home h1 {
