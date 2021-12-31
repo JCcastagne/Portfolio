@@ -7,6 +7,18 @@
     <title>JC Castagne</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/myWork.css" />
+
+    <!-- GlideJS Required Core Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.core.min.css"
+    />
+
+    <!-- GlideJS Optional Theme Stylesheet -->
+    <link
+      rel="stylesheet"
+      href="node_modules/@glidejs/glide/dist/css/glide.theme.min.css"
+    />
   </head>
 
   <body>
@@ -74,21 +86,52 @@
             <li>Company branding</li>
           </ul>
 
-          <div class="glider-contain">
-            <div class="glider">
-              <div><img src="./img/portfolio/delight/Showcase.png" alt=""></div>
-              <div><img src="./img/portfolio/delight/Showcase 2.png" alt=""></div>
-              <div><img src="./img/portfolio/delight/Showcase 3.png" alt=""></div>
+          <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide">
+                  <img src="./img/portfolio/delight/Showcase.png" alt="" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./img/portfolio/delight/Showcase 2.png" alt="" />
+                </li>
+                <li class="glide__slide">
+                  <img src="./img/portfolio/delight/Showcase 3.png" alt="" />
+                </li>
+              </ul>
             </div>
-
-            <button aria-label="Previous" class="glider-prev">«</button>
-            <button aria-label="Next" class="glider-next">»</button>
-            <div role="tablist" class="dots"></div>
+            <div class="glide__arrows" data-glide-el="controls">
+              <button
+                class="glide__arrow glide__arrow--left"
+                data-glide-dir="<"
+              >
+                <img src="./img/icons/chevron-right-white.svg" style="transform: rotate(180deg);" alt="">
+              </button>
+              <button
+                class="glide__arrow glide__arrow--right"
+                data-glide-dir=">"
+              >
+                <img src="./img/icons/chevron-right-white.svg" alt="">
+              </button>
+            </div>
           </div>
         </div>
       </section>
     </div>
 
     <script src="./js/hamMenu.js"></script>
+    <script src="node_modules/@glidejs/glide/dist/glide.min.js"></script>
+
+    <script>
+      new Glide('.glide', {
+        type: 'carousel',
+        perView: 3,
+        focusAt: 'center',
+        gap: 0,
+        hoverpause: 'true',
+        animationDuration: 300,
+        animationTimingFunc: 'ease-in-out'
+      }).mount()
+    </script>
   </body>
 </html>

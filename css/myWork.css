@@ -1,0 +1,34 @@
+/* * GlideJS default overrides * */
+
+.glide__slide img {
+  width: calc(((100vw / 12) * 10) / 3);
+  border-radius: 18px;
+}
+
+.glide__slide {
+  filter: blur();
+  opacity: 0.42;
+  transition: 0.3s ease-in-out;
+  z-index: 2;
+  margin: 5em 0;
+}
+
+.glide__slide--active {
+  opacity: 1;
+  filter: none;
+  transform: scale(1.66);
+  z-index: 3;
+}
+
+.glide__slides {
+  overflow: visible;
+}
+
+.glide__arrow {
+  border: 2px solid rgba(255, 255, 255, 0) !important;
+  border-radius: 99px !important;
+  background-color: var(--accent-color) !important;
+  padding: 11px 12px !important;
+}
+
+/* * GlideJS default overrides ^ * */
