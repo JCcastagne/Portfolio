@@ -1,7 +1,11 @@
 /* * GlideJS default overrides * */
 
+.glide {
+  width: calc((100vw / 12) * 8) !important;
+}
+
 .glide__slide img {
-  width: calc(((100vw / 12) * 10) / 3);
+  width: calc(((100vw / 12) * 8) / 3);
   border-radius: 18px;
 }
 
@@ -10,13 +14,13 @@
   opacity: 0.42;
   transition: 0.3s ease-in-out;
   z-index: 2;
-  margin: 5em 0;
+  /* margin: 5em 0; */
 }
 
 .glide__slide--active {
   opacity: 1;
   filter: none;
-  transform: scale(1.66);
+  /* transform: scale(1.66); */
   z-index: 3;
 }
 
@@ -32,3 +36,23 @@
 }
 
 /* * GlideJS default overrides ^ * */
+
+.wrapper .info {
+  display: flex;
+  flex-direction: column;
+}
+
+h3 {
+  font-size: var(--header-fontSize);
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+h4 {
+  font-size: var(--title-fontSize);
+  font-weight: 500;
+}
+
+ul {
+  list-style: none;
+}
