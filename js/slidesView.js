@@ -6,57 +6,98 @@ function init () {
   let sliderImg3 = slider.children[2]
 
   //Positions
-  let pos1 = sliderImg1
-  let pos2 = sliderImg2
-  let pos3 = sliderImg3
+  let image1 = { img: sliderImg1, position: 'left' }
+  let image2 = { img: sliderImg2, position: 'center' }
+  let image3 = { img: sliderImg3, position: 'right' }
 
-  sliderImg1.addEventListener('click', () => selectPos(1))
-  sliderImg2.addEventListener('click', () => selectPos(2))
-  sliderImg3.addEventListener('click', () => selectPos(3))
+  sliderImg1.addEventListener('click', () => selectImage(1))
+  sliderImg2.addEventListener('click', () => selectImage(2))
+  sliderImg3.addEventListener('click', () => selectImage(3))
 
-  function selectPos (pos) {
-    if (pos === 1 && pos1 === sliderImg1) {
-      console.log('clicked pos1 - image1')
+  function selectImage (selectedImage) {
+    if (selectedImage === 1 && image1.position === 'left') {
+      console.log('move image1 to middle')
       //translate
-      pos1.style.transform = 'translateX(50%) scale(1.5)'
-      pos2.style.transform = 'translateX(-50%)'
-      pos3.style.transform = 'translateX(0%)'
+      image1.img.style.transform = 'translateX(50%) scale(1.5)'
+      image2.img.style.transform = 'translateX(-50%)'
+      image3.img.style.transform = 'translateX(0%)'
 
       //z-index
-      pos1.style.zIndex = '3'
-      pos2.style.zIndex = '2'
-      pos3.style.zIndex = '2'
+      image1.img.style.zIndex = '3'
+      image2.img.style.zIndex = '2'
+      image3.img.style.zIndex = '2'
 
       //border radius
-      pos1.style.borderRadius = '13px'
-      pos2.style.borderRadius = '11px'
-      pos3.style.borderRadius = '11px'
+      image1.img.style.borderRadius = '13px'
+      image2.img.style.borderRadius = '11px'
+      image3.img.style.borderRadius = '11px'
 
       //update image positions
-      pos1 = sliderImg2
-      pos2 = sliderImg1
-      pos3 = sliderImg3
-    } else if (pos === 2 && pos1 === sliderImg2) {
-      console.log('clicked pos1 - image2')
+      image1.position = 'center'
+      image2.position = 'left'
+      image3.position = 'right'
+    } else if ((selectedImage === 1 || 2) && image1.position === 'center') {
+      console.log('move image1 to left, return image2 to center')
       //translate
-      pos1.style.transform = 'translateX(0%) scale(1.5)'
-      pos2.style.transform = 'translateX(0%)'
-      pos3.style.transform = 'translateX(0%)'
+      image1.img.style.transform = 'translateX(0%)'
+      image2.img.style.transform = 'translateX(0%) scale(1.5)'
+      image3.img.style.transform = 'translateX(0%)'
 
       //z-index
-      pos1.style.zIndex = '3'
-      pos2.style.zIndex = '2'
-      pos3.style.zIndex = '2'
+      image1.img.style.zIndex = '2'
+      image2.img.style.zIndex = '3'
+      image3.img.style.zIndex = '2'
 
       //border radius
-      pos1.style.borderRadius = '11px'
-      pos2.style.borderRadius = '13px'
-      pos3.style.borderRadius = '11px'
+      image1.img.style.borderRadius = '11px'
+      image2.img.style.borderRadius = '13px'
+      image3.img.style.borderRadius = '11px'
 
       //update image positions
-      pos1 = sliderImg1
-      pos2 = sliderImg2
-      pos3 = sliderImg3
+      image1.position = 'left'
+      image2.position = 'center'
+      image3.position = 'right'
+    } else if (selectedImage === 3 && image3.position === 'right') {
+      console.log('move image3 to center')
+      //translate
+      image1.img.style.transform = 'translateX(0%)'
+      image2.img.style.transform = 'translateX(50%)'
+      image3.img.style.transform = 'translateX(-50%) scale(1.5)'
+
+      //z-index
+      image1.img.style.zIndex = '2'
+      image2.img.style.zIndex = '2'
+      image3.img.style.zIndex = '3'
+
+      //border radius
+      image1.img.style.borderRadius = '11px'
+      image2.img.style.borderRadius = '11px'
+      image3.img.style.borderRadius = '13px'
+
+      //update image positions
+      image1.position = 'left'
+      image2.position = 'right'
+      image3.position = 'center'
+    } else if ((selectedImage === 3 || 2) && image3.position === 'center') {
+      console.log('move image3 to right, return image2 to center')
+      image1.img.style.transform = 'translateX(0%)'
+      image2.img.style.transform = 'translateX(0%) scale(1.5)'
+      image3.img.style.transform = 'translateX(0%)'
+
+      //z-index
+      image1.img.style.zIndex = '2'
+      image2.img.style.zIndex = '3'
+      image3.img.style.zIndex = '2'
+
+      //border radius
+      image1.img.style.borderRadius = '11px'
+      image2.img.style.borderRadius = '13px'
+      image3.img.style.borderRadius = '11px'
+
+      //update image positions
+      image1.position = 'left'
+      image2.position = 'center'
+      image3.position = 'right'
     }
   }
 
