@@ -100,10 +100,6 @@ function init () {
       image3.position = 'right'
     }
   }
-
-  function returnImg () {
-    sliderImg1.style.transform = 'translateX(0%)'
-  }
 }
 
 document.body.addEventListener('DOMContentLoaded', init())
