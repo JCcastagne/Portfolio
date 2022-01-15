@@ -26,6 +26,25 @@ ul {
   list-style: none;
 }
 
+.button a,
+.button a:link,
+.button a:visited,
+.button a:active {
+  text-decoration: none;
+  color: var(--accent-color);
+  font-weight: 500;
+}
+.button {
+  display: flex;
+  align-items: center;
+  width: calc((100vw / 12) * 2);
+  margin-top: var(--title-fontSize);
+}
+
+.button img {
+  margin-left: var(--body-fontSize);
+}
+
 .slides {
   display: flex;
   max-height: calc((100vh / 12) * 9);
