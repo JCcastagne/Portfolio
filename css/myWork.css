@@ -62,22 +62,32 @@ ul {
 
 .iPhoneMockups img:first-of-type {
   height: calc((100vh / 12) * 7);
-  transform: translateX(50%);
+  transform: translateX(100%);
   z-index: -2;
+
+  animation: lsHomeImg 1s 1s ease-in-out forwards;
+  animation-iteration-count: 1;
 }
 .iPhoneMockups img:nth-of-type(2) {
   height: calc((100vh / 12) * 8);
 }
 .iPhoneMockups img:nth-of-type(3) {
   height: calc((100vh / 12) * 7);
-  transform: translateX(-50%);
+  transform: translateX(-100%);
   z-index: -2;
+
+  animation: rsHomeImg 1s 1s ease-in-out forwards;
+  animation-iteration-count: 1;
 }
 .iPhoneMockups img:nth-of-type(4) {
   height: calc((100vh / 12) * 8);
   position: absolute;
   transform: translateX(13.5%);
   z-index: -1;
+
+  opacity: 0%;
+  animation: fadeIn 1s 1.2s ease-in-out forwards;
+  animation-iteration-count: 1;
 }
 
 /* carousels */
@@ -119,4 +129,39 @@ ul {
 /* carousels^ */
 
 /* homepage animations */
+
+@keyframes lsHomeImg {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(50%);
+  }
+}
+
+@keyframes rsHomeImg {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/* .iPhoneMockups img:first-of-type {
+  transform: translateX(50%);
+}
+.iPhoneMockups img:nth-of-type(3) {
+  transform: translateX(-50%);
+} */
+
 /* homepage animations^ */
