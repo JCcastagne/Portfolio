@@ -61,8 +61,8 @@ h6 {
 }
 
 :root {
-  --main-bg-color: #1d1d1d;
-  --accent-color: #4db5f0;
+  --main-bg-color: #111112;
+  --accent-color: #01c2f7;
   --body-color: #ededed;
   --body-two-color: #a6a6a6; /* 66% opacity of body */
   --body-three-color: #626262; /* 33% opacity of body */
