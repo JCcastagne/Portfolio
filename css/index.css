@@ -79,7 +79,7 @@
 }
 
 #home .button img {
-  margin-left: var(--body-fontSize);
+  margin-left: calc(var(--body-fontSize) / 2);
 }
 
 /* * Home page^ * */
@@ -279,7 +279,7 @@
 }
 
 #work button img {
-  margin-left: var(--body-fontSize);
+  margin-left: calc(var(--body-fontSize) / 2);
 }
 
 #work button a {

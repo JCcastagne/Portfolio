@@ -220,7 +220,7 @@ header a:active {
 }
 
 header > a {
-  margin-right: calc(100vw / 12);
+  margin-right: calc(100vw / 18);
   /* background-color: red; */
 }
 
