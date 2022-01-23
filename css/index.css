@@ -1,51 +1,37 @@
 /* * Home page * */
 
-@media only screen and (max-width: 1920px) {
+@media only screen and (min-width: 2122px) {
   #homeBG {
-    background-image: url(../img/JC_Desktop_3dAsset-cropped-2337w.png);
+    background-image: url(../img/JC_Desktop_3dAsset-3840w-RA_opt.jpg);
     background-position: right;
     background-repeat: no-repeat;
     background-size: contain;
 
     position: absolute;
-    right: 0;
-    width: 315vw;
-    height: 315vh;
-    transform: translateY(-31.5%);
+    transform: translateX(17vw);
+    top: -63%;
+    width: 350vh;
+    height: 350vh;
 
     overflow: visible;
     z-index: -1;
-
-    /* filter: contrast(0.89); */
-
-    /* z-index: -1;
-    position: absolute;
-    width: 120vw;
-    max-width: 2000px;
-    top: 50vh;
-    right: 0;
-    transform: translateY(-46%);
-    filter: contrast(0.92); */
   }
 }
-@media only screen and (min-width: 1921px) {
+@media only screen and (max-width: 2121px) {
   #homeBG {
-    background-image: url(../img/JC_Desktop_3dAsset-3840w.png);
-    background-position: center;
+    background-image: url(../img/JC_Desktop_3dAsset-3840w-RA_opt.jpg);
+    background-position: right;
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
 
-    width: 100vw;
-    height: 100vh;
-
-    /* z-index: -1;
     position: absolute;
-    width: 100vw;
-    max-width: 2000px;
-    top: 50vh;
-    right: 0;
-    transform: translateY(-46%);
-    filter: contrast(0.92); */
+    transform: translateX(23vw);
+    top: -40%;
+    width: 250vh;
+    height: 250vh;
+
+    overflow: visible;
+    z-index: -1;
   }
 }
 
