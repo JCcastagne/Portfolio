@@ -1,0 +1,140 @@
+.s1 {
+  overflow: hidden;
+}
+.nextPageHint {
+  position: absolute;
+  z-index: 100;
+  bottom: -112.5px;
+  left: calc(50vw - 75px);
+  background-color: var(--jet);
+  height: 150px;
+  width: 150px;
+  animation: hint 1.5s 1s cubic-bezier(0.95, -0.85, 0, 1.57) both;
+}
+.nextPageHint span {
+  font-weight: 600;
+  color: var(--white);
+  position: absolute;
+  transform: rotate(-45deg) translate(-25%, 1em);
+}
+@keyframes hint {
+  0% {
+    transform: scale(0) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1) rotate(45deg);
+    /* transform-origin: 50% 100%; */
+    opacity: 1;
+  }
+}
+
+/** main **/
+
+h1 {
+  font-size: var(--four);
+}
+
+/** main ^ **/
+
+/** first page **/
+
+.s1 .container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+h1 {
+}
+.textBody {
+  /* width: 500px; */
+  margin-top: 1em;
+}
+
+.textBody p {
+  font-size: var(--one);
+  padding: 0.5em 0;
+  max-width: 900px;
+}
+
+.textBody p:last-of-type {
+  padding: 1em 0;
+}
+
+/** first page ^ **/
+
+/** second page **/
+
+.s2 h1 {
+  font-size: var(--three);
+  max-width: 1266px;
+  margin: auto;
+  margin-bottom: var(--one);
+}
+
+.links {
+  display: grid;
+  max-width: 1266px;
+  margin: auto;
+  gap: var(--one);
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+
+.links div {
+  background-color: var(--jet);
+  transition: 0.3s cubic-bezier(0.47, 0.29, 0.01, 1.55);
+}
+
+.links div:last-of-type {
+  grid-column: 2;
+  grid-row-start: 1;
+  grid-row-end: 6;
+  background: rgb(30, 190, 115);
+}
+
+.links div a {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+.links div:last-of-type a {
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transform: translateX(calc(-0.5 * var(--one)));
+  color: var(--white);
+  font-weight: 400;
+}
+
+.links h3 {
+  font-size: var(--two);
+  font-weight: 300;
+}
+.links h3:last-of-type {
+  font-weight: 400;
+}
+
+.s2 img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  margin: 0 var(--one);
+}
+
+.links a:active,
+.links a:focus,
+.links a:visited,
+.links a:link {
+  color: var(--grey);
+  text-decoration: none;
+  transition: 0.3s cubic-bezier(0.47, 0.29, 0.01, 1.55);
+}
+
+div .links div:hover {
+  transform: scale(1.09);
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.16);
+}
+
+/** second page ^ **/
