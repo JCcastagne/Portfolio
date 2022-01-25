@@ -1,10 +1,10 @@
-h3 {
+h1 {
   font-size: var(--header-fontSize);
   font-weight: 600;
   color: var(--accent-color);
 }
 
-h4 {
+h2 {
   font-size: var(--title-fontSize);
   font-weight: 500;
   margin-bottom: var(--body-fontSize);
