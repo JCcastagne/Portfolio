@@ -1,3 +1,5 @@
+/* * Home page * */
+
 #home h1 {
   font-size: var(--heroBanner-fontSize);
   font-weight: 600;
@@ -73,8 +75,6 @@
 
 .page h3,
 .page h4 {
-  /* min-width: calc((100vw / 12) * 2);
-  max-width: calc((100vw / 12) * 3); */
   width: calc((100vw / 12) * 3);
   margin-right: calc(100vw / 12);
 }
@@ -90,7 +90,7 @@
 }
 
 #skills .list {
-  width: calc(100vw / 6);
+  width: calc((100vw / 12) * 2);
 }
 
 #skills .list h5 {
@@ -138,7 +138,6 @@
 /* Experience */
 
 #experience .items {
-  /* transform: translate(0, calc(100vh / 12)); */
   transform: translate(0, 10%);
 }
 
