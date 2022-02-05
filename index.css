@@ -90,7 +90,7 @@ h6 {
 #jMid {
   content: '';
   position: absolute;
-  background-color: red;
+  background-color: black;
   width: 50px;
   height: 50px;
 
@@ -102,7 +102,7 @@ h6 {
 #jBot {
   content: '';
   position: absolute;
-  background-color: blue;
+  background-color: black;
   width: 150px;
   height: 50px;
 
@@ -114,7 +114,7 @@ h6 {
 #cTop {
   content: '';
   position: absolute;
-  background-color: green;
+  background-color: black;
   width: 150px;
   height: 50px;
 
@@ -126,7 +126,7 @@ h6 {
 #cMid {
   content: '';
   position: absolute;
-  background-color: purple;
+  background-color: black;
   width: 50px;
   height: 50px;
 
@@ -136,7 +136,7 @@ h6 {
 #cBot {
   content: '';
   position: absolute;
-  background-color: orange;
+  background-color: black;
   width: 150px;
   height: 50px;
 
@@ -204,15 +204,15 @@ h6 {
   }
   30% {
     width: 50px;
-    height: 50px;
+    height: 52px;
 
-    transform: translate(100px, 0);
+    transform: translate(100px, -1px);
   }
   40% {
     width: 50px;
     height: 0px;
 
-    transform: translate(100px, 0);
+    transform: translate(100px, -1px);
   }
   50% {
   }
@@ -228,7 +228,7 @@ h6 {
     width: 50px;
     height: 0px;
 
-    transform: translate(100px, 0);
+    transform: translate(100px, -1px);
   }
 }
 
@@ -329,15 +329,15 @@ h6 {
   }
   30% {
     width: 50px;
-    height: 50px;
+    height: 52px;
 
-    transform: translate(0, 0);
+    transform: translate(0, -1px);
   }
   40% {
     width: 50px;
     height: 0px;
 
-    transform: translate(0, 0);
+    transform: translate(0, -1px);
   }
   50% {
   }
@@ -353,7 +353,7 @@ h6 {
     width: 50px;
     height: 0px;
 
-    transform: translate(0, 0);
+    transform: translate(0, -1px);
   }
 }
 
