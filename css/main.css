@@ -24,6 +24,15 @@
 :root {
   --body-color: #2e2e2e;
   --accent-color: #4db5f0;
+
+  --body-two-color: #a6a6a6; /* 66% opacity of body */
+  --body-three-color: #626262; /* 33% opacity of body */
+  --drawer-bg-color: #ededed;
+  --counter-fontSize: 432px;
+  --heroBanner-fontSize: 72px;
+  --header-fontSize: 48px;
+  --title-fontSize: 24px;
+  --body-fontSize: 18px;
 }
 
 html {
@@ -68,18 +77,15 @@ h6 {
 /* * Menu icon * */
 .menuIcon {
   position: absolute;
-  /* transform: translate(calc(35px + 1em), -12.5%); */
   right: calc((100vw / 12) + 1em);
   top: calc((100vh / 12) - 8px + 1em);
   z-index: 99;
-  /* padding: 1em; */
   width: calc(35px + 2em);
   height: calc(20px + 2em);
 }
 
 .menuIcon span::before {
   position: absolute;
-  /* transform: translate(1em, 1em); */
   content: ' ';
   height: 4px;
   width: 35px;
@@ -104,7 +110,7 @@ h6 {
 }
 .menuIcon span.active::after {
   transform: translateY(-150%) rotate(-45deg);
-  box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9);
+  /* box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9); */
 }
 
 /* * Menu icon ^ * */
