@@ -18,9 +18,40 @@
 }
 .firstLetter {
   transform: translate(-4px, 0);
+  animation: jOut 1s forwards 6.4s 1 ease-in-out;
 }
 .secondLetter {
   transform: translate(4px, 0);
+  animation: cOut 1s forwards 6.4s 1 ease-in-out;
+}
+
+@keyframes jOut {
+  0% {
+    transform-origin: right top;
+    transform: translate(-4px, 0);
+    transform: scale(1);
+    filter: opacity(1);
+  }
+  100% {
+    transform-origin: right top;
+    transform: translate(-4px, 0);
+    transform: scale(30);
+    filter: opacity(0);
+  }
+}
+@keyframes cOut {
+  0% {
+    transform-origin: left top;
+    transform: translate(4px, 0);
+    transform: scale(1);
+    filter: opacity(1);
+  }
+  100% {
+    transform-origin: left top;
+    transform: translate(4px, 0);
+    transform: scale(30);
+    filter: opacity(0);
+  }
 }
 
 #jTop {
