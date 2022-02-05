@@ -188,3 +188,33 @@ nav li a:active {
   margin: 0 calc((100vw / 12) * 2) 0 calc((100vw / 12) * 2);
   width: calc((100vw / 12) * 10);
 }
+
+/* * * Header * * */
+
+header {
+  display: flex;
+  align-items: center;
+  z-index: 90;
+  position: absolute;
+  margin-left: calc(100vw / 12);
+  margin-top: calc(100vh / 12);
+}
+
+header img {
+  height: 30px;
+  transform: translateY(3.5px);
+}
+
+header a,
+header a:link,
+header a:visited,
+header a:active {
+  text-decoration: none;
+  color: var(--body-two-color);
+}
+
+header > a {
+  margin-right: calc(100vw / 18);
+}
+
+/* * * Header^ * * */
