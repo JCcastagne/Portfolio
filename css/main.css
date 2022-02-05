@@ -72,93 +72,125 @@ h6 {
   font-weight: 400;
 }
 
-/* * * Nav * * */
+/* * * * Nav * * * */
 
 /* * Menu icon * */
-.menuIcon {
-  position: absolute;
-  right: calc((100vw / 12) + 1em);
-  top: calc((100vh / 12) - 8px + 1em);
-  z-index: 99;
-  width: calc(35px + 2em);
-  height: calc(20px + 2em);
-}
+@media screen {
+  .menuIcon {
+    position: absolute;
+    right: calc((100vw / 12) + 1em);
+    top: calc((100vh / 12) - 8px + 1em);
+    z-index: 99;
+    width: calc(35px + 2em);
+    height: calc(20px + 2em);
+  }
 
-.menuIcon span::before {
-  position: absolute;
-  content: ' ';
-  height: 4px;
-  width: 35px;
-  background-color: var(--body-color);
+  .menuIcon span::before {
+    position: absolute;
+    content: ' ';
+    height: 4px;
+    width: 35px;
+    background-color: var(--body-color);
 
-  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
-.menuIcon span::after {
-  position: absolute;
-  /* transform: translate(1em, 1em); */
-  margin-top: 12px;
-  content: ' ';
-  height: 4px;
-  width: 35px;
-  background-color: var(--body-color);
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
+  .menuIcon span::after {
+    position: absolute;
+    /* transform: translate(1em, 1em); */
+    margin-top: 12px;
+    content: ' ';
+    height: 4px;
+    width: 35px;
+    background-color: var(--body-color);
 
-  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
-}
+    transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+  }
 
-.menuIcon span.active::before {
-  transform: translateY(150%) rotate(45deg);
+  .menuIcon span.active::before {
+    transform: translateY(150%) rotate(45deg);
+  }
+  .menuIcon span.active::after {
+    transform: translateY(-150%) rotate(-45deg);
+  }
 }
-.menuIcon span.active::after {
-  transform: translateY(-150%) rotate(-45deg);
-  /* box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9); */
-}
-
 /* * Menu icon ^ * */
 
-nav.active {
-  right: 0;
+/* * Nav Drawer * */
+@media screen {
+  nav.active {
+    right: 0;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    height: 100vh;
+    min-width: 200px;
+    width: 33vw;
+    max-width: 1000px;
+    background-color: var(--drawer-bg-color);
+    z-index: 98;
+
+    transition: all 0.4s ease-in-out;
+  }
+
+  nav .nav {
+    margin-left: var(--title-fontSize);
+    margin-top: var(--title-fontSize);
+    margin-bottom: var(--title-fontSize);
+  }
+
+  nav .nav h6 {
+    margin-bottom: var(--body-fontSize);
+    font-weight: 500;
+    color: var(--accent-color);
+  }
+
+  nav li {
+    list-style: none;
+  }
+  nav li a,
+  nav li a:link,
+  nav li a:visited,
+  nav li a:active {
+    text-decoration: none;
+    color: var(--body-color);
+  }
 }
-nav {
-  display: none;
-  flex-direction: column;
-  justify-content: center;
+/* * Nav Drawer^ * */
+
+/* * * * Nav^ * * * */
+
+/* * * Header * * */
+header {
+  display: flex;
+  align-items: center;
+  z-index: 90;
   position: absolute;
-  right: -100%;
-  top: 0;
-  height: 100vh;
-  min-width: 200px;
-  width: 33vw;
-  max-width: 1000px;
-  background-color: var(--drawer-bg-color);
-  z-index: 98;
-
-  transition: all 0.4s ease-in-out;
+  margin-left: calc(100vw / 12);
+  margin-top: calc(100vh / 12);
 }
 
-nav .nav {
-  margin-left: var(--title-fontSize);
-  margin-top: var(--title-fontSize);
-  margin-bottom: var(--title-fontSize);
+header img {
+  height: 30px;
+  transform: translateY(3.5px);
 }
 
-nav .nav h6 {
-  margin-bottom: var(--body-fontSize);
-  font-weight: 500;
-  color: var(--accent-color);
-}
-
-nav li {
-  list-style: none;
-}
-nav li a,
-nav li a:link,
-nav li a:visited,
-nav li a:active {
+header a,
+header a:link,
+header a:visited,
+header a:active {
   text-decoration: none;
-  color: var(--body-color);
+  color: var(--body-two-color);
 }
 
-/* * * Nav^ * * */
+header > a {
+  margin-right: calc(100vw / 18);
+}
+/* * * Header^ * * */
 
 .pages {
   width: 100vw;
@@ -188,33 +220,3 @@ nav li a:active {
   margin: 0 calc((100vw / 12) * 2) 0 calc((100vw / 12) * 2);
   width: calc((100vw / 12) * 10);
 }
-
-/* * * Header * * */
-
-header {
-  display: flex;
-  align-items: center;
-  z-index: 90;
-  position: absolute;
-  margin-left: calc(100vw / 12);
-  margin-top: calc(100vh / 12);
-}
-
-header img {
-  height: 30px;
-  transform: translateY(3.5px);
-}
-
-header a,
-header a:link,
-header a:visited,
-header a:active {
-  text-decoration: none;
-  color: var(--body-two-color);
-}
-
-header > a {
-  margin-right: calc(100vw / 18);
-}
-
-/* * * Header^ * * */
