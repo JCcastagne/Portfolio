@@ -33,7 +33,7 @@
   transform: translate(0, -100%);
 
   animation: jTop 8s ease-in-out forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 #jMid {
@@ -46,7 +46,7 @@
   transform: translate(200%, 0);
 
   animation: jMid 8s ease-in-out 1 forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 #jBot {
@@ -59,7 +59,7 @@
   transform: translate(0, 100%);
 
   animation: jBot 8s ease-in-out 1 forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 #cTop {
@@ -72,7 +72,7 @@
   transform: translate(0, -100%);
 
   animation: cTop 8s ease-in-out 1 forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 #cMid {
@@ -83,7 +83,7 @@
   height: 50px;
 
   animation: cMid 8s ease-in-out 1 forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 #cBot {
@@ -96,7 +96,7 @@
   transform: translate(0, 100%);
 
   animation: cBot 8s ease-in-out 1 forwards;
-  animation-delay: 1s;
+  animation-delay: 1.4s;
 }
 
 /**animations**/
