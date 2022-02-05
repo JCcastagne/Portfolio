@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  position: absolute;
 
   /* transform: translate(0, 50px); */
   transform: translate(calc(50vw - (154px)), calc(50vh - (154px / 4)));
@@ -73,7 +74,7 @@
   position: absolute;
   width: 0px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(150px, 0%);
 
@@ -86,7 +87,7 @@
   position: absolute;
   width: 0px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(150px, 0);
 
@@ -99,7 +100,7 @@
   position: absolute;
   width: 0px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(150px, 0);
 
@@ -112,7 +113,7 @@
   position: absolute;
   width: 1px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(0, 0);
 
@@ -125,7 +126,7 @@
   position: absolute;
   width: 0px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(0, 0);
 
@@ -138,7 +139,7 @@
   position: absolute;
   width: 0px;
   height: 50px;
-  background-color: #2e2e2e;
+  background-color: var(--body-color);
 
   transform: translate(0, 0);
 
@@ -152,7 +153,7 @@
   0% {
     width: 0px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(150px, 0%);
   }
@@ -185,7 +186,7 @@
   }
   100% {
     border-radius: 0 0 0 20px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
     transform: translate(0, -58%);
     width: 150px;
     height: 50px;
@@ -196,7 +197,7 @@
   0% {
     width: 0px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(150px, 0);
   }
@@ -233,7 +234,7 @@
   100% {
     width: 50px;
     height: 0px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(100px, -1px);
   }
@@ -243,7 +244,7 @@
   0% {
     width: 0px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(150px, 0);
   }
@@ -276,7 +277,7 @@
   }
   100% {
     border-radius: 0 0 20px 0;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
     transform: translate(0, 58%);
     width: 150px;
     height: 50px;
@@ -287,7 +288,7 @@
   0% {
     width: 1px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(0, 0);
   }
@@ -322,7 +323,7 @@
     width: 150px;
     height: 50px;
     border-radius: 20px 0 0 0;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
     transform: translate(0, -58%);
   }
 }
@@ -331,7 +332,7 @@
   0% {
     width: 0px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(0, 0);
   }
@@ -368,7 +369,7 @@
   100% {
     width: 50px;
     height: 0px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(0, -1px);
   }
@@ -378,7 +379,7 @@
   0% {
     width: 0px;
     height: 50px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
 
     transform: translate(0, 0);
   }
@@ -411,7 +412,7 @@
   }
   100% {
     border-radius: 0 0 0 20px;
-    background-color: #2e2e2e;
+    background-color: var(--body-color);
     transform: translate(0, 58%);
 
     width: 150px;
