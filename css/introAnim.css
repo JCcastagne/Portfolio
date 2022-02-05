@@ -71,11 +71,11 @@
 #jTop {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 150px;
+  width: 0px;
   height: 50px;
+  background-color: #2e2e2e;
 
-  transform: translate(0, -100%);
+  transform: translate(150px, 0%);
 
   animation: jTop 8s ease-in-out forwards;
   animation-delay: 1.4s;
@@ -84,11 +84,11 @@
 #jMid {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 50px;
+  width: 0px;
   height: 50px;
+  background-color: #2e2e2e;
 
-  transform: translate(200%, 0);
+  transform: translate(150px, 0);
 
   animation: jMid 8s ease-in-out 1 forwards;
   animation-delay: 1.4s;
@@ -97,11 +97,11 @@
 #jBot {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 150px;
+  width: 0px;
   height: 50px;
+  background-color: #2e2e2e;
 
-  transform: translate(0, 100%);
+  transform: translate(150px, 0);
 
   animation: jBot 8s ease-in-out 1 forwards;
   animation-delay: 1.4s;
@@ -110,11 +110,11 @@
 #cTop {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 150px;
+  width: 1px;
   height: 50px;
+  background-color: #2e2e2e;
 
-  transform: translate(0, -100%);
+  transform: translate(0, 0);
 
   animation: cTop 8s ease-in-out 1 forwards;
   animation-delay: 1.4s;
@@ -123,9 +123,11 @@
 #cMid {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 50px;
+  width: 0px;
   height: 50px;
+  background-color: #2e2e2e;
+
+  transform: translate(0, 0);
 
   animation: cMid 8s ease-in-out 1 forwards;
   animation-delay: 1.4s;
@@ -134,11 +136,11 @@
 #cBot {
   content: '';
   position: absolute;
-  background-color: #2e2e2e;
-  width: 150px;
+  width: 0px;
   height: 50px;
+  background-color: #2e2e2e;
 
-  transform: translate(0, 100%);
+  transform: translate(0, 0);
 
   animation: cBot 8s ease-in-out 1 forwards;
   animation-delay: 1.4s;
@@ -185,6 +187,8 @@
     border-radius: 0 0 0 20px;
     background-color: #2e2e2e;
     transform: translate(0, -58%);
+    width: 150px;
+    height: 50px;
   }
 }
 
@@ -274,6 +278,8 @@
     border-radius: 0 0 20px 0;
     background-color: #2e2e2e;
     transform: translate(0, 58%);
+    width: 150px;
+    height: 50px;
   }
 }
 
@@ -313,6 +319,8 @@
   90% {
   }
   100% {
+    width: 150px;
+    height: 50px;
     border-radius: 20px 0 0 0;
     background-color: #2e2e2e;
     transform: translate(0, -58%);
@@ -405,5 +413,8 @@
     border-radius: 0 0 0 20px;
     background-color: #2e2e2e;
     transform: translate(0, 58%);
+
+    width: 150px;
+    height: 50px;
   }
 }
