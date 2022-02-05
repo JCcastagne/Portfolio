@@ -52,27 +52,28 @@ h6 {
 }
 
 .introAnimation {
-  height: 100vh;
-  width: 100vw;
+  height: 158px;
+  width: 308px;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
-  /* transform: translateX(-150px); */
+  /* transform: translate(0, 50px); */
+  transform: translate(calc(50vw - (154px)), calc(50vh - (154px / 4)));
 }
 
 .firstLetter,
 .secondLetter {
   display: flex;
-  height: 100vh;
-  width: 50vw;
+  height: 150px;
+  width: 150px;
 }
 .firstLetter {
-  transform: translate(calc(50vw - 154px), calc(50vh - 50px));
+  transform: translate(-4px, 0);
 }
 .secondLetter {
-  transform: translate(4px, calc(50vh - 50px));
+  transform: translate(4px, 0);
 }
 
 #jTop {
@@ -85,6 +86,7 @@ h6 {
   transform: translate(0, -100%);
 
   animation: jTop 8s ease-in-out forwards;
+  animation-delay: 1s;
 }
 
 #jMid {
@@ -97,6 +99,7 @@ h6 {
   transform: translate(200%, 0);
 
   animation: jMid 8s ease-in-out 1 forwards;
+  animation-delay: 1s;
 }
 
 #jBot {
@@ -109,6 +112,7 @@ h6 {
   transform: translate(0, 100%);
 
   animation: jBot 8s ease-in-out 1 forwards;
+  animation-delay: 1s;
 }
 
 #cTop {
@@ -121,6 +125,7 @@ h6 {
   transform: translate(0, -100%);
 
   animation: cTop 8s ease-in-out 1 forwards;
+  animation-delay: 1s;
 }
 
 #cMid {
@@ -131,6 +136,7 @@ h6 {
   height: 50px;
 
   animation: cMid 8s ease-in-out 1 forwards;
+  animation-delay: 1s;
 }
 
 #cBot {
@@ -143,6 +149,7 @@ h6 {
   transform: translate(0, 100%);
 
   animation: cBot 8s ease-in-out 1 forwards;
+  animation-delay: 1s;
 }
 
 /**animations**/
