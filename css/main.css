@@ -21,6 +21,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 
+:root {
+  --background-color: #fff;
+  --body-color: #2e2e2e;
+  --accent-color: #4db5f0;
+}
+
 html {
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -52,3 +58,94 @@ h6 {
   font-size: 1em;
   font-weight: 400;
 }
+
+/* * * Nav * * */
+
+/* * Menu icon * */
+.menuIcon {
+  position: absolute;
+  /* transform: translate(calc(35px + 1em), -12.5%); */
+  right: calc((100vw / 12) + 1em);
+  top: calc((100vh / 12) - 8px + 1em);
+  z-index: 99;
+  /* padding: 1em; */
+  width: calc(35px + 2em);
+  height: calc(20px + 2em);
+}
+
+.menuIcon span::before {
+  position: absolute;
+  /* transform: translate(1em, 1em); */
+  content: ' ';
+  height: 4px;
+  width: 35px;
+  background-color: var(--body-color);
+
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+.menuIcon span::after {
+  position: absolute;
+  /* transform: translate(1em, 1em); */
+  margin-top: 12px;
+  content: ' ';
+  height: 4px;
+  width: 35px;
+  background-color: var(--body-color);
+
+  transition: all 0.4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
+}
+
+.menuIcon span.active::before {
+  transform: translateY(150%) rotate(45deg);
+}
+.menuIcon span.active::after {
+  transform: translateY(-150%) rotate(-45deg);
+  box-shadow: 1px 1px 5px rgba(100, 100, 100, 0.9);
+}
+
+/* * Menu icon ^ * */
+
+nav.active {
+  right: 0;
+}
+nav {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  right: -100%;
+  top: 0;
+  height: 100vh;
+  min-width: 200px;
+  width: 33vw;
+  max-width: 1000px;
+  background-color: var(--drawer-bg-color);
+  z-index: 98;
+
+  transition: all 0.4s ease-in-out;
+}
+
+nav .nav {
+  margin-left: var(--title-fontSize);
+  margin-top: var(--title-fontSize);
+  margin-bottom: var(--title-fontSize);
+}
+
+nav .nav h6 {
+  margin-bottom: var(--body-fontSize);
+  font-weight: 500;
+  color: var(--accent-color);
+}
+
+nav li {
+  list-style: none;
+}
+nav li a,
+nav li a:link,
+nav li a:visited,
+nav li a:active {
+  text-decoration: none;
+  color: var(--body-color);
+}
+
+/* * * Nav^ * * */
