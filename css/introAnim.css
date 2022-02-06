@@ -1,3 +1,26 @@
+.introAnimation::before {
+  content: '';
+  height: 100vh;
+  width: 100vw;
+  background: #fff;
+  position: absolute;
+  transform: translateY(-40px);
+  animation: bgOut 1.3s forwards 5.1s 1 ease-in-out;
+}
+@keyframes bgOut {
+  0% {
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+  100% {
+    height: 100vh;
+    width: 100vw;
+    transform: translateY(-40px);
+    opacity: 0;
+  }
+}
 .introAnimation {
   height: 158px;
   width: 308px;
@@ -6,8 +29,7 @@
   justify-content: center;
   align-items: center;
   position: absolute;
-
-  /* transform: translate(0, 50px); */
+  /* z-index: 991; */
   transform: translate(calc(50vw - (154px)), calc(50vh - (154px / 4)));
 }
 
@@ -19,11 +41,11 @@
 }
 .firstLetter {
   transform: translate(-4px, 0);
-  animation: jOut 1s forwards 6.4s 1 ease-in-out;
+  animation: jOut 1s forwards 5s 1 ease-in-out;
 }
 .secondLetter {
   transform: translate(4px, 0);
-  animation: cOut 1s forwards 6.4s 1 ease-in-out;
+  animation: cOut 1s forwards 5s 1 ease-in-out;
 }
 
 @keyframes jOut {
@@ -79,7 +101,6 @@
   transform: translate(150px, 0%);
 
   animation: jTop 8s ease-in-out forwards;
-  animation-delay: 1.4s;
 }
 
 #jMid {
@@ -92,7 +113,6 @@
   transform: translate(150px, 0);
 
   animation: jMid 8s ease-in-out 1 forwards;
-  animation-delay: 1.4s;
 }
 
 #jBot {
@@ -105,7 +125,6 @@
   transform: translate(150px, 0);
 
   animation: jBot 8s ease-in-out 1 forwards;
-  animation-delay: 1.4s;
 }
 
 #cTop {
@@ -118,7 +137,6 @@
   transform: translate(0, 0);
 
   animation: cTop 8s ease-in-out 1 forwards;
-  animation-delay: 1.4s;
 }
 
 #cMid {
@@ -131,7 +149,6 @@
   transform: translate(0, 0);
 
   animation: cMid 8s ease-in-out 1 forwards;
-  animation-delay: 1.4s;
 }
 
 #cBot {
@@ -144,7 +161,6 @@
   transform: translate(0, 0);
 
   animation: cBot 8s ease-in-out 1 forwards;
-  animation-delay: 1.4s;
 }
 
 /**animations**/
