@@ -5,6 +5,8 @@
   background: #fff;
   position: absolute;
   transform: translateY(-40px);
+}
+.introAnimation.active::before {
   animation: bgOut 1.3s forwards 5.1s 1 ease-in-out;
 }
 @keyframes bgOut {
@@ -14,20 +16,14 @@
     transform: translateY(-40px);
     opacity: 1;
   }
-  99% {
+  100% {
     height: 100vh;
     width: 100vw;
     transform: translateY(-40px);
     opacity: 0;
   }
-  100% {
-    height: 100vh;
-    width: 100vw;
-    transform: translateY(-100vw);
-    opacity: 0;
-  }
 }
-.introAnimation {
+.introAnimation.active {
   height: 158px;
   width: 308px;
 
@@ -39,17 +35,17 @@
   transform: translate(calc(50vw - (154px)), calc(50vh - (154px / 4)));
 }
 
-.firstLetter,
-.secondLetter {
+.firstLetter.active,
+.secondLetter.active {
   display: flex;
   height: 150px;
   width: 150px;
 }
-.firstLetter {
+.firstLetter.active {
   transform: translate(-4px, 0);
   animation: jOut 1s forwards 5s 1 ease-in-out;
 }
-.secondLetter {
+.secondLetter.active {
   transform: translate(4px, 0);
   animation: cOut 1s forwards 5s 1 ease-in-out;
 }
@@ -61,18 +57,11 @@
     transform: scale(1);
     filter: opacity(1);
   }
-  99% {
-    transform-origin: right top;
-    transform: translate(-4px, 0);
-    transform: scale(30);
-    filter: opacity(0);
-  }
   100% {
     transform-origin: right top;
     transform: translate(-4px, 0);
     transform: scale(30);
     filter: opacity(0);
-    display: none;
   }
 }
 @keyframes cOut {
@@ -82,22 +71,15 @@
     transform: scale(1);
     filter: opacity(1);
   }
-  99% {
+  100% {
     transform-origin: left top;
     transform: translate(4px, 0);
     transform: scale(30);
     filter: opacity(0);
   }
-  100% {
-    transform-origin: right top;
-    transform: translate(-4px, 0);
-    transform: scale(30);
-    filter: opacity(0);
-    display: none;
-  }
 }
 
-#jTop {
+#jTop.active {
   content: '';
   position: absolute;
   width: 0px;
@@ -109,7 +91,7 @@
   animation: jTop 8s ease-in-out forwards;
 }
 
-#jMid {
+#jMid.active {
   content: '';
   position: absolute;
   width: 0px;
@@ -121,7 +103,7 @@
   animation: jMid 8s ease-in-out 1 forwards;
 }
 
-#jBot {
+#jBot.active {
   content: '';
   position: absolute;
   width: 0px;
@@ -133,7 +115,7 @@
   animation: jBot 8s ease-in-out 1 forwards;
 }
 
-#cTop {
+#cTop.active {
   content: '';
   position: absolute;
   width: 1px;
@@ -145,7 +127,7 @@
   animation: cTop 8s ease-in-out 1 forwards;
 }
 
-#cMid {
+#cMid.active {
   content: '';
   position: absolute;
   width: 0px;
@@ -157,7 +139,7 @@
   animation: cMid 8s ease-in-out 1 forwards;
 }
 
-#cBot {
+#cBot.active {
   content: '';
   position: absolute;
   width: 0px;
