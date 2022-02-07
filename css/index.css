@@ -147,7 +147,7 @@
 }
 
 #experience .item {
-  width: calc(100vw / 2.4);
+  width: calc(100vw / 3);
   margin-bottom: calc(var(--body-fontSize) * 2);
 }
 
@@ -210,7 +210,7 @@
 
 #work h3,
 #work h4 {
-  width: calc((100vw / 12) * 2);
+  margin-right: 0;
 }
 
 #work .wrapper > div div:nth-of-type(1) {
@@ -220,23 +220,23 @@
 #work div:nth-of-type(2) {
   display: flex;
   justify-content: center;
-  width: calc(100vw / 2);
+  width: 100%;
 }
 
 #work div:nth-of-type(2) img {
-  width: calc((100vw / 12) * 5);
-  max-width: 700px;
-  transform: translateX(-12%);
+  width: calc((100vw / 12) * 3);
+  max-width: 600px;
 }
 
 #work button {
   display: flex;
   align-items: center;
-  padding: var(--body-fontSize);
-  width: 66%;
+  padding: var(--body-fontSize) calc(var(--body-fontSize) * 2);
+  padding-left: var(--body-fontSize);
+  width: calc((100vw / 6) * 1.33);
   margin-top: var(--title-fontSize);
   bottom: calc((-400vh) + ((100vh / 12) * 4));
-  background-color: var(--accent-color);
+  background-color: var(--body-color);
   border: none;
 }
 
@@ -255,7 +255,7 @@
   text-decoration: none;
   font-weight: 500;
   font-size: var(--body-fontSize);
-  color: var(--body-color);
+  color: #fff;
 }
 
 /* Work^ */
