@@ -1,11 +1,29 @@
 /* * Home page * */
 
 #home h1 {
+  /*#BABABA*/
   font-size: var(--heroBanner-fontSize);
   font-weight: 600;
   line-height: 72px;
   max-width: 1000px;
+
+  color: #dedede;
   margin-bottom: calc(var(--title-fontSize) / 2);
+  mix-blend-mode: difference;
+}
+
+#home .wrapper {
+  background: url(../img/pictureFrame.png);
+  background-repeat: no-repeat;
+  /* background-position: 80%; */
+  background-position: right;
+  background-color: white;
+  /* background-color: radial-gradient(
+    115.97% 274.94% at 0% 11.2%,
+    #ffffff 0%,
+    #d4d4d4 100%
+  ); */
+  background-size: calc((100vh / 12) * 8.5);
 }
 
 #home h2 {
