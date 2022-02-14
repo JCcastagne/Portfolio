@@ -12,18 +12,26 @@
   mix-blend-mode: difference;
 }
 
+.pages #home {
+  background-color: white;
+  /* justify-content: initial; */
+}
+
 #home .wrapper {
-  background: url(../img/pictureFrame.png);
+  /* background: url(../img/pictureFrame.png); */
+  /* transform: translateX(calc(100vh / -6)); */
+  background: url(../img/headshot_wBlur.png);
   background-repeat: no-repeat;
   /* background-position: 80%; */
-  background-position: right;
+  background-position: center right;
   background-color: white;
-  /* background-color: radial-gradient(
-    115.97% 274.94% at 0% 11.2%,
-    #ffffff 0%,
-    #d4d4d4 100%
-  ); */
-  background-size: calc((100vh / 12) * 8.5);
+  min-width: calc((100vw / 12) * 10);
+  max-width: 1100px;
+  background-size: calc(((100vh / 12) * 11));
+}
+
+#home .wrapper > * {
+  margin-left: calc(100vw / 12);
 }
 
 #home h2 {
