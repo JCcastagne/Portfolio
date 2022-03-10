@@ -27,15 +27,18 @@
 }
 
 .heroBanner .picture {
+  /* display: none; */
   height: 66vh;
   width: calc(66vh / 1.1578231293);
-  margin-left: calc((66vh / -1.1578231293) / 2);
+  margin-left: calc((66vh / -1.1578231293) / 3);
+  z-index: 1;
 }
 
 .heroBanner .pictureBlur {
-  height: 66vh;
+  height: calc(66vh / 1.1578231293);
   position: absolute;
-  transform: translate(-50%, 0);
+  transform: translate(-25%, 150px) scale(0.7696357488);
+  filter: blur(126px);
 }
 
 #home h1 {
@@ -48,6 +51,7 @@
   color: #dedede;
   margin-bottom: calc(var(--title-fontSize) / 2);
   mix-blend-mode: difference;
+  z-index: 2;
 }
 
 #home h2 {
