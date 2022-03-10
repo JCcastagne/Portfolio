@@ -37,8 +37,8 @@
 .heroBanner .pictureBlur {
   height: calc(66vh / 1.1578231293);
   position: absolute;
-  transform: translate(-25%, 150px) scale(0.7696357488);
-  filter: blur(126px);
+  transform: translate(-30%, 15%);
+  filter: blur(152px);
 }
 
 #home h1 {
