@@ -86,7 +86,7 @@
   display: flex;
   align-items: center;
   width: calc((100vw / 12) * 2);
-  margin-top: var(--heroBanner-fontSize);
+  margin-top: var(--header-fontSize);
 }
 
 #home .button img {
@@ -194,15 +194,13 @@
 
 #experience .item {
   width: calc(100vw / 3);
-  margin-bottom: calc(var(--body-fontSize) * 2);
+  margin-bottom: calc(var(--body-fontSize) * 1.66);
 }
 
 #experience .item h5 {
-  font-size: var(--title-fontSize);
   font-weight: 500;
   color: var(--accent-color);
-  line-height: var(--title-fontSize);
-  margin-bottom: calc(var(--body-fontSize) / 3);
+  margin-bottom: calc(var(--body-fontSize) / 6);
 }
 
 #experience .item p {
@@ -220,8 +218,8 @@
   height: 5px;
   position: absolute;
   background-color: var(--body-two-color);
-  border-radius: 99px;
-  transform: translate(-300%, 233%);
+  opacity: 0.33;
+  transform: translate(-300%, 200%);
 }
 
 #experience .item ul li {
@@ -233,31 +231,25 @@
 /* About */
 
 #about div:nth-of-type(2) {
-  transform: translate(0, 42%);
+  /* transform: translate(0, 42%); */
 }
 
-#about div:nth-of-type(2) h5 {
-  font-size: var(--title-fontSize);
+#about div h5 {
+  font-size: var(--body-fontSize);
   font-weight: 500;
   font-style: italic;
   color: var(--accent-color);
-  line-height: var(--title-fontSize);
   margin-bottom: var(--body-fontSize);
 }
 
-#about div:nth-of-type(2) p {
+#about div p {
   max-width: calc((100vw / 12) * 6);
-  margin-bottom: calc(var(--body-fontSize) / 2);
+  margin-bottom: calc(var(--body-fontSize) / 3);
 }
 
 /* About^ */
 
 /* Work */
-
-#work h3,
-#work h4 {
-  margin-right: 0;
-}
 
 #work .wrapper > div div:nth-of-type(1) {
   transform: translateY(25%);
