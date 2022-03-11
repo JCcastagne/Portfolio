@@ -5,15 +5,13 @@
 }
 
 #home .wrapper {
-  min-width: calc((100vw / 12) * 10);
-  max-width: 1100px;
-}
-
-#home .wrapper {
   display: flex;
   justify-content: centers;
   align-items: center;
   flex-direction: row;
+
+  min-width: calc((100vw / 12) * 10);
+  max-width: 1100px;
 }
 
 .headerText {
@@ -297,3 +295,60 @@
 }
 
 /* Work^ */
+
+@media screen and (max-width: 600px) {
+  body {
+    font-size: var(--mobile-fontSize);
+  }
+
+  .heroBanner {
+    position: absolute;
+    top: calc(17px + 30px + 48px);
+    left: 34px;
+    max-height: none;
+  }
+  .heroBanner .picture {
+    height: initial;
+    width: calc(100vw - 103px);
+    max-width: 276px;
+    margin-left: 0;
+  }
+  .heroBanner .pictureBlur {
+    /* display: none; */
+    height: initial;
+    width: calc(100vw - 103px);
+    max-width: 276px;
+  }
+  .headerText {
+    position: absolute;
+    top: calc(17px + 30px + 48px + 282px);
+  }
+  #home h1 {
+    font-size: calc(var(--mobile-fontSize) * 3);
+    line-height: calc(var(--mobile-fontSize) * 3);
+    margin-bottom: calc((var(--mobile-fontSize)) / 2);
+    padding-right: 34px;
+  }
+  #home h2 {
+    padding-right: 34px;
+    margin-bottom: calc((var(--mobile-fontSize)));
+  }
+  #home .button a,
+  #home .button a:link,
+  #home .button a:visited,
+  #home .button a:active {
+    text-decoration: none;
+    color: var(--drawer-bg-color);
+    font-weight: 500;
+  }
+  #home .button {
+    width: initial;
+    background-color: var(--body-color);
+    padding: 13px 17px;
+    width: 100%;
+    margin-top: calc((var(--mobile-fontSize)));
+  }
+  #home .button img {
+    filter: saturate(0) brightness(100);
+  }
+}
