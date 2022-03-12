@@ -462,19 +462,17 @@
   /* Work */
 
   #work .wrapper > div div:nth-of-type(1) {
-    transform: translateY(0);
+    transform: translateY(-100%);
   }
   #work div:nth-of-type(2) img {
     position: absolute;
-    transform: translateY(-11%);
+    transform: translateY(-36%);
     width: calc(100vw - 68px);
     max-width: 600px;
-    z-index: -1;
   }
   #work button {
     padding: 13px 17px;
-    width: 100%;
-    margin-top: var(--title-fontSize);
+    width: calc(100% + 34px);
   }
 
   /* Work^ */
