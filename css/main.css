@@ -234,7 +234,7 @@ header > a {
   }
   header img {
     height: 30px;
-    transform: translate(15px, -7.5px);
+    transform: translate(17px, -7.5px);
   }
   header a:nth-of-type(2),
   header a:nth-of-type(3),

@@ -314,7 +314,9 @@
     margin-left: 0;
   }
   .heroBanner .pictureBlur {
-    /* display: none; */
+    height: initial;
+    width: calc(100vw - 103px);
+    transform: translate(-30%, 7%);
     height: initial;
     width: calc(100vw - 103px);
     max-width: 276px;
