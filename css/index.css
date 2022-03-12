@@ -297,6 +297,7 @@
 /* Work^ */
 
 @media screen and (max-width: 600px) {
+  /* * Home page * */
   body {
     font-size: var(--mobile-fontSize);
   }
@@ -353,4 +354,34 @@
   #home .button img {
     filter: saturate(0) brightness(100);
   }
+  /* * Home page^ * */
+
+  /* * Pages * */
+
+  .page .wrapper > div {
+    flex-direction: column;
+  }
+  .counter {
+    font-size: var(--mobile-counter-fontSize);
+    line-height: var(--mobile-counter-fontSize);
+    /* top: 0px; */
+    /* left: initial; */
+    transform: translate(0);
+  }
+  .page h3 {
+    font-size: var(--mobile-header-fontSize);
+    margin-bottom: calc(var(--mobile-header-fontSize) / 3) !important;
+  }
+  .page h4,
+  .page h5 {
+    font-size: var(--mobile-title-fontSize);
+    margin-bottom: calc(var(--mobile-title-fontSize) / 3) !important;
+  }
+  .page h3,
+  .page h4 {
+    width: initial;
+    margin-right: 0;
+  }
+
+  /* * Pages ^ * */
 }
