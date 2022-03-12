@@ -384,4 +384,44 @@
   }
 
   /* * Pages ^ * */
+
+  /* Skills */
+
+  #skills .lists {
+    margin-top: var(--mobile-header-fontSize) !important;
+    flex-direction: column;
+    transform: translate(0);
+  }
+  #skills .list {
+    margin-top: var(--mobile-title-fontSize);
+    width: initial;
+  }
+  #skills .list ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen {
+    .list ul li:nth-of-type(1),
+    .list ul li:nth-of-type(2) {
+      opacity: 100%;
+    }
+    .list ul li:nth-of-type(3),
+    .list ul li:nth-of-type(4) {
+      opacity: 80%;
+    }
+    .list ul li:nth-of-type(5),
+    .list ul li:nth-of-type(6) {
+      opacity: 60%;
+    }
+    .list ul li:nth-of-type(7),
+    .list ul li:nth-of-type(8) {
+      opacity: 40%;
+    }
+    .list ul li:nth-of-type(9),
+    .list ul li:nth-of-type(10) {
+      opacity: 20%;
+    }
+  }
+
+  /* Skills^ */
 }
