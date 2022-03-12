@@ -33,6 +33,11 @@
   --header-fontSize: 48px;
   --title-fontSize: 24px;
   --body-fontSize: 18px;
+
+  --mobile-counter-fontSize: 204px;
+  --mobile-header-fontSize: 24px;
+  --mobile-title-fontSize: 17px;
+  --mobile-fontSize: 16px;
 }
 
 html {
@@ -219,4 +224,36 @@ header > a {
 
   margin: 0 calc((100vw / 12) * 2) 0 calc((100vw / 12) * 2);
   width: calc((100vw / 12) * 10);
+}
+
+@media screen and (max-width: 600px) {
+  .menuIcon {
+    /* width: 35px; */
+    right: calc(35px - 2em);
+    top: 34px;
+  }
+  header {
+    margin-left: 17px;
+    margin-top: 34px;
+  }
+  header img {
+    height: 30px;
+    transform: translate(17px, -7.5px);
+  }
+  header a:nth-of-type(2),
+  header a:nth-of-type(3),
+  header a:nth-of-type(4),
+  header a:nth-of-type(5) {
+    display: none;
+  }
+  #home .wrapper {
+    min-width: initial;
+    width: initial;
+    margin: 0;
+    margin-left: 34px;
+  }
+  .page .wrapper {
+    margin: 0 34px;
+    width: initial;
+  }
 }
