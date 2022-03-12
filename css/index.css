@@ -424,4 +424,23 @@
   }
 
   /* Skills^ */
+
+  /* Experience */
+
+  #experience .items {
+    margin-top: var(--mobile-header-fontSize) !important;
+    transform: translate(0);
+  }
+  #experience .item {
+    width: initial;
+    margin-bottom: 0;
+  }
+  #experience .item p {
+    color: var(--body-color);
+  }
+  #experience .item ul {
+    display: none;
+  }
+
+  /* Experience^ */
 }
