@@ -443,4 +443,19 @@
   }
 
   /* Experience^ */
+
+  /* About */
+
+  #about div:nth-of-type(2) {
+    margin-top: var(--mobile-header-fontSize);
+  }
+  #about div p {
+    max-width: initial;
+    margin-bottom: calc(var(--body-fontSize) / 1);
+  }
+  #about div:nth-of-type(2) p:nth-of-type(2) {
+    display: none;
+  }
+
+  /* About^ */
 }
