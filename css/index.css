@@ -458,4 +458,24 @@
   }
 
   /* About^ */
+
+  /* Work */
+
+  #work .wrapper > div div:nth-of-type(1) {
+    transform: translateY(0);
+  }
+  #work div:nth-of-type(2) img {
+    position: absolute;
+    transform: translateY(-11%);
+    width: calc(100vw - 68px);
+    max-width: 600px;
+    z-index: -1;
+  }
+  #work button {
+    padding: 13px 17px;
+    width: 100%;
+    margin-top: var(--title-fontSize);
+  }
+
+  /* Work^ */
 }
