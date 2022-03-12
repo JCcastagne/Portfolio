@@ -33,6 +33,10 @@
   --header-fontSize: 48px;
   --title-fontSize: 24px;
   --body-fontSize: 18px;
+
+  --mobile-counter-fontSize: 204px;
+  --mobile-header-fontSize: 24px;
+  --mobile-title-fontSize: 17px;
   --mobile-fontSize: 16px;
 }
 
@@ -247,5 +251,9 @@ header > a {
     width: initial;
     margin: 0;
     margin-left: 34px;
+  }
+  .page .wrapper {
+    margin: 0 34px;
+    width: initial;
   }
 }
