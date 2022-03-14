@@ -52,9 +52,6 @@ ul {
 
 /* defaults^ */
 
-#home .info {
-}
-
 .iPhoneMockups {
   display: flex;
   align-items: flex-end;
@@ -152,3 +149,61 @@ ul {
 }
 
 /* homepage animations^ */
+
+@media screen and (max-width: 600px) {
+  /* defaults */
+
+  body {
+    font-size: var(--mobile-fontSize);
+  }
+  .page h3 {
+    font-size: var(--mobile-header-fontSize);
+    margin-bottom: calc(var(--mobile-header-fontSize) / 3) !important;
+  }
+  .page h4,
+  .page h5 {
+    font-size: var(--mobile-title-fontSize);
+    margin-bottom: calc(var(--mobile-title-fontSize) / 3) !important;
+  }
+  .info ul li::before {
+    content: ' ';
+    width: 5px;
+    height: 5px;
+    position: absolute;
+    background-color: var(--body-two-color);
+    opacity: 0.33;
+    transform: translate(-300%, 200%);
+  }
+
+  .page .info {
+    min-width: initial;
+  }
+
+  .page .wrapper {
+    margin: 0 34px !important;
+    flex-direction: column;
+  }
+
+  /* defaults^ */
+
+  .iPhoneMockups {
+    margin-top: calc(var(--mobile-header-fontSize) * 3);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  .iPhoneMockups img:nth-of-type(1) {
+    height: calc((100vw / 12) * 6.5);
+    transform: translateX(105%);
+  }
+
+  .iPhoneMockups img:nth-of-type(2) {
+    height: calc((100vw / 12) * 7.5);
+  }
+
+  .iPhoneMockups img:nth-of-type(3) {
+    height: calc((100vw / 12) * 6.5);
+    transform: translateX(-105%);
+  }
+}
