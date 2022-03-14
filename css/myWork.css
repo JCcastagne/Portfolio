@@ -2,9 +2,7 @@
 
 .page .wrapper {
   align-items: center;
-  justify-content: space-between;
   flex-direction: row;
-  margin: 0 calc(100vw / 12);
 }
 
 .wrapper .info {
@@ -12,8 +10,9 @@
   flex-direction: column;
 }
 
-#home .info ul {
-  list-style: initial;
+.page .info {
+  min-width: 430px;
+  padding-right: 34px;
 }
 
 h3 {
@@ -54,17 +53,15 @@ ul {
 /* defaults^ */
 
 #home .info {
-  /* max-width: calc((100vw / 12) * 3); */
 }
 
 .iPhoneMockups {
-  margin: auto;
   display: flex;
   align-items: flex-end;
 }
 
 .iPhoneMockups img:nth-of-type(1) {
-  height: calc((100vh / 12) * 7);
+  height: calc((100vh / 12) * 5.5);
   transform: translateX(105%);
   z-index: 1;
 
@@ -73,12 +70,12 @@ ul {
 }
 
 .iPhoneMockups img:nth-of-type(2) {
-  height: calc((100vh / 12) * 8);
+  height: calc((100vh / 12) * 6.5);
   z-index: 2;
 }
 
 .iPhoneMockups img:nth-of-type(3) {
-  height: calc((100vh / 12) * 7);
+  height: calc((100vh / 12) * 5.5);
   transform: translateX(-105%);
   z-index: 1;
 
