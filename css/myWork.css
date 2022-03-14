@@ -188,6 +188,11 @@ ul {
     transform: translate(-300%, 200%);
   }
 
+  .button {
+    margin-top: var(--mobile-header-fontSize);
+    width: initial;
+  }
+
   /* defaults^ */
 
   /* home */
@@ -225,8 +230,7 @@ ul {
     flex-wrap: nowrap;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
-    padding: calc(var(--mobile-header-fontSize) * 3) 17px
-      calc(var(--mobile-header-fontSize) * 3) 34px;
+    padding: 51px 17px calc(var(--mobile-header-fontSize) * 3) 34px;
   }
   .slides::-webkit-scrollbar {
     display: none;
