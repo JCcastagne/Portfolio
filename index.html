@@ -14,9 +14,18 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>JC Castagne</title>
+    <title>JC Castagne | Portfolio</title>
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/introAnim.css" />
+
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon/favicon-16x16.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+    <link rel="mask-icon" href="./favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#ffc40d" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
@@ -36,6 +45,19 @@
   </head>
 
   <body>
+    <div class="introAnimation">
+      <div class="firstLetter">
+        <span id="jTop"></span>
+        <span id="jMid"></span>
+        <span id="jBot"></span>
+      </div>
+      <div class="secondLetter">
+        <span id="cTop"></span>
+        <span id="cMid"></span>
+        <span id="cBot"></span>
+      </div>
+    </div>
+
     <div class="menuIcon"><span></span></div>
     <nav class="hamMenu">
       <div class="nav home">
@@ -64,9 +86,12 @@
             >
           </li>
           <li>
-            <a href="https://www.fiverr.com/jccastagne" target="_blank"
-              >HIRE ME</a
+            <a href="https://www.instagram.com/jc.castagne/" target="_blank"
+              >INSTAGRAM</a
             >
+          </li>
+          <li>
+            <a href="https://www.blog.jccastagne.com" target="_blank">BLOG</a>
           </li>
         </ul>
       </div>
@@ -75,7 +100,7 @@
         <ul>
           <li>
             <a href="https://www.fiverr.com/jccastagne" target="_blank"
-              >FIVERR</a
+              >HIRE ME</a
             >
           </li>
           <li><a href="mailto: jc.castagne96@gmail.com">EMAIL</a></li>
@@ -94,30 +119,40 @@
 
     <div class="pages">
       <section id="home" class="page">
-        <span id="homeBG"></span>
         <div class="wrapper">
-          <h1>JEAN-CHRISTOPHE CASTAGNE</h1>
-          <h2>Frontend Developer and UI/UX Designer for both Web and Mobile</h2>
-          <ul class="linkIcons">
-            <li>
-              <a href="https://dribbble.com/jccastagne" target="_blank"
-                ><img src="./img/icons/dribbble.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://github.com/jccastagne" target="_blank"
-                ><img src="./img/icons/github.svg" alt=""
-              /></a>
-            </li>
-            <li>
-              <a href="https://www.linkedin.com/in/jc-castagne/" target="_blank"
-                ><img src="./img/icons/linkedin.svg" alt=""
-              /></a>
-            </li>
-          </ul>
-          <div class="button">
-            <a href="./myWork.html">VIEW MY WORK</a>
-            <img src="./img/icons/chevron-right-blue.svg" />
+          <div class="headerText">
+            <h1>JEAN-CHRISTOPHE CASTAGNE</h1>
+            <h2>
+              Frontend Developer and UI/UX Designer for both Web and Mobile
+            </h2>
+            <ul class="linkIcons">
+              <li>
+                <a href="https://dribbble.com/jccastagne" target="_blank"
+                  ><img src="./img/icons/dribbble.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://github.com/jccastagne" target="_blank"
+                  ><img src="./img/icons/github.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/jc-castagne/"
+                  target="_blank"
+                  ><img src="./img/icons/linkedin.svg" alt=""
+                /></a>
+              </li>
+            </ul>
+            <div class="button">
+              <a href="./myWork.html">My featured projects</a>
+              <img src="./img/icons/chevron-right-blue.svg" />
+            </div>
+          </div>
+
+          <div class="heroBanner">
+            <img class="pictureBlur" src="./img/pictureFrame.png" />
+            <img class="picture" src="./img/pictureFrame.png" />
           </div>
         </div>
       </section>
@@ -144,7 +179,7 @@
                   <li>Cordova</li>
                   <li>PWAs</li>
                   <li>Firebase</li>
-                  <li>Non-SQL Databases</li>
+                  <li>Databases</li>
                   <li>Express</li>
                   <li>NodeJS</li>
                   <li>APIs</li>
@@ -158,9 +193,9 @@
                   <li>Adobe Photoshop</li>
                   <li>Adobe Illustrator</li>
                   <li>Case studies</li>
-                  <li>Market and user research</li>
+                  <li>Research</li>
                   <li>Design iteration</li>
-                  <li>Interactive prototyping</li>
+                  <li>Prototyping</li>
                   <li>Information architecture</li>
                   <li>Usability testing</li>
                 </ul>
@@ -234,22 +269,27 @@
           <div>
             <div>
               <h3>ABOUT</h3>
-              <h4>Always learning, always creating</h4>
+              <h4>
+                Self-motivated, disciplined and reliable. What I do is what I
+                truly enjoy.
+              </h4>
             </div>
 
             <div>
               <h5>"I truly love what I do"</h5>
               <p>
-                I am always creating or learning something. If I'm not working
-                or at school, I still mainly do the same things.
+                UX Designer & Front-end Developer, located in Ottawa, with a
+                passion for all things tech.
               </p>
               <p>
-                If it's creating websites or mobile apps, designing prototypes,
-                creating scripts or making music, that is where I'm happy.
+                Having a background in project management, planning and top
+                customer service, I come into the web and mobile design
+                industry, driven by customer and user satisfaction.
               </p>
               <p>
-                I am lucky to have found my passion at a young age, which I find
-                to be displayed quite well throughout my work.
+                My goal with every project is always to ensure the client’s
+                visions and needs are achieved, while also creating an
+                effortless and seamless interface.
               </p>
             </div>
           </div>
@@ -262,9 +302,9 @@
           <div>
             <div>
               <h3>MY WORK</h3>
-              <h4>My latest work, making both customers and employers happy</h4>
+              <h4>My latest work; making both customers and users happy</h4>
               <button>
-                <a href="./myWork.html">VIEW MY WORK</a>
+                <a href="./myWork.html">View my work</a>
                 <img src="./img/icons/chevron-right-white.svg" />
               </button>
             </div>
@@ -278,5 +318,6 @@
     </div>
 
     <script src="./js/hamMenu.js"></script>
+    <script src="./js/introAnim.js"></script>
   </body>
 </html>
