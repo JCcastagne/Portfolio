@@ -232,6 +232,21 @@ header > a {
     right: calc(35px - 2em);
     top: 34px;
   }
+  nav {
+    box-shadow: 0 68px 544px var(--body-color);
+  }
+  nav .nav {
+    margin-left: var(--mobile-title-fontSize) !important;
+    margin-top: var(--mobile-title-fontSize) !important;
+    margin-bottom: var(--mobile-title-fontSize) !important;
+  }
+  .nav h6 {
+    font-size: var(--mobile-header-fontSize);
+    margin-bottom: calc(var(--mobile-header-fontSize) / 3) !important;
+  }
+  .nav li {
+    font-size: var(--mobile-fontSize);
+  }
   header {
     margin-left: 17px;
     margin-top: 34px;
