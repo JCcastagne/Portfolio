@@ -361,22 +361,38 @@
   .page .wrapper > div {
     flex-direction: column;
   }
+
   .counter {
     font-size: var(--mobile-counter-fontSize);
     line-height: var(--mobile-counter-fontSize);
-    /* top: 0px; */
-    /* left: initial; */
-    transform: translate(0);
+    transform: translate(0, 0);
   }
+  @media screen {
+    #skills .counter {
+      top: 113vh;
+    }
+    #experience .counter {
+      top: 213vh;
+    }
+    #about .counter {
+      top: 313vh;
+    }
+    #work .counter {
+      top: 413vh;
+    }
+  }
+
   .page h3 {
     font-size: var(--mobile-header-fontSize);
     margin-bottom: calc(var(--mobile-header-fontSize) / 3) !important;
   }
+
   .page h4,
   .page h5 {
     font-size: var(--mobile-title-fontSize);
     margin-bottom: calc(var(--mobile-title-fontSize) / 3) !important;
   }
+
   .page h3,
   .page h4 {
     width: initial;
