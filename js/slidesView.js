@@ -1,6 +1,12 @@
 function init () {
   //listener for screen sizes. Cancel "slides" animations if on mobile.
   let animationsAreOn = true
+  //check initial window width
+  if (window.innerWidth <= 600) {
+    console.log(window.innerWidth)
+    animationsAreOn = false
+  }
+  //add listener to window width if changes
   window.addEventListener('resize', turnOffAnimations)
 
   function turnOffAnimations () {
