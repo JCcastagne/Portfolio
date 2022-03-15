@@ -485,10 +485,13 @@
     transform: translateY(-36%);
     width: calc(100vw - 68px);
     max-width: 600px;
+    z-index: -1;
   }
   #work button {
     padding: 13px 17px;
     width: calc(100% + 34px);
+    background-color: rgba(77, 180, 240, 0.77);
+    backdrop-filter: blur(1px);
   }
 
   /* Work^ */
