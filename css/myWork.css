@@ -11,11 +11,11 @@
 .wrapper .info {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  /* width: 50%; */
 }
 
-figure {
-  width: 60%;
+.wrapper figure {
+  /* width: 60%; */
   height: 100%;
 }
 
@@ -108,12 +108,15 @@ ul {
   .page .wrapper {
     margin: 0 !important;
     flex-direction: column;
-    justify-content: initial;
+    justify-content: center;
   }
 
   .page .info {
-    min-width: initial;
     margin-left: 34px;
+  }
+
+  .wrapper figure {
+    display: none;
   }
 
   .page h3 {
