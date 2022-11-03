@@ -3,16 +3,24 @@
 .page .wrapper {
   align-items: center;
   flex-direction: row;
+  justify-content: space-between;
+  gap: 34px;
 }
 
 .wrapper .info {
   display: flex;
   flex-direction: column;
+  width: 50%;
+}
+
+figure {
+  width: 50%;
+  /* overflow: hidden; */
 }
 
 .page .info {
-  min-width: 430px;
-  padding-right: 34px;
+  /* min-width: 430px; */
+  max-width: 642px;
 }
 
 h3 {
@@ -32,44 +40,53 @@ ul {
   margin-bottom: var(--title-fontSize);
 }
 
-.primaryButton,
-.secondaryButton {
-  display: flex;
-  align-items: center;
-  padding: var(--body-fontSize) calc(var(--body-fontSize) * 2);
-  padding-left: var(--body-fontSize);
-  margin-bottom: calc(var(--body-fontSize) * 0.66);
-  width: calc((100vw / 6) * 1.33);
-  bottom: calc((-400vh) + ((100vh / 12) * 4));
-  background-color: var(--body-color);
-  border: none;
-}
-.secondaryButton {
-  background-color: var(--accent-color);
-}
+/* buttons */
+@media screen {
+  .primaryButton,
+  .secondaryButton {
+    display: flex;
+    align-items: center;
+    padding: var(--body-fontSize) calc(var(--body-fontSize) * 2);
+    padding-left: var(--body-fontSize);
+    margin-bottom: calc(var(--body-fontSize) * 0.66);
+    width: calc((100vw / 6) * 1.33);
+    bottom: calc((-400vh) + ((100vh / 12) * 4));
+    background-color: var(--body-color);
+    border: none;
+    min-width: max-content;
+    width: 75%;
+    max-width: 378px;
+  }
+  .secondaryButton {
+    background-color: var(--accent-color);
+    min-width: max-content;
+    width: 25%;
+    max-width: 251px;
+  }
 
-.primaryButton img,
-.secondaryButton img {
-  margin-left: calc(var(--body-fontSize) / 2);
-}
+  .primaryButton img,
+  .secondaryButton img {
+    margin-left: calc(var(--body-fontSize) / 2);
+  }
 
-.primaryButton a,
-.secondaryButton a {
-  background-color: none;
-}
+  .primaryButton a,
+  .secondaryButton a {
+    background-color: none;
+  }
 
-.primaryButton a,
-.primaryButton a:link,
-.primaryButton a:visited,
-.primaryButton a:active,
-.secondaryButton a,
-.secondaryButton a:link,
-.secondaryButton a:visited,
-.secondaryButton a:active {
-  text-decoration: none;
-  font-weight: 500;
-  font-size: var(--body-fontSize);
-  color: #fff;
+  .primaryButton a,
+  .primaryButton a:link,
+  .primaryButton a:visited,
+  .primaryButton a:active,
+  .secondaryButton a,
+  .secondaryButton a:link,
+  .secondaryButton a:visited,
+  .secondaryButton a:active {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: var(--body-fontSize);
+    color: #fff;
+  }
 }
 
 /* defaults^ */
