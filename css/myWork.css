@@ -29,25 +29,47 @@ h4 {
 
 ul {
   list-style: none;
+  margin-bottom: var(--title-fontSize);
 }
 
-.button a,
-.button a:link,
-.button a:visited,
-.button a:active {
-  text-decoration: none;
-  color: var(--accent-color);
-  font-weight: 500;
-}
-.button {
+.primaryButton,
+.secondaryButton {
   display: flex;
   align-items: center;
-  width: calc((100vw / 12) * 2);
-  margin-top: var(--title-fontSize);
+  padding: var(--body-fontSize) calc(var(--body-fontSize) * 2);
+  padding-left: var(--body-fontSize);
+  margin-bottom: calc(var(--body-fontSize) * 0.66);
+  width: calc((100vw / 6) * 1.33);
+  bottom: calc((-400vh) + ((100vh / 12) * 4));
+  background-color: var(--body-color);
+  border: none;
+}
+.secondaryButton {
+  background-color: var(--accent-color);
 }
 
-.button img {
-  margin-left: var(--body-fontSize);
+.primaryButton img,
+.secondaryButton img {
+  margin-left: calc(var(--body-fontSize) / 2);
+}
+
+.primaryButton a,
+.secondaryButton a {
+  background-color: none;
+}
+
+.primaryButton a,
+.primaryButton a:link,
+.primaryButton a:visited,
+.primaryButton a:active,
+.secondaryButton a,
+.secondaryButton a:link,
+.secondaryButton a:visited,
+.secondaryButton a:active {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: var(--body-fontSize);
+  color: #fff;
 }
 
 /* defaults^ */
