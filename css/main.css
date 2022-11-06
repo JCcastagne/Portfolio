@@ -226,7 +226,7 @@ header > a {
   width: calc((100vw / 12) * 10);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
   .menuIcon {
     /* width: 35px; */
     right: calc(35px - 2em);
