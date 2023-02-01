@@ -1,5 +1,5 @@
 import { Outlet, NavLink } from 'react-router-dom'
-
+import './RootLayout.css'
 import Navbar from '../Components/Navbar/Navbar'
 import Footer from '../Components/Footer/Footer'
 
@@ -8,9 +8,11 @@ export default function RootLayout () {
     <div className='RootLayout'>
       <Navbar />
 
-      <main>
-        <Outlet />
-      </main>
+      <div className='container'>
+        <main>
+          <Outlet />
+        </main>
+      </div>
 
       <Footer />
     </div>

@@ -9,7 +9,7 @@ export default function Navbar () {
       <div className='container'>
         <title>
           <img src={JC_logo_black} alt='JC brand logo' />
-          <p>Jean-Christophe Castagne</p>
+          {/* <p>Jean-Christophe Castagne</p> */}
         </title>
 
         <button>
