@@ -22,6 +22,9 @@
 }
 
 html {
+  background-color: var(--background-white);
+  background-image: url('./img/noise_bg.png');
+
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
@@ -53,10 +56,22 @@ h6 {
   font-weight: 400;
 }
 
+/* reset button styling */
+button {
+  background-color: transparent;
+  border-width: 0;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  padding: 0;
+}
+
 :root {
   /* https://coolors.co/f1f1f1-4db5f0-9b5de5-f15bb5-f2545b */
   --background-white: #f1f1f1;
-  --black: #131313;
+  --black: #121212;
   --blue: #4db5f0;
   --purple: #9b5de5;
   --pink: #f15bb5;
