@@ -1,0 +1,138 @@
+.Landing {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+
+  height: 90vh;
+  /* background-color: #4b68c03a; */
+}
+
+.Landing header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: absolute;
+  top: 50vh;
+  transform: translateY(calc(-50%));
+  left: var(--text-2xl);
+}
+
+.Landing .name {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Landing .name img {
+  width: 100%;
+}
+
+.Landing .name .firstName {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+
+  height: 90px;
+  width: calc((100vw - (2 * var(--text-4xl))) / 1.8479196557);
+  margin-bottom: 25px;
+}
+
+.Landing .name .lastName {
+  width: calc(100vw - (2 * var(--text-4xl)));
+  margin-bottom: 17px;
+  z-index: 2;
+}
+
+.Landing .skills {
+  width: 100%;
+  height: 90px;
+  max-width: 1536px;
+
+  text-align: end;
+  font-size: var(--text-base);
+}
+
+.Landing .skills > * {
+  margin-bottom: calc(var(--text-base) / 3);
+}
+
+.Landing .heroCard {
+  width: calc((100vw / 12) * 3);
+  max-width: 468px;
+  max-height: 777px;
+  aspect-ratio: 1 / 1.6;
+
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 10px;
+  background-color: white;
+  background: radial-gradient(
+      112.57% 65.06% at 112.17% -1.38%,
+      #f04dc2 0%,
+      rgba(240, 77, 194, 0) 100%
+    ),
+    radial-gradient(
+      107.8% 62.31% at 0% 100%,
+      #6e4df0 0%,
+      rgba(110, 77, 240, 0) 100%
+    ),
+    radial-gradient(
+      101.19% 58.49% at 0% 0%,
+      #4db5f0 0%,
+      rgba(77, 181, 240, 0) 100%
+    ),
+    #ffffff;
+
+  /* box-shadow: 0px 2.4px 1.4px rgba(0, 0, 0, 0.025),
+    0px 5.7px 3.3px rgba(0, 0, 0, 0.036), 0px 10.8px 6.3px rgba(0, 0, 0, 0.045),
+    0px 19.2px 11.2px rgba(0, 0, 0, 0.054),
+    0px 35.9px 20.9px rgba(0, 0, 0, 0.065), 0px 86px 50px rgba(0, 0, 0, 0.09); */
+}
+
+/* .Landing .heroCard::after {
+  position: absolute;
+  transform: translate(calc((100vw / 12) * 0.75), 32px);
+  
+  content: 'F';
+  height: calc((100vh / 12) * 8);
+  width: calc((100vw / 12) * 1.5);
+  background: linear-gradient(
+    90deg,
+    rgba(53, 41, 102, 0.42) 0%,
+    rgba(84, 79, 105, 0.42) 100.18%
+  );
+  filter: blur(25px);
+  border-radius: 10px;
+} */
+.Landing .heroCard::after {
+  content: '';
+  position: absolute;
+  z-index: -10;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%, 50%);
+  width: calc(377px * 0.77);
+  height: 0;
+  padding-bottom: 10%;
+  background: radial-gradient(ellipse, #000 70%, transparent 70%);
+  filter: blur(50px);
+}
+
+.Landing > p {
+  font-size: var(--text-base);
+  font-weight: 500;
+}
+
+.Landing > p a {
+  font-size: var(--text-base);
+  font-weight: 500;
+  color: var(--black);
+  text-decoration: none;
+  border-bottom: 1px solid var(--black);
+}
