@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  height: 100vh;
+  height: 90vh;
 }
 
 .Landing header {
@@ -38,6 +38,12 @@
   width: calc(100vw - (2 * var(--text-4xl)));
   margin-bottom: 17px;
   z-index: 2;
+}
+
+.Landing .firstName,
+.Landing .lastName,
+.Landing .skills {
+  transform: translateY(6vh);
 }
 
 .Landing .heroCard {
@@ -89,6 +95,9 @@
 }
 
 .Landing > p {
+  /* z-index: -1; */
+  transform: translateY(20vh);
+
   font-size: var(--text-base);
   font-weight: 500;
 }
@@ -97,6 +106,7 @@
   font-size: var(--text-base);
   font-weight: 500;
   color: var(--black);
+
   text-decoration: none;
   border-bottom: 1px solid var(--black);
 }
