@@ -14,6 +14,7 @@ export default function Landing () {
           </div>
 
           <div className='heroCard'></div>
+          <div className='heroCard'></div>
 
           <div className='lastName'>
             <img src={lastName_hero} alt='Castagne' />
