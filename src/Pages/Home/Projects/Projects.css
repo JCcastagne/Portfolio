@@ -1,4 +1,51 @@
 .Projects {
   background-color: #4b68c03a;
-  margin-top: 10em;
+  width: 100%;
+  max-width: var(--md);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--text-3xl);
+}
+
+.Projects .project:nth-of-type(-n + 1),
+.Projects .project:nth-of-type(4n) {
+  grid-column: span 2;
+}
+
+.Projects .project:nth-of-type(2),
+.Projects .project:nth-of-type(3n) {
+  aspect-ratio: 1 / 1.66;
+}
+
+.Projects a {
+  font-weight: unset;
+  color: unset;
+  text-decoration: unset;
+}
+
+.Projects .project {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  padding: var(--text-3xl);
+}
+
+.Projects .project .title {
+  display: flex;
+}
+
+.Projects .project .title p {
+  font-size: var(--text-xl);
+  font-weight: 600;
+  margin-right: calc(var(--text-base) / 2);
+}
+
+.Projects .project .title {
+  margin-bottom: calc(var(--text-base) / 4);
+}
+
+.Projects .project > p {
+  font-size: var(--text-sm);
 }

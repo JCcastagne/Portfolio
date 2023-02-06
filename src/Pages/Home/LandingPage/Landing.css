@@ -77,8 +77,8 @@
 
 .Landing .heroCard:nth-of-type(2) {
   transform: translateY(calc(-50% + 20%)) scale(0.75);
-  background: rgba(0, 0, 0, 0.35);
-  filter: blur(60px);
+  background: rgba(30, 0, 45, 0.3);
+  filter: blur(35px);
 }
 
 .Landing .skills {

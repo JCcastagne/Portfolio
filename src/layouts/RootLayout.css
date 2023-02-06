@@ -9,7 +9,7 @@
 }
 
 .RootLayout > .container main {
-  /* background-color: #4b68c03a; */
+  background-color: #4b68c03a;
   width: 100%;
   max-width: var(--md);
   display: flex;
