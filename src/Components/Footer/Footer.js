@@ -10,16 +10,16 @@ export default function Footer () {
     <footer class='Footer'>
       <div className='container'>
         <section className='left'>
-          <Link to='mailto: jc.castagne96@gmail.com' target='_blank'>
+          <a href='mailto:jc.castagne96@gmail.com'>
             Email
             <img src={arrow_top_right_white} alt='arrow top right' />
-          </Link>
+          </a>
 
-          <Link to='https://www.linkedin.com/in/jc-castagne/' target='_blank'>
+          <Link to='https://linkedin.com/in/jc-castagne/' target='_blank'>
             LinkedIn
             <img src={arrow_top_right_white} alt='arrow top right' />
           </Link>
-          <Link to='https://www.instagram.com/jc.castagne/' target='_blank'>
+          <Link to='https://instagram.com/jc.castagne/' target='_blank'>
             Instagram
             <img src={arrow_top_right_white} alt='arrow top right' />
           </Link>
@@ -35,24 +35,10 @@ export default function Footer () {
             Blog
             <img src={arrow_top_right_white} alt='arrow top right' />
           </Link>
-          <p>Jean-Christophe Castagne &copy; 2023</p>
         </section>
         <section className='right'>
           <img src={JC_logo_white} alt='jc logo' />
-
-          <span>
-            <img src={star_white} alt='star' />
-            <img src={star_white} alt='star' />
-            <img src={star_white} alt='star' />
-            <img src={star_white} alt='star' />
-            <img src={star_white} alt='star' />
-            <p>
-              100% rated on{' '}
-              <Link to='https://www.fiverr.com/jccastagne' target='_blank'>
-                Fiverr.com
-              </Link>
-            </p>
-          </span>
+          <p>Jean-Christophe Castagne &copy; 2023</p>
         </section>
       </div>
     </footer>

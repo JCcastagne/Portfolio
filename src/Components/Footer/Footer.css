@@ -36,30 +36,21 @@
   justify-content: space-between;
 
   font-size: 400;
+  font-weight: 500;
   width: 200px;
   padding-bottom: calc(var(--text-base) / 2);
   margin-bottom: calc(var(--text-xl) / 1);
   border-bottom: 1px #ededed54 solid;
 }
-.Footer section.left p {
+
+.Footer section.right p {
   margin-top: var(--text-6xl);
-  opacity: 33%;
+  padding-bottom: calc(var(--text-base) / 2);
+  margin-bottom: calc(var(--text-xl) / 1);
+  opacity: 66%;
 }
 
 .Footer section.right > img {
   height: 24px;
-}
-
-.Footer section.right span {
-  display: flex;
-  align-items: center;
-  opacity: 33%;
-}
-
-.Footer section.right span img:last-of-type {
-  margin-right: calc(var(--text-base) / 2);
-}
-
-.Footer section.right span p a {
-  border-bottom: 1px #ededed54 solid;
+  /* opacity: 33%; */
 }
