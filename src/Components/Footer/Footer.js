@@ -9,7 +9,7 @@ export default function Footer () {
   return (
     <footer class='Footer'>
       <div className='container'>
-        <section className='left'>
+        <section className='left' id='links'>
           <a href='mailto:jc.castagne96@gmail.com'>
             Email
             <img src={arrow_top_right_white} alt='arrow top right' />
@@ -36,7 +36,7 @@ export default function Footer () {
             <img src={arrow_top_right_white} alt='arrow top right' />
           </Link>
         </section>
-        <section className='right'>
+        <section className='right' id='copyright'>
           <img src={JC_logo_white} alt='jc logo' />
           <p>Jean-Christophe Castagne &copy; 2023</p>
         </section>
