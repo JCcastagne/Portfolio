@@ -1,5 +1,5 @@
 import './Home.css'
-import Landing from './LandingPage/Landing'
+import Landing from './Landing/Landing'
 import Projects from './Projects/Projects'
 
 export default function Home () {
