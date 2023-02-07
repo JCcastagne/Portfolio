@@ -9,9 +9,9 @@
 }
 
 .RootLayout > .container main {
-  /* background-color: #4b68c03a; */
+  background-color: #4b68c03a;
   width: 100%;
-  max-width: var(--md);
+  max-width: var(--2xl);
   display: flex;
   align-items: center;
   justify-content: center;

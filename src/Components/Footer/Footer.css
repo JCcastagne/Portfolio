@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
 
-  padding: var(--text-6xl) 0;
+  padding: var(--text-4xl) var(--text-4xl);
   background-color: var(--black);
 }
 
