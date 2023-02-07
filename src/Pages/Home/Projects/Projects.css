@@ -1,5 +1,5 @@
 .Projects {
-  background-color: #4b68c03a;
+  /* background-color: #4b68c03a; */
   width: 100%;
   max-width: var(--md);
 
@@ -16,12 +16,6 @@
 .Projects .project:nth-of-type(2),
 .Projects .project:nth-of-type(3n) {
   aspect-ratio: 1 / 1.66;
-}
-
-.Projects a {
-  font-weight: unset;
-  color: unset;
-  text-decoration: unset;
 }
 
 .Projects .project {

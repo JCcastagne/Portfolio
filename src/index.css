@@ -57,6 +57,14 @@ h6 {
   font-weight: 400;
 }
 
+a,
+a:link,
+a:active,
+a:visited {
+  color: var(--black);
+  text-decoration: unset;
+}
+
 /* reset button styling */
 button {
   background-color: transparent;
