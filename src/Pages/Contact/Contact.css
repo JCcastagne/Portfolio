@@ -1,0 +1,79 @@
+.Contact {
+  width: 100%;
+  max-width: var(--2xl);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.Contact img.contact_hero {
+  width: 100%;
+  margin-bottom: var(--text-7xl);
+}
+
+.Contact .details {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: var(--md);
+  gap: var(--text-4xl);
+}
+
+.Contact .details section.left {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: calc(var(--text-base) / 2);
+  flex-grow: 99;
+}
+
+.Contact .details a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  font-weight: 500;
+
+  border: 1px var(--black) solid;
+  padding: calc(var(--text-base) / 2) calc(var(--text-base) / 2) var(--text-3xl)
+    calc(var(--text-base) / 2);
+  /* width: 100%; */
+}
+
+.Contact .details a img {
+  width: 12px;
+}
+
+.Contact .details section.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  text-align: end;
+
+  flex-grow: 1;
+  flex-shrink: 1;
+  gap: calc(var(--text-base) / 2);
+  margin-bottom: calc(var(--text-base) / 4);
+}
+
+.Contact .details section.right p {
+  /* width: max-content; */
+}
+
+/*     (width <= var(--md)) */
+@media (width <= 768px) {
+  .Contact .details section.left {
+    grid-template-columns: 1fr;
+  }
+}
+/*     (width <= var(--sm)) */
+@media (width <= 640px) {
+  .Contact .details {
+    flex-direction: column;
+  }
+}

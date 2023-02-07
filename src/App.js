@@ -13,6 +13,7 @@ import WorkLayout from './layouts/WorkLayout'
 import './App.css'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
+import Contact from './pages/Contact/Contact'
 import Applauz from './pages/Work/Applauz/Applauz'
 import Freelance from './pages/Work/Freelance/Freelance'
 import SmartTenant from './pages/Work/SmartTenant/SmartTenant'
@@ -24,6 +25,7 @@ const router = createBrowserRouter(
     <Route path='/' element={<RootLayout />}>
       <Route index element={<Home />} />
       <Route path='about' element={<About />} />
+      <Route path='contact' element={<Contact />} />
       <Route path='work' element={<WorkLayout />}>
         <Route path='applauz' element={<Applauz />} />
         <Route path='freelance' element={<Freelance />} />
