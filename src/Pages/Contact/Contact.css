@@ -11,7 +11,9 @@
 
 .Contact img.contact_hero {
   width: 100%;
-  margin-bottom: var(--text-7xl);
+  padding-bottom: var(--text-7xl);
+  margin-bottom: var(--text-6xl);
+  border-bottom: 3px var(--black) solid;
 }
 
 .Contact .details {
