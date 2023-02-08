@@ -70,3 +70,11 @@
   list-style: none;
   margin-bottom: calc(var(--text-base) / 3);
 }
+
+/*     (width <= var(--sm)) */
+@media (width <= 640px) {
+  .Resume .details {
+    display: flex;
+    flex-direction: column;
+  }
+}
