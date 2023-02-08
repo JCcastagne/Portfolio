@@ -14,10 +14,13 @@ import './App.css'
 import Home from './pages/Home/Home'
 import About from './pages/About/About'
 import Contact from './pages/Contact/Contact'
+import Resume from './pages/Resume/Resume'
+
 import Applauz from './pages/Work/Applauz/Applauz'
 import Freelance from './pages/Work/Freelance/Freelance'
 import SmartTenant from './pages/Work/SmartTenant/SmartTenant'
 import Vuzec from './pages/Work/Vuzec/Vuzec'
+
 import Error from './pages/Error/Error'
 
 const router = createBrowserRouter(
@@ -26,6 +29,7 @@ const router = createBrowserRouter(
       <Route index element={<Home />} />
       <Route path='about' element={<About />} />
       <Route path='contact' element={<Contact />} />
+      <Route path='resume' element={<Resume />} />
       <Route path='work' element={<WorkLayout />}>
         <Route path='applauz' element={<Applauz />} />
         <Route path='freelance' element={<Freelance />} />
