@@ -2,7 +2,6 @@ import './Contact.css'
 import { Link } from 'react-router-dom'
 
 import arrow_top_right from '../../img/icons/arrow_top_right.svg'
-import JC_logo_black from '../../img/JC_logo_black.svg'
 import contact_hero from '../../img/contact_hero.svg'
 
 export default function Contact () {
