@@ -1,6 +1,9 @@
 import './Resume.css'
 
+import { Link } from 'react-router-dom'
+
 import resume_hero from '../../img/resume_hero.svg'
+import arrow_top_right from '../../img/icons/arrow_top_right.svg'
 
 export default function Resume () {
   return (
@@ -58,7 +61,12 @@ export default function Resume () {
 
           <section className='download'>
             <p className='header'>Download</p>
-            <p>Download PDF</p>
+            <Link
+              to='https://drive.google.com/drive/folders/1PyRM405cnmUgB1yCpyKRiSmM863IQ-6H?usp=share_link'
+              target='_blank'
+            >
+              Download PDF <img src={arrow_top_right} alt='arrow' />
+            </Link>
           </section>
         </div>
 

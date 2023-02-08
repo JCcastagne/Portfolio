@@ -71,6 +71,16 @@
   margin-bottom: calc(var(--text-base) / 3);
 }
 
+a {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+a img {
+  width: 12px;
+  margin-left: calc(var(--text-base) / 2);
+}
+
 /*     (width <= var(--sm)) */
 @media (width <= 640px) {
   .Resume .details {
