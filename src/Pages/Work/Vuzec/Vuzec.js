@@ -1,4 +1,5 @@
 import './Vuzec.css'
+import '../Work.css'
 
 import vuzec_dual_desktop from '../../../img/portfolioAssets/Vuzec/vuzec_dual_desktop.png'
 import desiredFeatures from '../../../img/portfolioAssets/Vuzec/information-arch/desiredFeatures.png'
@@ -14,7 +15,7 @@ import dashboard from '../../../img/portfolioAssets/Vuzec/final-screens/dashboar
 
 export default function Vuzec () {
   return (
-    <div class='Vuzec'>
+    <div class='work' id='Vuzec'>
       <section className='intro'>
         <h1>Vuzec</h1>
         <h2>Building a completely new music-nft trading platform</h2>
