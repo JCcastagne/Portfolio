@@ -17,7 +17,7 @@ import Contact from './pages/Contact/Contact'
 import Resume from './pages/Resume/Resume'
 
 import Applauz from './pages/Work/Applauz/Applauz'
-import Freelance from './pages/Work/Freelance/Freelance'
+import Fiverr from './pages/Work/Fiverr/Fiverr'
 import SmartTenant from './pages/Work/SmartTenant/SmartTenant'
 import Vuzec from './pages/Work/Vuzec/Vuzec'
 
@@ -32,7 +32,7 @@ const router = createBrowserRouter(
       <Route path='resume' element={<Resume />} />
       <Route path='work' element={<WorkLayout />}>
         <Route path='applauz' element={<Applauz />} />
-        <Route path='freelance' element={<Freelance />} />
+        <Route path='fiverr' element={<Fiverr />} />
         <Route path='smartTenant' element={<SmartTenant />} />
         <Route path='vuzec' element={<Vuzec />} />
       </Route>
