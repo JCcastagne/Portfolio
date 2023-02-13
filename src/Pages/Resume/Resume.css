@@ -71,12 +71,12 @@
   margin-bottom: calc(var(--text-base) / 3);
 }
 
-a {
+.Resume a {
   display: flex;
   align-items: center;
   /* background-color: red; */
 }
-a img {
+.Resume a img {
   width: 12px;
   margin-left: calc(var(--text-base) / 2);
 }
