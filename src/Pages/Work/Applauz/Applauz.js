@@ -7,12 +7,14 @@ export default function Applauz () {
   return (
     <div class='Work' id='Applauz'>
       <section className='intro'>
-        <h1>Applauz</h1>
-        <h2>Social employee recognition and management tool (NDA)</h2>
-        <div className='chips'>
-          <p>Web</p>
-          <p>Desktop</p>
-          <p>Mobile app</p>
+        <div className='header'>
+          <h1>Applauz</h1>
+          <h2>Social employee recognition and management tool (NDA)</h2>
+          <div className='chips'>
+            <p>Web</p>
+            <p>Desktop</p>
+            <p>Mobile app</p>
+          </div>
         </div>
         <img
           className='hero'

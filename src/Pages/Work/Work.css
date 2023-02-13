@@ -18,14 +18,19 @@
 .Work section.intro {
   margin-bottom: var(--text-9xl);
 }
-.Work section.intro h1 {
+.Work section.intro .header {
+  width: 100%;
+  max-width: var(--md);
+}
+
+.Work section.intro .header h1 {
   margin-top: 25vh;
   font-size: var(--text-9xl);
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
 }
-.Work section.intro h2 {
+.Work section.intro .header h2 {
   font-size: var(--text-xl);
   font-weight: 600;
   margin-bottom: calc(var(--text-xl) / 2);
@@ -33,14 +38,14 @@
   opacity: 66%;
   width: 100%;
 }
-.Work section.intro .chips {
+.Work section.intro .header .chips {
   display: flex;
   align-items: center;
   opacity: 66%;
   margin-bottom: var(--text-7xl);
   width: 100%;
 }
-.Work section.intro .chips p {
+.Work section.intro .header .chips p {
   font-size: var(--text-sm);
   padding: calc(var(--text-sm) / 2) var(--text-sm);
   margin-right: calc(var(--text-sm) / 2);

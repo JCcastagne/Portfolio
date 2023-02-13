@@ -17,12 +17,14 @@ export default function Vuzec () {
   return (
     <div class='Work' id='Vuzec'>
       <section className='intro'>
-        <h1>Vuzec</h1>
-        <h2>Building a completely new music-nft trading platform</h2>
-        <div className='chips'>
-          <p>Web</p>
-          <p>Desktop</p>
-          <p>Mobile</p>
+        <div className='header'>
+          <h1>Vuzec</h1>
+          <h2>Building a completely new music-nft trading platform</h2>
+          <div className='chips'>
+            <p>Web</p>
+            <p>Desktop</p>
+            <p>Mobile</p>
+          </div>
         </div>
         <img
           className='hero'

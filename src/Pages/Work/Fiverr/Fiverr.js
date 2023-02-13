@@ -20,13 +20,15 @@ export default function Fiverr () {
   return (
     <div className='Work' id='Fiverr'>
       <section className='intro'>
-        <h1>Fiverr</h1>
-        <h2>Freelance UI/UX design</h2>
-        <div className='chips'>
-          <p>Web</p>
-          <p>Mobile</p>
-          <p>Desktop</p>
-          <p>Mobile app</p>
+        <div className='header'>
+          <h1>Fiverr</h1>
+          <h2>Freelance UI/UX design</h2>
+          <div className='chips'>
+            <p>Web</p>
+            <p>Mobile</p>
+            <p>Desktop</p>
+            <p>Mobile app</p>
+          </div>
         </div>
         <img
           className='hero'
