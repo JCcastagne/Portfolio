@@ -1,4 +1,4 @@
-.work {
+.Work {
   width: 100%;
   max-width: var(--2xl);
   min-height: 100vh;
@@ -9,23 +9,23 @@
   flex-direction: column;
 }
 
-.work section {
+.Work section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.work section.intro {
+.Work section.intro {
   margin-bottom: var(--text-9xl);
 }
-.work section.intro h1 {
+.Work section.intro h1 {
   margin-top: 25vh;
   font-size: var(--text-9xl);
   font-weight: 600;
   text-transform: uppercase;
   width: 100%;
 }
-.work section.intro h2 {
+.Work section.intro h2 {
   font-size: var(--text-xl);
   font-weight: 600;
   margin-bottom: calc(var(--text-xl) / 2);
@@ -33,123 +33,123 @@
   opacity: 66%;
   width: 100%;
 }
-.work section.intro .chips {
+.Work section.intro .chips {
   display: flex;
   align-items: center;
   opacity: 66%;
   margin-bottom: var(--text-7xl);
   width: 100%;
 }
-.work section.intro .chips p {
+.Work section.intro .chips p {
   font-size: var(--text-sm);
   padding: calc(var(--text-sm) / 2) var(--text-sm);
   margin-right: calc(var(--text-sm) / 2);
   border: 1px var(--black) solid;
   border-radius: 99px;
 }
-.work section.intro img.hero {
+.Work section.intro img.hero {
   width: 100%;
   margin-bottom: var(--text-8xl);
 }
 
 /* 1st section - info */
 
-.work section .info {
+.Work section .info {
   display: flex;
   flex-direction: column;
   width: 100%;
   max-width: var(--md);
 }
-.work section .info .title {
+.Work section .info .title {
   font-size: var(--text-4xl);
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: calc(var(--text-4xl) / 2);
 }
-.work section .info > p:not(.title) {
+.Work section .info > p:not(.title) {
   font-size: var(--text-xl);
   margin-bottom: var(--text-4xl);
 }
 
-.work section .info .grid {
+.Work section .info .grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: var(--text-base);
 }
-.work section .info .grid div .subTitle {
+.Work section .info .grid div .subTitle {
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: var(--text-base);
 }
-.work section .info .grid div p {
+.Work section .info .grid div p {
   margin-bottom: calc(var(--text-base) / 2);
 }
-.work section .info .grid div p:last-of-type {
+.Work section .info .grid div p:last-of-type {
   margin-bottom: 0;
 }
-.work section .info .grid div:first-of-type {
+.Work section .info .grid div:first-of-type {
   grid-row: 1 / -1;
 }
 
 /* all other sections - story */
 
-.work section.story {
+.Work section.story {
   width: 100%;
   max-width: var(--md);
   margin-bottom: var(--text-8xl);
 }
-.work section.story .title {
+.Work section.story .title {
   font-size: var(--text-xl);
   font-weight: 600;
   text-transform: uppercase;
   margin-bottom: var(--text-6xl);
 }
-.work section.story .slide {
+.Work section.story .slide {
   display: flex;
   flex-direction: column;
   margin-bottom: var(--text-5xl);
 }
-.work section.story .slide p {
+.Work section.story .slide p {
   margin-bottom: calc(var(--text-base) / 2);
 }
-.work section.story .slide p:last-of-type {
+.Work section.story .slide p:last-of-type {
   margin-bottom: var(--text-3xl);
 }
-.work section.story .slide img {
+.Work section.story .slide img {
   width: 100%;
   margin-bottom: calc(var(--text-base) / 2);
 }
-.work section.story .slide caption {
+.Work section.story .slide caption {
   font-size: var(--text-sm);
   opacity: 66%;
 }
 
 /* last section - same as 'intro' but with added styling for final screens */
 
-.work section.final .grid {
+.Work section.final .grid {
   margin-bottom: var(--text-8xl);
 }
-.work section.final .info .pictureGrid {
+.Work section .pictureGrid {
   display: flex;
   flex-direction: column;
   gap: var(--text-base);
 }
-.work section.final .info .pictureGrid .row {
+.Work section .pictureGrid .row {
   display: flex;
   flex-direction: row;
   gap: var(--text-base);
 }
-.work section.final .info .pictureGrid .col {
+.Work section .pictureGrid .col {
   display: flex;
   flex-direction: column;
   gap: var(--text-base);
 }
-.work section.final .info .pictureGrid img {
+.Work section .pictureGrid img {
   width: 100%;
   border-radius: 8px;
 }
-.work section.final .info .pictureGrid .row .col > img {
+.Work section .pictureGrid .row .col > img {
   z-index: -2;
   box-shadow: 0px 2.4px 1.8px rgba(0, 0, 0, 0.003),
     0px 5.7px 4.3px rgba(0, 0, 0, 0.004), 0px 10.8px 8.1px rgba(0, 0, 0, 0.005),
@@ -157,10 +157,10 @@
     0px 35.9px 27.2px rgba(0, 0, 0, 0.007), 0px 86px 65px rgba(0, 0, 0, 0.01);
 }
 
-.work section.final .info .pictureGrid > img:first-of-type {
+.Work section .pictureGrid > img:first-of-type {
   margin-bottom: var(--text-5xl);
 }
-.work section.final .info .pictureGrid > img:last-of-type {
+.Work section .pictureGrid > img:last-of-type {
   position: absolute;
   width: 100%;
   /* opacity: 0; */
@@ -172,4 +172,12 @@
 
   transform: translate(-50%, var(--text-5xl));
   filter: contrast(0.5) blur(64px);
+}
+
+.Work section.final .info p > a.dribbble {
+  font-weight: 500;
+  color: var(--pink);
+
+  text-decoration: none;
+  border-bottom: 2px solid var(--pink);
 }

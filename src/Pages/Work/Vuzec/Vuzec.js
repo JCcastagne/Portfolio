@@ -15,7 +15,7 @@ import dashboard from '../../../img/portfolioAssets/Vuzec/final-screens/dashboar
 
 export default function Vuzec () {
   return (
-    <div class='work' id='Vuzec'>
+    <div class='Work' id='Vuzec'>
       <section className='intro'>
         <h1>Vuzec</h1>
         <h2>Building a completely new music-nft trading platform</h2>

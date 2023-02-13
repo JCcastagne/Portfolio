@@ -5,7 +5,7 @@ import applauz_hero from '../../../img/portfolioAssets/Applauz/applauz_hero.png'
 
 export default function Applauz () {
   return (
-    <div class='work' id='Applauz'>
+    <div class='Work' id='Applauz'>
       <section className='intro'>
         <h1>Applauz</h1>
         <h2>Social employee recognition and management tool (NDA)</h2>
