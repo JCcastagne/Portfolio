@@ -5,7 +5,7 @@
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: var(--text-3xl);
+  gap: var(--text-base);
 }
 
 .Projects .project:nth-of-type(-n + 1),
@@ -21,9 +21,12 @@
 .Projects .project {
   display: flex;
   flex-direction: column;
-  background-color: white;
-  border-radius: 8px;
+  justify-content: flex-end;
+
+  background-color: grey;
+  border-radius: var(--text-base);
   padding: var(--text-3xl);
+  box-shadow: 0px 32px 128px var(--black);
 }
 
 .Projects .project .title {
@@ -37,9 +40,71 @@
 }
 
 .Projects .project .title {
-  margin-bottom: calc(var(--text-base) / 4);
+  margin-bottom: calc(var(--text-base) / 2);
+}
+
+.Projects .project .chips {
+  display: flex;
+  align-items: center;
+  margin-bottom: calc(var(--text-base) / 2);
+  gap: calc(var(--text-base) / 2);
+}
+
+.Projects .project .chips p {
+  font-size: var(--text-xs);
+  padding: calc(var(--text-xs) / 2) var(--text-xs);
+  border: 1px var(--white) solid;
+  border-radius: 99px;
 }
 
 .Projects .project > p {
-  font-size: var(--text-sm);
+  font-size: var(--text-base);
+}
+
+.Projects #SmartTenant {
+  color: var(--black);
+}
+.Projects #SmartTenant .chips p {
+  border-color: var(--black);
+}
+
+.Projects #Vuzec {
+  z-index: 8;
+
+  background: radial-gradient(
+    121.15% 116.1% at -9.86% -1.93%,
+    #f04d4d 0%,
+    #f04d88 55.21%,
+    #f04dc2 100%
+  );
+}
+.Projects #Applauz {
+  z-index: 6;
+
+  background: radial-gradient(
+    121.15% 116.1% at -9.86% -1.93%,
+    #4d8ef0 0%,
+    #4d7bf0 55.21%,
+    #644df0 100%
+  );
+}
+.Projects #Fiverr {
+  z-index: 5;
+
+  background: radial-gradient(
+    121.15% 116.1% at -9.86% -1.93%,
+    #954df0 0%,
+    #b24df0 55.21%,
+    #e34df0 100%
+  );
+}
+.Projects #SmartTenant {
+  z-index: 7;
+
+  background: radial-gradient(
+    121.15% 116.1% at -9.86% -1.93%,
+    #4df0ac 0%,
+    #4df0c9 55.21%,
+    #4dc9f0 100%
+  );
 }
