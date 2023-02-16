@@ -1,11 +1,14 @@
 .Projects {
-  /* background-color: #4b68c03a; */
+  /* background-color: rgba(34, 0, 255, 0.32); */
   width: 100%;
   max-width: var(--md);
 
+  padding-top: 90vh;
+  padding-bottom: calc(var(--text-9xl) * 2);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: var(--text-base);
+  overflow-y: auto;
 }
 
 .Projects .project:nth-of-type(-n + 1),

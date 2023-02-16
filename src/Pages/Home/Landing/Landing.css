@@ -1,4 +1,7 @@
 .Landing {
+  position: fixed;
+  /* background-color: rgba(0, 255, 255, 0.16); */
+  top: 0;
   display: flex;
   flex-direction: column;
   align-items: center;

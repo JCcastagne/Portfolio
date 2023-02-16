@@ -1,5 +1,6 @@
 .Navbar {
   position: absolute;
+  top: 0;
   width: 100vw;
   display: flex;
   align-items: center;
@@ -47,8 +48,6 @@
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
-
-  border-radius: 8px;
 }
 
 .Navbar button img {

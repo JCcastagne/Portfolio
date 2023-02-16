@@ -25,18 +25,20 @@ import Error from './pages/Error/Error'
 
 const router = createBrowserRouter(
   createRoutesFromElements(
-    <Route path='/' element={<RootLayout />}>
+    <Route path='/'>
       <Route index element={<Home />} />
-      <Route path='about' element={<About />} />
-      <Route path='contact' element={<Contact />} />
-      <Route path='resume' element={<Resume />} />
-      <Route path='work' element={<WorkLayout />}>
-        <Route path='applauz' element={<Applauz />} />
-        <Route path='fiverr' element={<Fiverr />} />
-        <Route path='smartTenant' element={<SmartTenant />} />
-        <Route path='vuzec' element={<Vuzec />} />
-      </Route>
 
+      <Route element={<RootLayout />}>
+        <Route path='about' element={<About />} />
+        <Route path='contact' element={<Contact />} />
+        <Route path='resume' element={<Resume />} />
+        <Route path='work' element={<WorkLayout />}>
+          <Route path='applauz' element={<Applauz />} />
+          <Route path='fiverr' element={<Fiverr />} />
+          <Route path='smartTenant' element={<SmartTenant />} />
+          <Route path='vuzec' element={<Vuzec />} />
+        </Route>
+      </Route>
       <Route path='*' element={<Error />} />
     </Route>
   )
