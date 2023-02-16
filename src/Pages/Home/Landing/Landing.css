@@ -4,109 +4,60 @@
   align-items: center;
   justify-content: center;
 
+  width: 100%;
+  max-width: var(--md);
   height: 90vh;
-}
-
-.Landing header {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .Landing .name {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 
 .Landing .name img {
   width: 100%;
 }
+.Landing .name img:first-of-type {
+  margin-bottom: var(--text-xl);
+}
+.Landing .name img:nth-of-type(2) {
+  margin-bottom: var(--text-7xl);
+}
 
-.Landing .name .firstName {
+.Landing .skills {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--text-8xl);
+}
+
+.Landing .skills > div {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-
-  height: 90px;
-  width: calc((100vw - (2 * var(--text-4xl))) / 1.8479196557);
-  margin-bottom: 25px;
+  align-items: center;
 }
 
-.Landing .name .lastName {
-  width: calc(100vw - (2 * var(--text-4xl)));
-  margin-bottom: 17px;
-  z-index: 2;
+.Landing .skills img {
+  height: 48px;
+  width: 48px;
+  margin-bottom: var(--text-base);
 }
 
-.Landing .firstName,
-.Landing .lastName,
-.Landing .skills {
-  transform: translateY(6vh);
-}
-
-.Landing .heroCard {
-  width: calc((100vw / 12) * 3);
-  max-width: 468px;
-  max-height: 777px;
-  aspect-ratio: 1 / 1.6;
-
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-
-  border-radius: 10px;
-  background: radial-gradient(
-      112.57% 65.06% at 112.17% -1.38%,
-      #f04dc2 0%,
-      rgba(240, 77, 194, 0) 100%
-    ),
-    radial-gradient(
-      107.8% 62.31% at 0% 100%,
-      #6e4df0 0%,
-      rgba(110, 77, 240, 0) 100%
-    ),
-    radial-gradient(
-      101.19% 58.49% at 0% 0%,
-      #4db5f0 0%,
-      rgba(77, 181, 240, 0) 100%
-    ),
-    #ffffff;
-}
-
-.Landing .heroCard:nth-of-type(2) {
-  transform: translateY(calc(-50% + 20%)) scale(0.75);
-  background: rgba(30, 0, 45, 0.3);
-  filter: blur(35px);
-}
-
-.Landing .skills {
-  width: 100%;
-  height: 90px;
-  max-width: 1536px;
-
-  text-align: end;
+.Landing .skills h1,
+.Landing .skills h2,
+.Landing .skills h3 {
   font-size: var(--text-base);
+  opacity: 0.66;
 }
 
-.Landing .skills > * {
-  margin-bottom: calc(var(--text-base) / 3);
+.Landing .skills > span {
+  background-color: var(--white);
+  height: 4px;
+  width: 64px;
+  margin: 0 var(--text-base);
+  transform: translateY(-16px);
+  opacity: 0.33;
 }
 
-.Landing > p {
-  /* z-index: -1; */
-  transform: translateY(20vh);
-
-  font-size: var(--text-base);
-  font-weight: 500;
-}
-
-.Landing > p a {
-  font-size: var(--text-base);
-  font-weight: 500;
-  color: var(--black);
-
-  text-decoration: none;
-  border-bottom: 1px solid var(--black);
+.Landing p a {
+  border-bottom: 2px var(--white) solid;
 }
