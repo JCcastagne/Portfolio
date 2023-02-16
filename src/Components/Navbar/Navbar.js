@@ -1,20 +1,22 @@
 import './Navbar.css'
 
-import JC_logo_black from '../../img/JC_logo_black.svg'
-import sort_icon from '../../img/icons/sort.svg'
+import JC_logo_light from '../../img/JC_logo_light.svg'
+import sort_light from '../../img/icons/sort_light.svg'
+import { Link } from 'react-router-dom'
 
 export default function Navbar () {
   return (
     <div class='Navbar'>
       <div className='container'>
-        <title>
-          <img src={JC_logo_black} alt='JC brand logo' />
-          {/* <p>Jean-Christophe Castagne</p> */}
-        </title>
+        <Link to='/'>
+          <img src={JC_logo_light} alt='JC brand logo' className='logo' />
+        </Link>
+
+        <p>Resume</p>
 
         <button>
+          <img src={sort_light} alt='menu' />
           Menu
-          <img src={sort_icon} alt='menu' />
         </button>
       </div>
     </div>

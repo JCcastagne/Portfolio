@@ -22,34 +22,38 @@
   justify-content: center;
 }
 
-.Navbar title p {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-left: var(--text-base);
-  letter-spacing: calc(var(--text-base) * 0.33);
+.Navbar .logo {
+  height: 28px;
 }
 
-.Navbar title img {
-  height: var(--text-base);
+.Navbar p {
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  background: radial-gradient(
+    150.75% 1874.52% at -18.66% 100%,
+    #4db5f0 0%,
+    #f04dc2 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  padding: 14px;
 }
 
 .Navbar button {
-  border-radius: 8px;
-  cursor: pointer;
+  font-weight: 500;
   text-transform: uppercase;
-  padding: calc(var(--text-base) / 2) calc(var(--text-base) * 1);
-  background-color: white;
+  cursor: pointer;
 
-  box-shadow: 0px 0.5px 0.6px hsl(0deg 0% 59% / 0.34),
-    0px 2.9px 3.3px -0.4px hsl(0deg 0% 59% / 0.34),
-    0px 5.4px 6.1px -0.7px hsl(0deg 0% 59% / 0.34),
-    0px 8.9px 10px -1.1px hsl(0deg 0% 59% / 0.34),
-    0px 14.2px 16px -1.4px hsl(0deg 0% 59% / 0.34),
-    0px 22.1px 24.9px -1.8px hsl(0deg 0% 59% / 0.34),
-    0px 33.6px 37.8px -2.1px hsl(0deg 0% 59% / 0.34),
-    0px 49.5px 55.7px -2.5px hsl(0deg 0% 59% / 0.34);
+  border-radius: 8px;
 }
 
 .Navbar button img {
-  margin-left: calc(var(--text-base) / 3);
+  width: 48px;
+  height: 48px;
+
+  margin-right: calc(var(--text-base) / 2);
 }
