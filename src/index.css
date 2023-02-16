@@ -22,9 +22,8 @@
 }
 
 html {
-  background-color: var(--background-white);
-  background-image: url('./img/noise_bg.png');
-  color: var(--black);
+  background-color: var(--black);
+  color: var(--white);
 
   box-sizing: border-box;
   -moz-text-size-adjust: 100%;
@@ -61,7 +60,7 @@ a,
 a:link,
 a:active,
 a:visited {
-  color: var(--black);
+  color: var(--white);
   text-decoration: unset;
 }
 
@@ -80,7 +79,9 @@ button {
 :root {
   /* https://coolors.co/f1f1f1-4db5f0-9b5de5-f15bb5-f2545b */
   --background-white: #f1f1f1;
-  --black: #121212;
+
+  --white: #eef3f5;
+  --black: #0f1010;
   --blue: #4db5f0;
   --purple: #9b5de5;
   --pink: #f15bb5;
