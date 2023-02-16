@@ -13,7 +13,7 @@
   width: 100%;
   padding-bottom: var(--text-7xl);
   margin-bottom: var(--text-6xl);
-  border-bottom: 3px var(--black) solid;
+  /* border-bottom: 3px var(--white) solid; */
 }
 
 .Contact .details {
@@ -40,7 +40,7 @@
 
   font-weight: 500;
 
-  border: 1px var(--black) solid;
+  border: 1px var(--white) solid;
   padding: calc(var(--text-base) / 2) calc(var(--text-base) / 2) var(--text-3xl)
     calc(var(--text-base) / 2);
   /* width: 100%; */
@@ -60,6 +60,7 @@
   flex-grow: 1;
   flex-shrink: 1;
   gap: calc(var(--text-base) / 2);
+  opacity: 0.66;
   margin-bottom: calc(var(--text-base) / 4);
 }
 
