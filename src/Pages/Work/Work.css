@@ -9,180 +9,60 @@
   flex-direction: column;
 }
 
-.Work section {
+.Work .intro {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: max(var(--text-9xl), 33vh);
 }
 
-.Work section.intro {
-  margin-bottom: var(--text-9xl);
-}
-.Work section.intro .header {
+.Work .intro .header {
+  display: flex;
+  flex-direction: column;
   width: 100%;
   max-width: var(--md);
-}
-
-.Work section.intro .header h1 {
-  margin-top: 25vh;
-  font-size: var(--text-9xl);
-  font-weight: 600;
-  text-transform: uppercase;
-  width: 100%;
-}
-.Work section.intro .header h2 {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  margin-bottom: calc(var(--text-xl) / 2);
-  text-transform: uppercase;
-  opacity: 66%;
-  width: 100%;
-}
-.Work section.intro .header .chips {
-  display: flex;
-  align-items: center;
-  opacity: 66%;
   margin-bottom: var(--text-7xl);
-  width: 100%;
-}
-.Work section.intro .header .chips p {
-  font-size: var(--text-sm);
-  padding: calc(var(--text-sm) / 2) var(--text-sm);
-  margin-right: calc(var(--text-sm) / 2);
-  border: 1px var(--black) solid;
-  border-radius: 99px;
-}
-.Work section.intro img.hero {
-  width: 100%;
-  margin-bottom: var(--text-8xl);
 }
 
-/* 1st section - info */
-
-.Work section .info {
+.Work .intro .header span {
   display: flex;
-  flex-direction: column;
+  align-items: flex-start;
   width: 100%;
-  max-width: var(--md);
-}
-.Work section .info .title {
-  font-size: var(--text-4xl);
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: calc(var(--text-4xl) / 2);
-}
-.Work section .info > p:not(.title) {
-  font-size: var(--text-xl);
-  margin-bottom: var(--text-4xl);
+
+  margin-bottom: var(--text-xl);
 }
 
-.Work section .info .grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  gap: var(--text-base);
+.Work .intro .header span #heroTitle {
+  width: 100%;
 }
-.Work section .info .grid div .subTitle {
-  font-weight: 700;
+.Work .intro .header span #arrow {
+  width: 33px;
+  margin-left: var(--text-base);
+}
+
+.Work .intro .header > p {
+  font-size: var(--text-xl);
+  font-weight: 500;
   text-transform: uppercase;
+  opacity: 0.66;
+
   margin-bottom: var(--text-base);
 }
-.Work section .info .grid div p {
-  margin-bottom: calc(var(--text-base) / 2);
-}
-.Work section .info .grid div p:last-of-type {
-  margin-bottom: 0;
-}
-.Work section .info .grid div:first-of-type {
-  grid-row: 1 / -1;
-}
 
-/* all other sections - story */
-
-.Work section.story {
-  width: 100%;
-  max-width: var(--md);
-  margin-bottom: var(--text-8xl);
-}
-.Work section.story .title {
-  font-size: var(--text-xl);
-  font-weight: 600;
-  text-transform: uppercase;
-  margin-bottom: var(--text-6xl);
-}
-.Work section.story .slide {
+.Work .intro .header .chips {
   display: flex;
-  flex-direction: column;
-  margin-bottom: var(--text-5xl);
+  align-items: center;
+  opacity: 0.66;
 }
-.Work section.story .slide p {
-  margin-bottom: calc(var(--text-base) / 2);
-}
-.Work section.story .slide p:last-of-type {
-  margin-bottom: var(--text-3xl);
-}
-.Work section.story .slide img {
-  width: 100%;
-  margin-bottom: calc(var(--text-base) / 2);
-}
-.Work section.story .slide caption {
+.Work .intro .header .chips p {
   font-size: var(--text-sm);
-  opacity: 66%;
+  padding: calc(var(--text-base) / 2) var(--text-base);
+  border: 1px var(--white) solid;
+  border-radius: 99px;
 }
 
-/* last section - same as 'intro' but with added styling for final screens */
-
-.Work section.final .grid {
-  margin-bottom: var(--text-8xl);
-}
-.Work section .pictureGrid {
-  display: flex;
-  flex-direction: column;
-  gap: var(--text-base);
-}
-.Work section .pictureGrid .row {
-  display: flex;
-  flex-direction: row;
-  gap: var(--text-base);
-}
-.Work section .pictureGrid .col {
-  display: flex;
-  flex-direction: column;
-  gap: var(--text-base);
-}
-.Work section .pictureGrid img {
+.Work .intro img#heroBanner {
   width: 100%;
-  border-radius: 8px;
-}
-.Work section .pictureGrid .row .col > img {
-  z-index: -2;
-  box-shadow: 0px 2.4px 1.8px rgba(0, 0, 0, 0.003),
-    0px 5.7px 4.3px rgba(0, 0, 0, 0.004), 0px 10.8px 8.1px rgba(0, 0, 0, 0.005),
-    0px 19.2px 14.5px rgba(0, 0, 0, 0.006),
-    0px 35.9px 27.2px rgba(0, 0, 0, 0.007), 0px 86px 65px rgba(0, 0, 0, 0.01);
-}
-
-.Work section .pictureGrid > img:first-of-type {
-  margin-bottom: var(--text-5xl);
-}
-.Work section .pictureGrid > img:last-of-type {
-  position: absolute;
-  width: 100%;
-  /* opacity: 0; */
-  /* width: 100%; */
-  max-width: var(--md);
-  padding: 0 var(--text-3xl);
-  left: 50vw;
-  z-index: -1;
-
-  transform: translate(-50%, var(--text-5xl));
-  filter: contrast(0.5) blur(64px);
-}
-
-.Work section.final .info p > a.dribbble {
-  font-weight: 500;
-  color: var(--pink);
-
-  text-decoration: none;
-  border-bottom: 2px solid var(--pink);
+  height: 100%;
 }

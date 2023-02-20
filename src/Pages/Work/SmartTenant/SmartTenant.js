@@ -5,68 +5,40 @@ import SmartTenant_hero from '../../../img/portfolioAssets/SmartTenant/SmartTena
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
 import SmartTenant_3 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_3.png'
+import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
+import intelidevs_hero_light from '../../../img/portfolioAssets/SmartTenant/intelidevs_hero_light.svg'
 
 export default function SmartTenant () {
   return (
     <div class='Work' id='SmartTenant'>
       <section className='intro'>
-        <div className='header'>
-          <h1>InteliDevs</h1>
-          <h2>Social app connecting tenants to their community</h2>
+        <header className='header'>
+          <span>
+            <img
+              src={intelidevs_hero_light}
+              id='heroTitle'
+              alt='Header logo of Intelidevs'
+              aria-label='Intelidevs'
+              aria-roledescription='Header logo of Intelidevs'
+            />
+            <img src={arrow_top_right_light} id='arrow' alt='arrow icon' />
+          </span>
+
+          <p>Social app connecting tenants to their community</p>
+
           <div className='chips'>
             <p>Mobile app</p>
           </div>
-        </div>
+        </header>
+
         <img
-          className='hero'
+          id='heroBanner'
           src={SmartTenant_hero}
           alt='SmartTenant ui design on iPhones'
         />
-
-        <div className='info'>
-          <p className='title'>Introduction</p>
-          <p>
-            A mobile app built from the ground up offering tenants the ability
-            to engage with their community, stay up to date with payments, earn
-            rewards and enjoy a host of other exciting features.
-          </p>
-          <div className='grid'>
-            <div>
-              <p className='subTitle'>My role</p>
-              <p>Lead UI/UX Designer and Full Stack Developer</p>
-              <p>
-                Lead the team at InteliDevs for app's design; overseeing market
-                research, information architecture, user flows, wire frames,
-                interactive prototypes, and usability testing.
-              </p>
-              <p>
-                Also contributed to the implementation of robust and scalable
-                solutions that meet user requirements through coding, testing,
-                and debugging.
-              </p>
-            </div>
-            <div>
-              <p className='subTitle'>Project scope</p>
-              <p>
-                InteliDevs team consisting of myself and 4 Full Stack
-                Developers. 4 Months
-              </p>
-              <p>
-                SmartLiving team including CEO, Marketing team and 1 Graphic
-                Designer.
-              </p>
-            </div>
-            <div>
-              <p className='subTitle'>Tools</p>
-              <p>
-                React Native, NodeJS, Javascript, Google Firebase/Firestore,
-                Figma
-              </p>
-            </div>
-          </div>
-        </div>
       </section>
 
+      {/* 
       <section className='story'>
         <p className='title'>Problem discovery</p>
 
@@ -175,7 +147,7 @@ export default function SmartTenant () {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
     </div>
   )
 }
