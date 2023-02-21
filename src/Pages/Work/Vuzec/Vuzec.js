@@ -5,6 +5,9 @@ import '../Work.css'
 import vuzec_hero_light from '../../../img/portfolioAssets/Vuzec/vuzec_hero_light.svg'
 import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
 import vuzec_hero from '../../../img/portfolioAssets/Vuzec/vuzec_hero.png'
+import desiredFeatures from '../../../img/portfolioAssets/Vuzec/desiredFeatures.png'
+import categorizedFeatures from '../../../img/portfolioAssets/Vuzec/categorizedFeatures.png'
+import userFlow from '../../../img/portfolioAssets/Vuzec/userFlow.png'
 
 export default function Vuzec () {
   return (
@@ -66,6 +69,48 @@ export default function Vuzec () {
             </p>
           </div>
         </div>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Information architecture</p>
+
+        <p>
+          Shareholders provided the features they would like to incorporate into
+          the application. Many of them overlapping, changing, or being removed
+          as time moved on in this new, fast-emerging sector.
+        </p>
+
+        <figure>
+          <img
+            src={desiredFeatures}
+            alt='Map of all requested and desired user features from shareholders'
+          />
+          <figcaption>Mapping out all requested user features</figcaption>
+        </figure>
+
+        <p>
+          Once all features are on the table, we can create the information
+          architecture by categorizing the application's features and what they
+          will each contain respectively.
+        </p>
+
+        <figure>
+          <img
+            src={categorizedFeatures}
+            alt='Map of applications features being, categorized'
+          />
+          <figcaption>Categorizing application's features</figcaption>
+        </figure>
+
+        <p>
+          Finally, we're able to create the user flow and map out all of the
+          application's possible states and combinations.
+        </p>
+
+        <figure>
+          <img src={userFlow} alt='Map of the final user flow' />
+          <figcaption>Final user flow</figcaption>
+        </figure>
       </section>
     </div>
   )
