@@ -7,6 +7,9 @@ import SmartTenant_hero from '../../../img/portfolioAssets/SmartTenant/SmartTena
 import mapping_v1 from '../../../img/portfolioAssets/SmartTenant/mapping_v1.png'
 import mapping_v2 from '../../../img/portfolioAssets/SmartTenant/mapping_v2.png'
 import primaryUserFlow from '../../../img/portfolioAssets/SmartTenant/primaryUserFlow.png'
+import paperProto_v1 from '../../../img/portfolioAssets/SmartTenant/paperProto_v1.png'
+import paperProto_v2 from '../../../img/portfolioAssets/SmartTenant/paperProto_v2.png'
+import prototype_v1 from '../../../img/portfolioAssets/SmartTenant/prototype_v1.png'
 
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
@@ -163,6 +166,33 @@ export default function SmartTenant () {
         <figure>
           <img src={primaryUserFlow} alt='Maping of user flow' />
           <figcaption>User flow</figcaption>
+        </figure>
+      </section>
+
+      <section className='story'>
+        <p className='title'>System architecture</p>
+        <span className='heading'>
+          While considering key paths, it was important to build screens that
+          brings users to their most important features within the least amount
+          of steps.
+        </span>
+        <p>
+          Usability testing while using paper prototypes enabled us to iterate
+          and fine-tune the user experience, leading us to a polished and
+          intuitive design system and flow.
+        </p>
+
+        <figure>
+          <img src={paperProto_v1} alt='Initial paper prototype' />
+          <figcaption>First paper prototype draft</figcaption>
+        </figure>
+        <figure>
+          <img src={paperProto_v2} alt='Secondary paper prototype' />
+          <figcaption>Second iteration of the paper prototype</figcaption>
+        </figure>
+        <figure>
+          <img src={prototype_v1} alt='prototype with applied visual design' />
+          <figcaption>Applying visual design</figcaption>
         </figure>
       </section>
     </div>

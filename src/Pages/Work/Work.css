@@ -134,6 +134,7 @@
     font-size: var(--text-base);
     margin-top: calc(var(--text-base) / 2);
     text-align: center;
+    opacity: 0.66;
   }
 }
 
