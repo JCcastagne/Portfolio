@@ -386,27 +386,47 @@ export default function SmartTenant () {
 
         <div className='links'>
           <p className='heading'>To read more about the event and our award:</p>
+
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>
-              Algonquin College's blog post about SmartTenant winning 1st place
-            </Link>
-          </span>
-          <span>
-            <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>
+            <Link
+              to='https://www.algonquincollege.com/arie/2022/03/smart-tenant/'
+              target='_blank'
+            >
               InteliDevs & SmartTenant's winning entry
             </Link>
           </span>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>
+            <Link
+              to='https://www.algonquincollege.com/college-blog/smart-tenant-wins-top-prize-at-re-action-showcase/'
+              target='_blank'
+            >
+              Algonquin College's article about SmartTenant winning 1st place
+            </Link>
+          </span>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link to='https://youtu.be/-3LbMqBqL_A?t=1040' target='_blank'>
+              Watch the Showcase Awards&#8212;17:22 SmartTenant presentation,
+              35:49 question period
+            </Link>
+          </span>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link
+              to='https://www.algonquincollege.com/arie/re-action/'
+              target='_blank'
+            >
               More about Algonquin College's RE/ACTION Applied Research Showcase
             </Link>
           </span>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>
+            <Link
+              to='https://www.algonquincollege.com/arie/virtual-re-action-showcases/virtual-reaction-apr-2022/'
+              target='_blank'
+            >
               All other contestants' submissions
             </Link>
           </span>

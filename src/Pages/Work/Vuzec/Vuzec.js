@@ -12,8 +12,12 @@ import landing_home from '../../../img/portfolioAssets/Vuzec/landing_home.png'
 import dashboard from '../../../img/portfolioAssets/Vuzec/dashboard.png'
 import signIn from '../../../img/portfolioAssets/Vuzec/signIn.png'
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function Vuzec () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div class='Work' id='Vuzec'>
       <section className='hero'>
@@ -32,7 +36,9 @@ export default function Vuzec () {
           <p>Social app connecting tenants to their community</p>
 
           <div className='chips'>
-            <p>Mobile app</p>
+            <p>Web</p>
+            <p>Desktop</p>
+            <p>Mobile</p>
           </div>
         </header>
 
@@ -197,19 +203,30 @@ export default function Vuzec () {
           <p className='heading'>To read more about the event and our award:</p>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>Vuzec's official website</Link>
+            <Link to='https://twitter.com/vuzecmx' target='_blank'>
+              Follow Vuzec on Twitter
+            </Link>
           </span>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>Follow Vuzec on Twitter</Link>
+            <Link to='https://www.instagram.com/vuzecmx/' target='_blank'>
+              Follow Vuzec on Instagram
+            </Link>
           </span>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>Follow Vuzec on Instagram</Link>
+            <Link
+              to='https://www.crunchbase.com/organization/the-vuze'
+              target='_blank'
+            >
+              Crunchbase
+            </Link>
           </span>
           <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-            <Link to='https://google.com'>Crunchbase</Link>
+            <Link to='https://www.vuzec.com/' target='_blank'>
+              Vuzec's official website
+            </Link>
           </span>
         </div>
       </section>
