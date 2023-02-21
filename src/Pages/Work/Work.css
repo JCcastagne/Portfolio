@@ -39,7 +39,8 @@
   }
 
   .Work .hero .header span #heroTitle {
-    width: 100%;
+    height: 94px;
+    max-width: 100%;
   }
   .Work .hero .header span #arrow {
     width: 33px;
