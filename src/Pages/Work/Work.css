@@ -162,3 +162,19 @@
     margin-left: var(--text-base);
   }
 }
+
+/* .imgWithQuote */
+@media screen {
+  .Work .imgWithQuote {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--text-4xl);
+    align-items: center;
+  }
+
+  .Work .imgWithQuote > p {
+    font-size: var(--text-xl);
+    line-height: 28px;
+    transform: translateY(-45px);
+  }
+}

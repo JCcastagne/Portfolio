@@ -10,6 +10,8 @@ import primaryUserFlow from '../../../img/portfolioAssets/SmartTenant/primaryUse
 import paperProto_v1 from '../../../img/portfolioAssets/SmartTenant/paperProto_v1.png'
 import paperProto_v2 from '../../../img/portfolioAssets/SmartTenant/paperProto_v2.png'
 import prototype_v1 from '../../../img/portfolioAssets/SmartTenant/prototype_v1.png'
+import reactNative from '../../../img/portfolioAssets/SmartTenant/reactNative.png'
+import devStack from '../../../img/portfolioAssets/SmartTenant/devStack.png'
 
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
@@ -193,6 +195,65 @@ export default function SmartTenant () {
         <figure>
           <img src={prototype_v1} alt='prototype with applied visual design' />
           <figcaption>Applying visual design</figcaption>
+        </figure>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Development</p>
+        <span className='heading'>
+          Translating design to code, using React Native to build the mobile
+          application lets us build for all three major platforms
+          simultaneously.
+        </span>
+        <p>
+          The project required to have all platforms to be accounted for while
+          being built. This is why React Native was the best choice for our
+          codebase since it allows the team to write code once and deploy it
+          across multiple platforms.
+        </p>
+
+        <div className='imgWithQuote'>
+          <p>
+            React Native was also an excellent choice because it allowed us to
+            build a{' '}
+            <b>
+              high performance, cross-platform compatible application with
+              reusable code
+            </b>
+            , which was ideal given the project's short deadline.
+          </p>
+          <figure>
+            <img
+              src={reactNative}
+              alt='Flow displaying how React Native takes code and transforms it into the three major platforms'
+            />
+            <figcaption>
+              A simple mobile stack made it easy for anyone to understand and
+              maintain the codebase
+            </figcaption>
+          </figure>
+        </div>
+
+        <p>
+          The stack consisted of Google FireBase for data storage, React
+          (Javascript) for the frontend and Node.js for the backend.
+        </p>
+        <p>
+          We also incorporated PicPurify&#8212;a third-party API that provides
+          real-time image moderation based on advanced deep learning. This was
+          an important tool to help prevent unwanted content being uploaded onto
+          our data store.
+        </p>
+
+        <figure>
+          <img
+            src={devStack}
+            alt='Development stack of the mobile application'
+          />
+          <figcaption>
+            A simple mobile stack made it easy for anyone to understand and
+            maintain the codebase
+          </figcaption>
         </figure>
       </section>
     </div>
