@@ -217,14 +217,17 @@
   .Work .links .heading {
     padding-bottom: calc(var(--text-base) / 2);
   }
-  .Work .links a {
-    color: rgb(235, 235, 235, 0.66);
-    width: max-content;
-    text-decoration: underline;
+  .Work .links span {
     margin-bottom: calc(var(--text-base) / 2);
+    opacity: 0.66;
   }
-  .Work .links a img {
-    margin-left: calc(var(--text-base) / 2);
-    opacity: 0.33;
+  .Work .links span img {
+    margin-right: var(--text-base);
+  }
+  .Work .links span a {
+    color: var(--white);
+    width: max-content;
+
+    border-bottom: 1px var(--white) solid;
   }
 }

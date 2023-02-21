@@ -386,22 +386,30 @@ export default function SmartTenant () {
 
         <div className='links'>
           <p className='heading'>To read more about the event and our award:</p>
-          <Link to='https://google.com'>
-            Algonquin College's blog post about SmartTenant winning 1st place
+          <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-          </Link>
-          <Link to='https://google.com'>
-            InteliDevs & SmartTenant's winning entry
+            <Link to='https://google.com'>
+              Algonquin College's blog post about SmartTenant winning 1st place
+            </Link>
+          </span>
+          <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-          </Link>
-          <Link to='https://google.com'>
-            More about Algonquin College's RE/ACTION Applied Research Showcase
+            <Link to='https://google.com'>
+              InteliDevs & SmartTenant's winning entry
+            </Link>
+          </span>
+          <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-          </Link>
-          <Link to='https://google.com'>
-            All other contestants' submissions
+            <Link to='https://google.com'>
+              More about Algonquin College's RE/ACTION Applied Research Showcase
+            </Link>
+          </span>
+          <span>
             <img src={arrow_top_right_light} alt='arrow icon' />
-          </Link>
+            <Link to='https://google.com'>
+              All other contestants' submissions
+            </Link>
+          </span>
         </div>
       </section>
 
