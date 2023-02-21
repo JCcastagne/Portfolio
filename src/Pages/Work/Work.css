@@ -19,7 +19,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: max(var(--text-9xl), 33vh);
-    margin-bottom: var(--text-7xl);
+    margin-bottom: var(--text-9xl);
   }
 
   .Work .hero .header {

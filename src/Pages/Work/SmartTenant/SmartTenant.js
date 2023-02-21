@@ -1,23 +1,26 @@
+// Stylesheets
 import './SmartTenant.css'
 import '../Work.css'
 
+// Images
 import intelidevs_hero_light from '../../../img/portfolioAssets/SmartTenant/intelidevs_hero_light.svg'
 import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
 import SmartTenant_hero from '../../../img/portfolioAssets/SmartTenant/SmartTenant_hero.png'
+import questionnaire from '../../../img/portfolioAssets/SmartTenant/questionnaire.png'
 import mapping_v1 from '../../../img/portfolioAssets/SmartTenant/mapping_v1.png'
 import mapping_v2 from '../../../img/portfolioAssets/SmartTenant/mapping_v2.png'
 import primaryUserFlow from '../../../img/portfolioAssets/SmartTenant/primaryUserFlow.png'
 import paperProto_v1 from '../../../img/portfolioAssets/SmartTenant/paperProto_v1.png'
 import paperProto_v2 from '../../../img/portfolioAssets/SmartTenant/paperProto_v2.png'
 import prototype_v1 from '../../../img/portfolioAssets/SmartTenant/prototype_v1.png'
+import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
+import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
+import SmartTenant_3 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_3.png'
 import reactNative from '../../../img/portfolioAssets/SmartTenant/reactNative.png'
 import devStack from '../../../img/portfolioAssets/SmartTenant/devStack.png'
 import awardScreenshot from '../../../img/portfolioAssets/SmartTenant/awardScreenshot.png'
 import awardArticle from '../../../img/portfolioAssets/SmartTenant/awardArticle.png'
-
-import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
-import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
-import SmartTenant_3 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_3.png'
+// React
 import { Link } from 'react-router-dom'
 
 export default function SmartTenant () {
@@ -102,8 +105,14 @@ export default function SmartTenant () {
           neighbors, leading to a feeling of isolation and disconnection.
         </p>
         <figure>
-          <img src={SmartTenant_3} alt='SmartTenant3' />
-          <figcaption>caption</figcaption>
+          <img
+            src={questionnaire}
+            alt='An example of the questionnaire that InteliDevs had circulated'
+          />
+          <figcaption>
+            An example of our questionnaire that we circulated to a wide range
+            of tenants; crucial to understanding major pain points.
+          </figcaption>
         </figure>
         <p>
           This lack of social engagement and community involvement can have
