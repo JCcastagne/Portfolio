@@ -227,10 +227,7 @@ export default function SmartTenant () {
               src={reactNative}
               alt='Flow displaying how React Native takes code and transforms it into the three major platforms'
             />
-            <figcaption>
-              A simple mobile stack made it easy for anyone to understand and
-              maintain the codebase
-            </figcaption>
+            <figcaption>React Native outputs code to all platforms</figcaption>
           </figure>
         </div>
 
@@ -269,6 +266,50 @@ export default function SmartTenant () {
             of upcoming payments, announcements and events
           </span>
         </div>
+      </section>
+
+      <section className='story'>
+        <span className='heading'>
+          The sense of community is completely recreated in Smart Tenant. It is
+          focused on each individual tenant to deliver a sense of community,
+          something that has never been properly implemented.
+        </span>
+        <p>
+          Users of Smart Tenant can interact with nearby businesses, landlords,
+          and property managers in addition to their neighbours.
+        </p>
+
+        <figure>
+          <img
+            src={SmartTenant_3}
+            alt='Development stack of the mobile application'
+          />
+          <figcaption>
+            Expand your social network by interacting with other tenants inside
+            the same building
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src={SmartTenant_1}
+            alt='Development stack of the mobile application'
+          />
+          <figcaption>
+            Post a status and pictures for others to engage with, post
+            announcements as property managers or community moderators, get to
+            know the people you live close with
+          </figcaption>
+        </figure>
+        <figure>
+          <img
+            src={SmartTenant_2}
+            alt='Development stack of the mobile application'
+          />
+          <figcaption>
+            A simple mobile stack made it easy for anyone to understand and
+            maintain the codebase
+          </figcaption>
+        </figure>
       </section>
     </div>
   )

@@ -175,7 +175,7 @@
   .Work .imgWithQuote > p {
     font-size: var(--text-xl);
     line-height: 28px;
-    transform: translateY(-45px);
+    transform: translateY(-23px);
   }
 }
 
