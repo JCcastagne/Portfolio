@@ -10,3 +10,7 @@
 .Work .story .textGrid .title {
   color: var(--accentColor);
 }
+
+.Work .banner {
+  background-color: var(--accentColor);
+}

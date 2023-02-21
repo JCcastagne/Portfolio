@@ -256,6 +256,20 @@ export default function SmartTenant () {
           </figcaption>
         </figure>
       </section>
+
+      <section className='banner'>
+        <div className='container'>
+          <p className='title'>Final product</p>
+          <span className='heading'>
+            An{' '}
+            <b>
+              easy, straightforward and accessible way to engage with others in
+              your community while staying informed
+            </b>{' '}
+            of upcoming payments, announcements and events
+          </span>
+        </div>
+      </section>
     </div>
   )
 }

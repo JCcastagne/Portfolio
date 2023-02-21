@@ -178,3 +178,31 @@
     transform: translateY(-45px);
   }
 }
+
+/* .banner */
+@media screen {
+  .Work .banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    max-width: var(--2xl);
+    padding: var(--text-7xl);
+    margin-bottom: var(--text-9xl);
+  }
+
+  .Work .banner .container {
+    max-width: var(--md);
+  }
+
+  .Work .banner .title {
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: var(--text-2xl);
+  }
+  .Work .banner .heading {
+    font-size: var(--text-3xl);
+    line-height: 45px;
+  }
+}
