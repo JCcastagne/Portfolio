@@ -12,6 +12,8 @@ import paperProto_v2 from '../../../img/portfolioAssets/SmartTenant/paperProto_v
 import prototype_v1 from '../../../img/portfolioAssets/SmartTenant/prototype_v1.png'
 import reactNative from '../../../img/portfolioAssets/SmartTenant/reactNative.png'
 import devStack from '../../../img/portfolioAssets/SmartTenant/devStack.png'
+import awardScreenshot from '../../../img/portfolioAssets/SmartTenant/awardScreenshot.png'
+import awardArticle from '../../../img/portfolioAssets/SmartTenant/awardArticle.png'
 
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
@@ -310,6 +312,62 @@ export default function SmartTenant () {
             maintain the codebase
           </figcaption>
         </figure>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Final outcomes</p>
+        <span className='heading'>
+          Delivering key deliverables, completing objectives, and celebrating a
+          successful—and award winning!—mobile application.
+        </span>
+        <p>
+          Near the end of the four months, Algonquin College invited us to
+          submit our work for their biannual RE/ACTION Applied Research Showcase
+          event, hosted by the Office of Applied Research, Innovation &
+          Entrepreneurship.
+        </p>
+        <p>
+          We were chosen amongst five project finalists out of 43 submissions to
+          present to a panel of industry professionals and investors during the
+          live event.
+        </p>
+
+        <figure>
+          <img
+            src={awardScreenshot}
+            alt='President and CEO, Claude Brulé presents the InteliDevs team with the 1st place award of Algonquin College 2022 RE/ACTION Showcase'
+          />
+          <figcaption>
+            President and CEO, Claude Brulé presents our team with the 1st place
+            award of Algonquin College's 2022 RE/ACTION Showcase
+          </figcaption>
+        </figure>
+
+        <span className='heading'>
+          After the finalist's live presentations,{' '}
+          <b>
+            our team was presented the 1st place award, recognizing InteliDevs'
+            hard work and dedication
+          </b>{' '}
+          to building a solution for our client.
+        </span>
+
+        <figure>
+          <img
+            src={awardArticle}
+            alt='Screenshot of Algonquin Colleges blog announcing our SmartTenant app winning first place'
+          />
+          <figcaption>
+            Algonquin College's first public announcement of the winning team of
+            their 2022 RE/ACTION Showcase
+          </figcaption>
+        </figure>
+
+        <p>
+          Following the award ceremony, we were approached by Algonquin College
+          for them to take ownership over the following phases of the
+          application.
+        </p>
       </section>
     </div>
   )

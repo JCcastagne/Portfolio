@@ -14,3 +14,7 @@
 .Work .banner {
   background-color: var(--accentColor);
 }
+
+.Work section:nth-last-of-type(2) img:first-of-type {
+  border: 2px var(--white) solid;
+}
