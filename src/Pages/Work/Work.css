@@ -206,3 +206,25 @@
     line-height: 45px;
   }
 }
+
+/* .links */
+@media screen {
+  .Work .links {
+    display: flex;
+    flex-direction: column;
+    margin-top: var(--text-base);
+  }
+  .Work .links .heading {
+    padding-bottom: calc(var(--text-base) / 2);
+  }
+  .Work .links a {
+    color: rgb(235, 235, 235, 0.66);
+    width: max-content;
+    text-decoration: underline;
+    margin-bottom: calc(var(--text-base) / 2);
+  }
+  .Work .links a img {
+    margin-left: calc(var(--text-base) / 2);
+    opacity: 0.33;
+  }
+}

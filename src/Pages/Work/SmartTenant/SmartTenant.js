@@ -18,6 +18,7 @@ import awardArticle from '../../../img/portfolioAssets/SmartTenant/awardArticle.
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
 import SmartTenant_3 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_3.png'
+import { Link } from 'react-router-dom'
 
 export default function SmartTenant () {
   return (
@@ -336,6 +337,7 @@ export default function SmartTenant () {
           <img
             src={awardScreenshot}
             alt='President and CEO, Claude Brulé presents the InteliDevs team with the 1st place award of Algonquin College 2022 RE/ACTION Showcase'
+            style={{ border: '2px rgb(235, 235, 235, 0.66) solid' }}
           />
           <figcaption>
             President and CEO, Claude Brulé presents our team with the 1st place
@@ -368,6 +370,61 @@ export default function SmartTenant () {
           for them to take ownership over the following phases of the
           application.
         </p>
+
+        <div className='links'>
+          <p className='heading'>To read more about the event and our award:</p>
+          <Link to='https://google.com'>
+            Algonquin College's blog post about SmartTenant winning 1st place
+            <img src={arrow_top_right_light} alt='arrow icon' />
+          </Link>
+          <Link to='https://google.com'>
+            InteliDevs & SmartTenant's winning entry
+            <img src={arrow_top_right_light} alt='arrow icon' />
+          </Link>
+          <Link to='https://google.com'>
+            More about Algonquin College's RE/ACTION Applied Research Showcase
+            <img src={arrow_top_right_light} alt='arrow icon' />
+          </Link>
+          <Link to='https://google.com'>
+            All other contestants' submissions
+            <img src={arrow_top_right_light} alt='arrow icon' />
+          </Link>
+        </div>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Next steps</p>
+        <p>
+          The application currently is being worked on by another team under the
+          College's name. It is aimed to officially launch in the app store by
+          Q2 2023.
+        </p>
+        <div className='tileGrid'>
+          <div>
+            <p className='title'>01</p>
+            <p>
+              Incorporate features of the next phase; marketplace,
+              notifications, moderator panel, rewards, etc.
+            </p>
+          </div>
+          <div>
+            <p className='title'>02</p>
+            <p>Create web version of admin and community moderator panels.</p>
+          </div>
+          <div>
+            <p className='title'>03</p>
+            <p>
+              Review design and code, fine-tuning details and making sure the
+              app is within each of its respective app stores' guidelines.
+            </p>
+          </div>
+          <div>
+            <p className='title'>04</p>
+            <p>
+              Official App Store launch aimed for the second quarter of 2023.
+            </p>
+          </div>
+        </div>
       </section>
     </div>
   )
