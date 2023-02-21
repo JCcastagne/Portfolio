@@ -64,6 +64,7 @@
   .Work .hero .header .chips p {
     font-size: var(--text-sm);
     padding: calc(var(--text-base) / 2) var(--text-base);
+    margin-right: calc(var(--text-base) / 2);
     border: 1px var(--white) solid;
     border-radius: 99px;
   }
