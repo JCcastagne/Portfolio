@@ -73,6 +73,33 @@ export default function SmartTenant () {
           </div>
         </div>
       </section>
+
+      <section className='story'>
+        <p className='title'>Problem</p>
+        <span className='heading'>
+          Tenants are not engaged socially within their communities, leading to
+          a decreased satisfaction within their living experience.
+        </span>
+        <p>
+          In many urban areas, people are increasingly choosing to rent
+          apartments, but often, renters do not feel connected to their
+          communities.
+        </p>
+        <p>
+          They may lack opportunities for social interaction with their
+          neighbors, leading to a feeling of isolation and disconnection.
+        </p>
+        <figure>
+          <img src={SmartTenant_3} alt='SmartTenant3' />
+          <figcaption>caption</figcaption>
+        </figure>
+        <p>
+          This lack of social engagement and community involvement can have
+          negative effects on renters' well-being, leading to decreased
+          satisfaction with their living experience and potentially even causing
+          them to leave their apartments earlier than they might otherwise.
+        </p>
+      </section>
     </div>
   )
 }

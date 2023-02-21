@@ -95,6 +95,10 @@
   margin-bottom: var(--text-2xl);
 }
 
+.Work .story > p:not(.title) {
+  margin-bottom: var(--text-base);
+}
+
 /* .textGrid */
 @media screen {
   .Work .story .textGrid {
@@ -113,5 +117,22 @@
   }
   .Work .story .textGrid p:not(.title) {
     margin-bottom: var(--text-base);
+  }
+}
+
+/* figure */
+@media screen {
+  .Work .story figure {
+    margin-top: var(--text-xl);
+    margin-bottom: var(--text-4xl);
+  }
+  .Work .story figure img {
+    width: 100%;
+    border-radius: calc(var(--text-base) / 2);
+  }
+  .Work .story figcaption {
+    font-size: var(--text-base);
+    margin-top: calc(var(--text-base) / 2);
+    text-align: center;
   }
 }
