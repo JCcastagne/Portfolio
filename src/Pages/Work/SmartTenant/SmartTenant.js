@@ -22,8 +22,12 @@ import awardScreenshot from '../../../img/portfolioAssets/SmartTenant/awardScree
 import awardArticle from '../../../img/portfolioAssets/SmartTenant/awardArticle.png'
 // React
 import { Link } from 'react-router-dom'
+import { useEffect } from 'react'
 
 export default function SmartTenant () {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div class='Work' id='SmartTenant'>
       <section className='hero'>
