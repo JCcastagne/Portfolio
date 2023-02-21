@@ -136,3 +136,28 @@
     text-align: center;
   }
 }
+
+/* .tileGrid */
+@media screen {
+  .Work .story .tileGrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: var(--text-base);
+  }
+
+  .Work .story .tileGrid div {
+    padding: var(--text-base);
+    border-radius: calc(var(--text-base) / 2);
+    background-color: #313131;
+  }
+
+  .Work .story .tileGrid div .title {
+    font-weight: 700;
+    margin-bottom: var(--text-base);
+  }
+
+  .Work .story .tileGrid div ul {
+    margin-left: var(--text-base);
+  }
+}

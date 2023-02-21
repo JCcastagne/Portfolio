@@ -1,12 +1,16 @@
 import './SmartTenant.css'
 import '../Work.css'
 
+import intelidevs_hero_light from '../../../img/portfolioAssets/SmartTenant/intelidevs_hero_light.svg'
+import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
 import SmartTenant_hero from '../../../img/portfolioAssets/SmartTenant/SmartTenant_hero.png'
+import mapping_v1 from '../../../img/portfolioAssets/SmartTenant/mapping_v1.png'
+import mapping_v2 from '../../../img/portfolioAssets/SmartTenant/mapping_v2.png'
+import primaryUserFlow from '../../../img/portfolioAssets/SmartTenant/primaryUserFlow.png'
+
 import SmartTenant_1 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_1.png'
 import SmartTenant_2 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_2.png'
 import SmartTenant_3 from '../../../img/portfolioAssets/SmartTenant/SmartTenant_3.png'
-import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
-import intelidevs_hero_light from '../../../img/portfolioAssets/SmartTenant/intelidevs_hero_light.svg'
 
 export default function SmartTenant () {
   return (
@@ -99,6 +103,67 @@ export default function SmartTenant () {
           satisfaction with their living experience and potentially even causing
           them to leave their apartments earlier than they might otherwise.
         </p>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Project requirement scope</p>
+        <div className='tileGrid'>
+          <div>
+            <p className='title'>Business objectives</p>
+            <ul>
+              <li>Customer retention</li>
+              <li>Create a sense of connection </li>
+              <li>Increase tenant satisfaction</li>
+            </ul>
+          </div>
+          <div>
+            <p className='title'>Customer goals</p>
+            <ul>
+              <li>Low effort way of connecting with their community</li>
+              <li>A sense of belonging</li>
+            </ul>
+          </div>
+          <div>
+            <p className='title'>Constraints</p>
+            <ul>
+              <li>Existing brand guidelines</li>
+              <li>Restricted project timelines</li>
+              <li>COVID-19 environment</li>
+            </ul>
+          </div>
+          <div>
+            <p className='title'>My responsibilities</p>
+            <ul>
+              <li>
+                Leading design efforts (wireframing, prototyping, layouts,
+                visual design, etc.)
+              </li>
+              <li>Create UX-backed flows and designs</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Information architecture</p>
+        <p>
+          Organizing and structuring content and information, making it as
+          intuitive and user-friendly as possible by compartmentalizing key
+          content through sorting exercises.
+        </p>
+
+        <figure>
+          <img src={mapping_v1} alt='Initial mapping of features' />
+          <figcaption>First draft</figcaption>
+        </figure>
+        <figure>
+          <img src={mapping_v2} alt='Secondary mapping of features' />
+          <figcaption>Final version</figcaption>
+        </figure>
+        <figure>
+          <img src={primaryUserFlow} alt='Maping of user flow' />
+          <figcaption>User flow</figcaption>
+        </figure>
       </section>
     </div>
   )
