@@ -8,6 +8,9 @@ import vuzec_hero from '../../../img/portfolioAssets/Vuzec/vuzec_hero.png'
 import desiredFeatures from '../../../img/portfolioAssets/Vuzec/desiredFeatures.png'
 import categorizedFeatures from '../../../img/portfolioAssets/Vuzec/categorizedFeatures.png'
 import userFlow from '../../../img/portfolioAssets/Vuzec/userFlow.png'
+import landing_home from '../../../img/portfolioAssets/Vuzec/landing_home.png'
+import dashboard from '../../../img/portfolioAssets/Vuzec/dashboard.png'
+import signIn from '../../../img/portfolioAssets/Vuzec/signIn.png'
 
 export default function Vuzec () {
   return (
@@ -110,6 +113,74 @@ export default function Vuzec () {
         <figure>
           <img src={userFlow} alt='Map of the final user flow' />
           <figcaption>Final user flow</figcaption>
+        </figure>
+      </section>
+
+      <section className='banner'>
+        <div className='container'>
+          <p className='title'>Final product</p>
+          <span className='heading'>
+            An innovative web3 trading platform, leveraging advanced blockchain
+            technology to offer a{' '}
+            <b>secure and decentralized trading environment</b> for digital
+            assets.
+          </span>
+        </div>
+      </section>
+
+      <section className='story'>
+        <span className='heading'>
+          Users are able to experience a fully customized onboarding process.
+          Once enrolled, they have the ability to create an artist account which
+          permits them to create and sell releases. Any user is able to view,
+          sell and exchange tokens.
+        </span>
+
+        <p>
+          The platform's <b>design system</b> has been completely UX-engineered
+          along with responsive components. Dynamic content is also displayed on
+          main pages to create a sense of immersion while also retaining
+          accessibility.
+        </p>
+
+        <figure>
+          <img
+            src={landing_home}
+            alt='Screenshot of the Trading pages landing view'
+          />
+          <figcaption>Trading page's landing view</figcaption>
+        </figure>
+
+        <p>
+          The application is <b>built with ReactJS</b> and managed by WebPack to
+          ensure efficient maintenance of both the codebase and the
+          customizable, responsive components.
+        </p>
+
+        <p>
+          <b>EthersJS and the UniswapV3 subgraph API</b> enables the viewing,
+          buying and selling of these financial assets while our{' '}
+          <b>custom, private music distributor's third-party API</b> handles the
+          submission of artist releases.
+        </p>
+
+        <figure>
+          <img src={dashboard} alt='Screenshot of the dashboard page' />
+          <figcaption>
+            Dashboard page lets users view their wallet balance, earnings and
+            past transactions
+          </figcaption>
+        </figure>
+
+        <p>
+          User onboarding and authentication has been built both with our
+          custom, in-house solution and OAuth/OpenID Connect, providing the user
+          an easy, fast and seamless onboarding experience.
+        </p>
+
+        <figure>
+          <img src={signIn} alt='Screenshot of the Sign up/login page' />
+          <figcaption>Sign up/login page</figcaption>
         </figure>
       </section>
     </div>
