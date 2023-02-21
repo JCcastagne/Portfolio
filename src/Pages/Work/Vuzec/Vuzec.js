@@ -11,6 +11,7 @@ import userFlow from '../../../img/portfolioAssets/Vuzec/userFlow.png'
 import landing_home from '../../../img/portfolioAssets/Vuzec/landing_home.png'
 import dashboard from '../../../img/portfolioAssets/Vuzec/dashboard.png'
 import signIn from '../../../img/portfolioAssets/Vuzec/signIn.png'
+import { Link } from 'react-router-dom'
 
 export default function Vuzec () {
   return (
@@ -182,6 +183,35 @@ export default function Vuzec () {
           <img src={signIn} alt='Screenshot of the Sign up/login page' />
           <figcaption>Sign up/login page</figcaption>
         </figure>
+      </section>
+
+      <section className='story'>
+        <p className='title'>Next steps</p>
+        <span className='heading'>
+          Vuzec plans to utilize the Series A funding to further expand its
+          online presence while working towards an upcoming official launch
+          date, which has yet to be announced.
+        </span>
+
+        <div className='links'>
+          <p className='heading'>To read more about the event and our award:</p>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link to='https://google.com'>Vuzec's official website</Link>
+          </span>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link to='https://google.com'>Follow Vuzec on Twitter</Link>
+          </span>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link to='https://google.com'>Follow Vuzec on Instagram</Link>
+          </span>
+          <span>
+            <img src={arrow_top_right_light} alt='arrow icon' />
+            <Link to='https://google.com'>Crunchbase</Link>
+          </span>
+        </div>
       </section>
     </div>
   )
