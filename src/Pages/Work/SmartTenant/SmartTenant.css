@@ -2,15 +2,15 @@
   --accentColor: #3c7f8c;
 }
 
-.Work .story > .title {
+.Work#SmartTenant .story > .title {
   font-size: var(--text-xl);
   color: var(--accentColor);
 }
 
-.Work .story .textGrid .title {
+.Work#SmartTenant .story .textGrid .title {
   color: var(--accentColor);
 }
 
-.Work .banner {
+.Work#SmartTenant .banner {
   background-color: var(--accentColor);
 }
