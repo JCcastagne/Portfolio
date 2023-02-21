@@ -1,6 +1,12 @@
-#SmartTenant .intro > .imgContainer {
-  /* overflow: hidden; */
+:root {
+  --accentColor: #3c7f8c;
 }
-#SmartTenant .intro #heroBanner {
-  /* transform: scale(2); */
+
+.Work .story > .title {
+  font-size: var(--text-xl);
+  color: var(--accentColor);
+}
+
+.Work .story .textGrid .title {
+  color: var(--accentColor);
 }
