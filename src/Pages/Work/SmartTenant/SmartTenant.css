@@ -1,16 +1,15 @@
 :root {
-  --accentColor: #3c7f8c;
+  --st-accentColor: #3c7f8c;
 }
 
 .Work#SmartTenant .story > .title {
-  font-size: var(--text-xl);
-  color: var(--accentColor);
+  color: var(--st-accentColor);
 }
 
 .Work#SmartTenant .story .textGrid .title {
-  color: var(--accentColor);
+  color: var(--st-accentColor);
 }
 
 .Work#SmartTenant .banner {
-  background-color: var(--accentColor);
+  background-color: var(--st-accentColor);
 }
