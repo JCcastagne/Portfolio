@@ -17,10 +17,50 @@ import thotexperiment_hero from '../../../img/portfolioAssets/Fiverr/thotexperim
 import thotexperiment2 from '../../../img/portfolioAssets/Fiverr/thotexperiment/thotexperiment2.png'
 import thotexperiment3 from '../../../img/portfolioAssets/Fiverr/thotexperiment/thotexperiment3.png'
 
+import star_green from '../../../img/icons/star_green.svg'
+
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
 export default function Fiverr () {
+  const reviews = [
+    {
+      name: 'Steven',
+      country: 'United States',
+      time: '1 year ago',
+      rating: 5,
+      body: "J-C was great. Very communicative and responsive. On my website's graphic design project, his eye for design was evident throughout. Highly recommend him."
+    },
+    {
+      name: 'Steven',
+      country: 'United States',
+      time: '1 year ago',
+      rating: 5,
+      body: 'Working with J-C was great. He actively sought to understand my objectives while presenting his point of view as a designer. Led to a really great outcome.'
+    },
+    {
+      name: 'Galactus97',
+      country: 'United States',
+      time: '1 year ago',
+      rating: 5,
+      body: "JC was fantastic I'm definitely going to bring him back for more work soon."
+    },
+    {
+      name: 'ThyFlow',
+      country: 'United States',
+      time: '1 year ago',
+      rating: 5,
+      body: 'Communication was top notch and we were able to work together to produce something amazing'
+    },
+    {
+      name: 'Steven',
+      time: '1 year ago',
+      rating: 5,
+      country: 'United States',
+      body: 'JC did a great job. I will be using him for the rest of the project(s).'
+    }
+  ]
+
   useEffect(() => {
     window.scrollTo(0, 0)
   }, [])
@@ -195,6 +235,69 @@ export default function Fiverr () {
             src={thotexperiment3}
             alt='Website philosophy page of ThotExperiment'
           />
+        </div>
+      </section>
+
+      <section className='banner'>
+        <div className='container'>
+          <p className='title'>Reviews</p>
+          <span className='heading'>
+            <b>100% of clients rated their orders 5-stars.</b> Discover what
+            people have to say about my relentless dedication to{' '}
+            <b>delivering exceptional, quality work.</b>
+          </span>
+        </div>
+      </section>
+
+      <section className='story'>
+        <span className='heading'>
+          All of my clients have given me 5 stars for{' '}
+          <b>Communication, Service, 'Would buy again', and 'Goals achieved'</b>{' '}
+          categories on Fiverr.
+        </span>
+        <p>
+          Customers love my dedication and passion for creating solutions that
+          work and fit their needs. My commitment to excellence and attention to
+          detail ensures that every project is delivered with high-quality
+          results.
+        </p>
+
+        <div className='reviews'>
+          {reviews.map((review, index) => {
+            return (
+              <Link
+                className='card'
+                to='https://www.fiverr.com/jccastagne'
+                target='_blank'
+              >
+                <div className='header'>
+                  <p>{`${review.name}, ${review.country}`}</p>
+                  <img src={arrow_top_right_light} alt='arrow icon' />
+                </div>
+
+                <div className='rating'>
+                  <p>{review.time}</p>
+                  <div className='stars'>
+                    {Array.apply(null, { length: review.rating }).map(
+                      (e, i) => (
+                        <img src={star_green} alt='star icon' key={i} />
+                      )
+                    )}
+                  </div>
+                </div>
+
+                <p className='body'>&ldquo;{review.body}&rdquo;</p>
+              </Link>
+            )
+          })}
+          <Link
+            className='card'
+            to='https://www.fiverr.com/jccastagne'
+            target='_blank'
+            id='hidden'
+          >
+            <p className='body'>+3 hidden for NDAs</p>
+          </Link>
         </div>
       </section>
     </div>

@@ -270,3 +270,52 @@
     border-bottom: 1px var(--white) solid;
   }
 }
+
+/* /Work/Fiverr .reviews */
+@media screen {
+  .Work .reviews {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Work .reviews .card {
+    display: flex;
+    flex-direction: column;
+
+    background: #1b1b1b;
+    border-radius: 8px;
+    padding: var(--text-3xl);
+    margin-bottom: var(--text-base);
+  }
+
+  .Work .reviews .card .header {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--text-xl);
+    font-weight: 600;
+    margin-bottom: var(--text-xs);
+  }
+  .Work .reviews .card .header img {
+    opacity: 0.66;
+  }
+
+  .Work .reviews .card .rating {
+    display: flex;
+    gap: var(--text-base);
+    margin-bottom: var(--text-3xl);
+  }
+  .Work .reviews .card .rating .stars > img {
+    margin-right: calc(var(--text-base) / 4);
+  }
+
+  .Work .reviews .card .body {
+    font-size: var(--text-xl);
+    line-height: 28px;
+  }
+
+  .Work .reviews .card#hidden {
+    padding: var(--text-base);
+    text-align: center;
+    opacity: 0.66;
+  }
+}
