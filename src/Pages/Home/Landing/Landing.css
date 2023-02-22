@@ -10,6 +10,8 @@
   width: 100%;
   max-width: var(--md);
   height: 90vh;
+
+  transition: transform linear 0.1s;
 }
 
 .Landing .name {
