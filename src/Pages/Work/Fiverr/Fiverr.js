@@ -5,6 +5,14 @@ import fiverr_hero_light from '../../../img/portfolioAssets/Fiverr/fiverr_hero_l
 import arrow_top_right_light from '../../../img/icons/arrow_top_right_light.svg'
 import fiverr_hero from '../../../img/portfolioAssets/Fiverr/fiverr_hero.png'
 
+import delight_hero from '../../../img/portfolioAssets/Fiverr/delight/delight_hero.png'
+import delight2 from '../../../img/portfolioAssets/Fiverr/delight/delight2.png'
+import delight3 from '../../../img/portfolioAssets/Fiverr/delight/delight3.png'
+
+import ThyFlow_hero from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow_hero.png'
+import ThyFlow2 from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow2.png'
+import ThyFlow3 from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow3.png'
+
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -107,6 +115,52 @@ export default function Fiverr () {
               Hire me on Fiverr
             </Link>
           </span>
+        </div>
+      </section>
+
+      <section className='story' id='delight'>
+        <p className='title'>Delight</p>
+
+        <span className='heading'>
+          A seasoned startup looking to update and modernize their current top
+          mobile dating app.
+        </span>
+        <p>
+          In addition to an update, "Delight" required a review of its designs
+          to ensure that they adhered to Apple's Human Interface Guidelines
+          before they could be submitted to the app store.
+        </p>
+
+        <p>
+          With over 350 reviews,{' '}
+          <b>Delight now has 4.2/5 stars on the Apple App Store.</b>
+        </p>
+
+        <div className='picGrid'>
+          {/* <img src={delight_hero} alt='Stylized app showcase of Delight' /> */}
+          <img src={delight_hero} alt='Stylized app showcase of Delight' />
+          <img src={delight2} alt='App showcase of Delight' />
+          <img src={delight3} alt='App showcase of Delight with logo' />
+        </div>
+      </section>
+
+      <section className='story' id='thyFlow'>
+        <p className='title'>ThyFlow</p>
+
+        <span className='heading'>
+          A new California-based startup providing "Uber-like" on-demand booking
+          for a variety of services, including but not limited to: dog grooming,
+          hair styling, barbers, etc.
+        </span>
+        <p>
+          ThyFlow is currently in the process of their initial beta launch, with
+          the goal of launching their product fully within the next year.
+        </p>
+
+        <div className='picGrid'>
+          <img src={ThyFlow_hero} alt='Stylized app showcase of ThyFlow' />
+          <img src={ThyFlow2} alt='App showcase of ThyFlow' />
+          <img src={ThyFlow3} alt='App showcase of ThyFlow with logo' />
         </div>
       </section>
     </div>
