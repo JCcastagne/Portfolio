@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 export default function Navbar () {
   return (
-    <div class='Navbar'>
+    <div className='Navbar'>
       <div className='container'>
         <Link to='/'>
           <img src={JC_logo_light} alt='JC brand logo' className='logo' />
