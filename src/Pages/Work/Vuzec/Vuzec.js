@@ -33,7 +33,7 @@ export default function Vuzec () {
             <img src={arrow_top_right_light} id='arrow' alt='arrow icon' />
           </span>
 
-          <p>Social app connecting tenants to their community</p>
+          <p>Building a completely new music-nft trading web platform</p>
 
           <div className='chips'>
             <p>Web</p>
