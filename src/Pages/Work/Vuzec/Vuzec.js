@@ -60,7 +60,7 @@ export default function Vuzec () {
         <div className='textGrid'>
           <div>
             <p className='title'>My role</p>
-            <p>Lead Frontend Developer and UI/UX Designer</p>
+            <p>Lead Frontend Developer and UI/UX Designer:</p>
             <p>
               Transform shareholder's ideas into a concrete web application.
               Overseeing frontend team to create an overhaul of the current
