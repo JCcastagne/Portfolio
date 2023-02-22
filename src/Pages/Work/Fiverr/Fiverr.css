@@ -1,5 +1,5 @@
 :root {
-  --fiverr-accentColor: #00a8b3;
+  --fiverr-accentColor: #1dbf73;
 }
 
 .Work#Fiverr .story > .title {
@@ -12,4 +12,8 @@
 
 .Work#Fiverr .banner {
   background-color: var(--fiverr-accentColor);
+}
+
+.Work#Fiverr .story .textGrid {
+  grid-template-columns: 1fr 1fr;
 }
