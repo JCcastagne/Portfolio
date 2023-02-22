@@ -36,7 +36,9 @@ export default function Footer () {
           </Link>
         </section>
         <section className='right' id='copyright'>
-          <img src={JC_logo_light} alt='jc logo' />
+          <Link to='/'>
+            <img src={JC_logo_light} alt='jc logo' />
+          </Link>
           <p>Jean-Christophe Castagne &copy; 2023</p>
         </section>
       </div>

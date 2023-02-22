@@ -54,7 +54,7 @@
   margin-bottom: calc(var(--text-xl) / 1);
 }
 
-.Footer section.right > img {
+.Footer section.right > a img {
   height: 24px;
 }
 
