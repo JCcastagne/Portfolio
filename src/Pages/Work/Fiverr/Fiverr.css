@@ -1,0 +1,15 @@
+:root {
+  --fiverr-accentColor: #00a8b3;
+}
+
+.Work#Fiverr .story > .title {
+  color: var(--fiverr-accentColor);
+}
+
+.Work#Fiverr .story .textGrid .title {
+  color: var(--fiverr-accentColor);
+}
+
+.Work#Fiverr .banner {
+  background-color: var(--fiverr-accentColor);
+}
