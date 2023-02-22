@@ -56,6 +56,7 @@
   background-color: var(--white);
   height: 4px;
   width: 64px;
+  border-radius: 99px;
   margin: 0 var(--text-base);
   transform: translateY(-16px);
   opacity: 0.33;
