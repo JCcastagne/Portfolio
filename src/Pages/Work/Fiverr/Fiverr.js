@@ -13,6 +13,10 @@ import ThyFlow_hero from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow_he
 import ThyFlow2 from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow2.png'
 import ThyFlow3 from '../../../img/portfolioAssets/Fiverr/thyflow/ThyFlow3.png'
 
+import thotexperiment_hero from '../../../img/portfolioAssets/Fiverr/thotexperiment/thotexperiment_hero.png'
+import thotexperiment2 from '../../../img/portfolioAssets/Fiverr/thotexperiment/thotexperiment2.png'
+import thotexperiment3 from '../../../img/portfolioAssets/Fiverr/thotexperiment/thotexperiment3.png'
+
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react'
 
@@ -161,6 +165,36 @@ export default function Fiverr () {
           <img src={ThyFlow_hero} alt='Stylized app showcase of ThyFlow' />
           <img src={ThyFlow2} alt='App showcase of ThyFlow' />
           <img src={ThyFlow3} alt='App showcase of ThyFlow with logo' />
+        </div>
+      </section>
+
+      <section className='story' id='thotExperiment'>
+        <p className='title'>ThotExperiment</p>
+
+        <span className='heading'>
+          A company with a wide range of adult wellness applications looking to
+          build a new website for their parent LLC corporation.
+        </span>
+
+        <p>
+          Since ThotExperiment's initial launch of their first mobile app, they
+          have experienced great success{' '}
+          <b>with over 100K+ downloads achieved.</b>
+        </p>
+
+        <div className='picGrid'>
+          <img
+            src={thotexperiment_hero}
+            alt='Stylized app showcase of ThotExperiment'
+          />
+          <img
+            src={thotexperiment2}
+            alt='Website landing page of ThotExperiment'
+          />
+          <img
+            src={thotexperiment3}
+            alt='Website philosophy page of ThotExperiment'
+          />
         </div>
       </section>
     </div>
