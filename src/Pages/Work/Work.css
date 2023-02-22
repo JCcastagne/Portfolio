@@ -276,6 +276,7 @@
   .Work .reviews {
     display: flex;
     flex-direction: column;
+    margin-top: var(--text-6xl);
   }
 
   .Work .reviews .card {
@@ -303,6 +304,9 @@
     display: flex;
     gap: var(--text-base);
     margin-bottom: var(--text-3xl);
+  }
+  .Work .reviews .card .rating .stars {
+    transform: translateY(2px);
   }
   .Work .reviews .card .rating .stars > img {
     margin-right: calc(var(--text-base) / 4);
