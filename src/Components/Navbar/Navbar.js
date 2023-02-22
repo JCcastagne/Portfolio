@@ -12,7 +12,7 @@ export default function Navbar () {
           <img src={JC_logo_light} alt='JC brand logo' className='logo' />
         </Link>
 
-        <p>Resume</p>
+        {/* <p>Resume</p> */}
 
         <button>
           <img src={sort_light} alt='menu' />
