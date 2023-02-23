@@ -21,8 +21,6 @@ export default function Navbar () {
           <img src={JC_logo_light} alt='JC brand logo' className='logo' />
         </Link>
 
-        {/* <p>Resume</p> */}
-
         <button onClick={() => toggleDrawer()}>
           <img src={sort_light} alt='menu' />
           Menu
@@ -32,7 +30,7 @@ export default function Navbar () {
         <Link to='/'>Home</Link>
         <Link to='contact'>Contact</Link>
         <Link to='resume'>Resume</Link>
-        <Link to='work'>Work</Link>
+        {/* <Link to='work'>Work</Link> */}
       </div>
     </div>
   )

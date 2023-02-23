@@ -28,27 +28,18 @@
   height: 28px;
 }
 
-#Navbar p {
-  font-weight: 700;
-  text-transform: uppercase;
-  cursor: pointer;
-
-  background: radial-gradient(
-    150.75% 1874.52% at -18.66% 100%,
-    #4db5f0 0%,
-    #f04dc2 100%
-  );
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  padding: 14px;
-}
-
 #Navbar button {
   font-weight: 500;
   text-transform: uppercase;
   cursor: pointer;
+
+  transition: all linear 0.15s;
+  border: 2px rgba(238, 243, 245, 0) solid;
+  border-radius: 8px;
+  padding: 0 var(--text-base);
+}
+#Navbar button:hover {
+  border: 2px rgba(238, 243, 245, 0.66) solid;
 }
 
 #Navbar button img {
@@ -58,16 +49,18 @@
   margin-right: calc(var(--text-base) / 2);
 }
 
-#Navbar .container > a {
-  transition: all linear 0.3s;
-}
-#Navbar.inactive .container > a {
-  transform: translateX(0);
-  opacity: 1;
-}
-#Navbar.active .container > a {
-  transform: translateX(-100%);
-  opacity: 0;
+@media (width <= 768px) {
+  #Navbar .container > a {
+    transition: all linear 0.3s;
+  }
+  #Navbar.inactive .container > a {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  #Navbar.active .container > a {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
 }
 
 #Navbar #links {
@@ -87,8 +80,15 @@
 }
 #Navbar.active #links {
   transform: translateY(0);
-
-  /* transform: translateX(-100%); */
+}
+@media (width <= 768px) {
+  #Navbar.inactive #links {
+    left: var(--text-4xl);
+    transform: translateY(-400%);
+  }
+  #Navbar.active #links {
+    left: var(--text-4xl);
+  }
 }
 
 #Navbar #links a {
