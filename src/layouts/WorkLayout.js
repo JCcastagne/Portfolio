@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router-dom'
 
-import ViewMoreFooter from '../pages/Work/ViewMoreFooter/ViewMoreFooter'
+import ViewMoreFooter from '../Pages/Work/ViewMoreFooter/ViewMoreFooter'
 
 export default function WorkLayout () {
   return (
