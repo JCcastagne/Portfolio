@@ -35,5 +35,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "homepage": "http://github.com/JCcastagne/Portfolio",
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
