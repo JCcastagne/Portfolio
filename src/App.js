@@ -1,8 +1,8 @@
 import {
-  createBrowserRouter,
   Route,
   createRoutesFromElements,
-  RouterProvider
+  RouterProvider,
+  createHashRouter
 } from 'react-router-dom'
 
 // layouts
@@ -23,7 +23,7 @@ import Vuzec from './Pages/Work/Vuzec/Vuzec'
 
 import Error from './Pages/Error/Error'
 
-const router = createBrowserRouter(
+const router = createHashRouter(
   createRoutesFromElements(
     <Route path='/'>
       <Route index element={<Home />} />
