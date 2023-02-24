@@ -1,0 +1,15 @@
+:root {
+  --st-accentColor: #3c7f8c;
+}
+
+.Work#SmartTenant .story > .title {
+  color: var(--st-accentColor);
+}
+
+.Work#SmartTenant .story .textGrid .title {
+  color: var(--st-accentColor);
+}
+
+.Work#SmartTenant .banner {
+  background-color: var(--st-accentColor);
+}

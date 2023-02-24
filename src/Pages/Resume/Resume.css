@@ -1,0 +1,91 @@
+.Resume {
+  width: 100%;
+  max-width: var(--2xl);
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: var(--text-9xl);
+}
+
+.Resume img.resume_hero {
+  width: 100%;
+  padding-bottom: var(--text-7xl);
+  margin-top: 25vh;
+  margin-bottom: var(--text-6xl);
+  border-bottom: 3px var(--black) solid;
+}
+
+.Resume .details {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: var(--text-5xl);
+  max-width: var(--md);
+}
+
+.Resume .details .side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-5xl);
+}
+
+.Resume .details .side .work .jobs,
+.Resume .details .side .work .awards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--text-3xl);
+}
+
+.Resume .details section .header {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  opacity: 66%;
+  margin-bottom: var(--text-4xl);
+}
+
+/*  */
+.Resume .details section .title {
+  margin-bottom: var(--text-base);
+}
+
+.Resume .details section .title > div {
+  display: flex;
+  align-items: center;
+}
+
+.Resume .details section .title .name {
+  font-weight: 700;
+  margin-right: calc(var(--text-base) / 2);
+}
+
+.Resume .details section .title .date {
+  font-size: var(--text-sm);
+  font-weight: 500;
+  margin-top: calc(var(--text-base) / 2);
+}
+
+.Resume .details section ul li {
+  list-style: none;
+  margin-bottom: calc(var(--text-base) / 3);
+}
+
+.Resume a {
+  display: flex;
+  align-items: center;
+  /* background-color: red; */
+}
+.Resume a img {
+  width: 12px;
+  margin-left: calc(var(--text-base) / 2);
+}
+
+/*     (width <= var(--sm)) */
+@media (width <= 640px) {
+  .Resume .details {
+    display: flex;
+    flex-direction: column;
+  }
+}

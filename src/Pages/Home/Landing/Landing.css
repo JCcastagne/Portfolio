@@ -1,0 +1,69 @@
+.Landing {
+  position: fixed;
+  /* background-color: rgba(0, 255, 255, 0.16); */
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: var(--md);
+  height: 90vh;
+
+  transition: transform linear 0.1s;
+}
+
+.Landing .name {
+  display: flex;
+  flex-direction: column;
+}
+
+.Landing .name img {
+  width: 100%;
+}
+.Landing .name img:first-of-type {
+  margin-bottom: var(--text-xl);
+}
+.Landing .name img:nth-of-type(2) {
+  margin-bottom: var(--text-7xl);
+}
+
+.Landing .skills {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--text-8xl);
+}
+
+.Landing .skills > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.Landing .skills img {
+  height: 48px;
+  width: 48px;
+  margin-bottom: var(--text-base);
+}
+
+.Landing .skills h1,
+.Landing .skills h2,
+.Landing .skills h3 {
+  font-size: var(--text-base);
+  opacity: 0.66;
+}
+
+.Landing .skills > span {
+  background-color: var(--white);
+  height: 4px;
+  width: 64px;
+  border-radius: 99px;
+  margin: 0 var(--text-base);
+  transform: translateY(-16px);
+  opacity: 0.33;
+}
+
+.Landing p a {
+  border-bottom: 2px var(--white) solid;
+}

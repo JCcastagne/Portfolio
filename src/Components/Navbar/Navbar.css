@@ -1,0 +1,131 @@
+#Navbar {
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: var(--text-4xl) var(--text-4xl);
+  z-index: 99;
+}
+
+#Navbar .container {
+  width: 100%;
+  max-width: var(--2xl);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#Navbar .container > * {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#Navbar .logo {
+  height: 28px;
+}
+
+#Navbar button {
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+
+  transition: all linear 0.15s;
+  border: 2px rgba(238, 243, 245, 0) solid;
+  border-radius: 8px;
+  padding: 0 var(--text-base);
+}
+#Navbar button:hover {
+  border: 2px rgba(238, 243, 245, 0.66) solid;
+}
+
+#Navbar button img {
+  width: 48px;
+  height: 48px;
+
+  margin-right: calc(var(--text-base) / 2);
+}
+
+@media (width <= 768px) {
+  #Navbar .container > a {
+    transition: all linear 0.3s;
+  }
+  #Navbar.inactive .container > a {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  #Navbar.active .container > a {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+}
+
+#Navbar #links {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  gap: var(--text-base);
+
+  font-weight: 600;
+  text-transform: uppercase;
+
+  transition: all linear 0.3s;
+}
+
+#Navbar.inactive #links {
+  transform: translateY(-400%);
+}
+#Navbar.active #links {
+  transform: translateY(0);
+}
+@media (width <= 768px) {
+  #Navbar.inactive #links {
+    left: var(--text-4xl);
+    transform: translateY(-400%);
+  }
+  #Navbar.active #links {
+    left: var(--text-4xl);
+  }
+}
+
+#Navbar #links a {
+  transition: all linear 0.3s;
+
+  background: linear-gradient(
+    -45deg,
+    #4db5f0,
+    #f04dc2,
+    #4db5f0,
+    #f04dc2,
+    #eef3f5,
+    #eef3f5
+  );
+  background-size: 800% 800%;
+  background-position: 0% 0%;
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+#Navbar #links a:hover {
+  animation: gradient 15s ease;
+}
+
+@keyframes gradient {
+  1% {
+    background-position: 25% 25%;
+  }
+  8% {
+    background-position: 50% 50%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 50% 50%;
+  }
+}

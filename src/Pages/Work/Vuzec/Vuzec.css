@@ -1,0 +1,15 @@
+:root {
+  --vuzec-accentColor: #bf3152;
+}
+
+.Work#Vuzec .story > .title {
+  color: var(--vuzec-accentColor);
+}
+
+.Work#Vuzec .story .textGrid .title {
+  color: var(--vuzec-accentColor);
+}
+
+.Work#Vuzec .banner {
+  background-color: var(--vuzec-accentColor);
+}

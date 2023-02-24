@@ -1,0 +1,15 @@
+:root {
+  --applauz-accentColor: #00a8b3;
+}
+
+.Work#Applauz .story > .title {
+  color: var(--applauz-accentColor);
+}
+
+.Work#Applauz .story .textGrid .title {
+  color: var(--applauz-accentColor);
+}
+
+.Work#Applauz .banner {
+  background-color: var(--applauz-accentColor);
+}
