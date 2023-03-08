@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Portfolio/static/css/main.4e1f149f.css",
-    "main.js": "/Portfolio/static/js/main.0fec812b.js",
+    "main.css": "/Portfolio/static/css/main.7e9eb154.css",
+    "main.js": "/Portfolio/static/js/main.c353785d.js",
     "static/media/ThyFlow_hero.png": "/Portfolio/static/media/ThyFlow_hero.88bc9a53de41f4090f3c.png",
     "static/media/prototype_v1.png": "/Portfolio/static/media/prototype_v1.e4a08cf0416f32139e3a.png",
     "static/media/ThyFlow3.png": "/Portfolio/static/media/ThyFlow3.997abee4924de8fb84c3.png",
@@ -10,8 +10,10 @@
     "static/media/SmartTenant_1.png": "/Portfolio/static/media/SmartTenant_1.5438f262452ff8358392.png",
     "static/media/thotexperiment_hero.png": "/Portfolio/static/media/thotexperiment_hero.aa48af1886371a554fed.png",
     "static/media/userFlow.png": "/Portfolio/static/media/userFlow.9869426c2bc4374f8a40.png",
+    "static/media/smartTenant_gradient.png": "/Portfolio/static/media/smartTenant_gradient.9c8a8711be706fab8e42.png",
     "static/media/vuzec_hero.png": "/Portfolio/static/media/vuzec_hero.76c9a3d271e892e66ab7.png",
     "static/media/SmartTenant_3.png": "/Portfolio/static/media/SmartTenant_3.d961c68f9496d7da940d.png",
+    "static/media/vuzec_gradient.png": "/Portfolio/static/media/vuzec_gradient.b30610684095612fdf48.png",
     "static/media/delight_hero.png": "/Portfolio/static/media/delight_hero.a9ce20bfcdd03f10154f.png",
     "static/media/desiredFeatures.png": "/Portfolio/static/media/desiredFeatures.a52ae99d600c01185eff.png",
     "static/media/categorizedFeatures.png": "/Portfolio/static/media/categorizedFeatures.8b777d13178f3e63fa54.png",
@@ -26,6 +28,8 @@
     "static/media/paperProto_v2.png": "/Portfolio/static/media/paperProto_v2.33a222382950d9268453.png",
     "static/media/paperProto_v1.png": "/Portfolio/static/media/paperProto_v1.ab0e79969b841417bb07.png",
     "static/media/awardArticle.png": "/Portfolio/static/media/awardArticle.c1e78967a84cfa935c88.png",
+    "static/media/fiverr_gradient.png": "/Portfolio/static/media/fiverr_gradient.6ea839a0c53e46640f1c.png",
+    "static/media/applauz_gradient.png": "/Portfolio/static/media/applauz_gradient.daeca18e5cd67ddea447.png",
     "static/media/thotexperiment2.png": "/Portfolio/static/media/thotexperiment2.b151c110c430b30d0a64.png",
     "static/media/devStack.png": "/Portfolio/static/media/devStack.adfed82a3a8faef0a0c0.png",
     "static/media/primaryUserFlow.png": "/Portfolio/static/media/primaryUserFlow.d5fd9df9139628a3fe94.png",
@@ -52,11 +56,11 @@
     "static/media/arrow_top_right.svg": "/Portfolio/static/media/arrow_top_right.c82070d49cfc50bdf36865c29a53d5db.svg",
     "static/media/server_light.svg": "/Portfolio/static/media/server_light.ce4939f2da17c3867b1ae322faee72a1.svg",
     "static/media/arrow_top_right_light.svg": "/Portfolio/static/media/arrow_top_right_light.10535b45b66d1fba144d6ccc04e1ba1d.svg",
-    "main.4e1f149f.css.map": "/Portfolio/static/css/main.4e1f149f.css.map",
-    "main.0fec812b.js.map": "/Portfolio/static/js/main.0fec812b.js.map"
+    "main.7e9eb154.css.map": "/Portfolio/static/css/main.7e9eb154.css.map",
+    "main.c353785d.js.map": "/Portfolio/static/js/main.c353785d.js.map"
   },
   "entrypoints": [
-    "static/css/main.4e1f149f.css",
-    "static/js/main.0fec812b.js"
+    "static/css/main.7e9eb154.css",
+    "static/js/main.c353785d.js"
   ]
 }
