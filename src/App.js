@@ -4,6 +4,7 @@ import {
   RouterProvider,
   createHashRouter
 } from 'react-router-dom'
+import ReactGA from 'react-ga4'
 
 // layouts
 import RootLayout from './layouts/RootLayout'
@@ -45,6 +46,10 @@ const router = createHashRouter(
 )
 
 function App () {
+  //Google Analytics manager
+  const measurement_id = 'G-X8BHT2H536'
+  ReactGA.initialize(measurement_id)
+
   return <RouterProvider router={router} />
 }
 
