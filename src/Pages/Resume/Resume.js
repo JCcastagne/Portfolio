@@ -46,9 +46,11 @@ export default function Resume () {
             <ul>
               <li>React Native, ReactJS, NextJS</li>
               <li>NodeJS, ExpressJS, MongoDB, Firebase</li>
-              <li>HTML, CSS, SASS, Javascript</li>
+              <li>JavaScript, TypeScript, HTML, CSS, SASS</li>
+              <li>.NET 8 (MVC), Microsoft Dataverse, Microsoft Power Apps</li>
+              <li>Azure DevOps, Kubernetes</li>
               <li>Web3, EthersJS</li>
-              <li>Figma, Adobe XD, Photoshop, Illustrator</li>
+              <li>Adobe Suite, Aﬃnity Suite, Figma</li>
               <li>
                 Visual design, interactive prototyping, wireframing, user flows,
                 mockups
