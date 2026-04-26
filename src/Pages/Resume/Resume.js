@@ -80,6 +80,69 @@ export default function Resume () {
               <div className='job'>
                 <div className='title'>
                   <div>
+                    <p className='name'>
+                      Department of Fisheries and Oceans (DFO, Gov. of Canada)
+                    </p>
+                    <p className='position'>
+                      Software Solutions Analyst (IT-02)
+                    </p>
+                  </div>
+                  <p className='date'>Aug 2025 — Present</p>
+                </div>
+                <p>
+                  Led development and maintenance of the public-facing web
+                  application for the Enterprise Grant and Contribution System
+                  (EGCS) using .NET 8 (MVC) and Microsoft Dataverse; modernized
+                  the grant application process from paper-based to digital,
+                  delivering improved user interfaces and streamlined service
+                  delivery for the DFO.
+                </p>
+                <p>
+                  Provided technical advice on software solution development,
+                  testing, and integration to support service delivery for EGCS
+                  and DFO program oﬃcers and stakeholders.
+                </p>
+                <p>
+                  Developed business solutions in Microsoft Power Apps to
+                  support the MVC architecture.
+                </p>
+                <p>
+                  Configured and deployed release pipelines in Power Apps, Azure
+                  DevOps, and Kubernetes.
+                </p>
+                <p>
+                  Created and rolled out team coding guidelines and
+                  documentation on project architecture, coding practices, and
+                  Git workflows, resulting in higher team eﬃciency and cleaner
+                  code architecture and versioning.
+                </p>
+              </div>
+
+              <div className='job'>
+                <div className='title'>
+                  <div>
+                    <p className='name'>The Interactive Abode</p>
+                    <p className='position'>
+                      Frontend and Lead Mobile Developer
+                    </p>
+                  </div>
+                  <p className='date'>May 2023 — Mar 2024</p>
+                </div>
+                <p>
+                  Developed cross-platform Android/iOS mobile app from scratch,
+                  including front-end features from the existing web app;
+                  launched on Apple and Google App Stores.
+                </p>
+                <p>
+                  Collaborated with project managers on technical solutions,
+                  issue resolution, product launch, and evaluation of emerging
+                  technologies.
+                </p>
+              </div>
+
+              <div className='job'>
+                <div className='title'>
+                  <div>
                     <p className='name'>Applauz</p>
                     <p className='position'>Full Stack Developer</p>
                   </div>
